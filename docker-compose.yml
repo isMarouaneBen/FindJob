@@ -1,0 +1,204 @@
+version: "3.8"
+
+# ==============================================================
+#  PROJET JOB INTELLIGENT — Docker Compose unifié
+#  Airflow 2.8 (LocalExecutor) + MongoDB + PostgreSQL
+#  Optimisé pour machine locale Windows
+# ==============================================================
+
+x-airflow-common: &airflow-common
+  image: apache/airflow:2.8.1
+  environment: &airflow-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    AIRFLOW__CORE__FERNET_KEY: ""
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
+    AIRFLOW__WEBSERVER__SECRET_KEY: "job_intelligent_secret"
+    # Variables accessibles dans les DAGs
+    MONGO_URI: mongodb://admin:admin123@mongodb:27017/
+    POSTGRES_DATA_URI: postgresql://datauser:datapass@postgres:5432/job_db
+  volumes:
+    - ${AIRFLOW_PROJ_DIR:-.}/airflow/dags:/opt/airflow/dags
+    - ${AIRFLOW_PROJ_DIR:-.}/airflow/logs:/opt/airflow/logs
+    - ${AIRFLOW_PROJ_DIR:-.}/airflow/plugins:/opt/airflow/plugins
+    - ${AIRFLOW_PROJ_DIR:-.}/scrapers:/opt/airflow/scrapers
+    - ${AIRFLOW_PROJ_DIR:-.}/etl:/opt/airflow/etl
+  depends_on:
+    postgres:
+      condition: service_healthy
+    mongodb:
+      condition: service_healthy
+  networks:
+    - job_network
+
+services:
+
+  # ────────────────────────────────────────────
+  #  1. POSTGRESQL
+  #     - Base "airflow"  : metadata Airflow
+  #     - Base "job_db"   : Silver + Gold layers
+  #     Accès : localhost:5432
+  # ────────────────────────────────────────────
+  postgres:
+    image: postgres:16
+    container_name: job_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: datauser
+      POSTGRES_PASSWORD: datapass
+      POSTGRES_DB: job_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres-init:/docker-entrypoint-initdb.d
+    networks:
+      - job_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U datauser -d job_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ────────────────────────────────────────────
+  #  2. PGADMIN — Interface PostgreSQL
+  #     Accès : http://localhost:5050
+  #     Login : admin@jobintelligent.ma / admin123
+  # ────────────────────────────────────────────
+  pgadmin:
+    image: dpage/pgadmin4:8.4
+    container_name: job_pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@jobintelligent.ma
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - job_network
+
+  # ────────────────────────────────────────────
+  #  3. MONGODB — Bronze / Raw layer
+  #     Accès : localhost:27017
+  # ────────────────────────────────────────────
+  mongodb:
+    image: mongo:7.0
+    container_name: job_mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+      MONGO_INITDB_DATABASE: job_raw
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - ./mongo-init:/docker-entrypoint-initdb.d
+    networks:
+      - job_network
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ────────────────────────────────────────────
+  #  4. MONGO EXPRESS — Interface MongoDB
+  #     Accès : http://localhost:8081
+  #     Login : admin / admin123
+  # ────────────────────────────────────────────
+  mongo-express:
+    image: mongo-express:1.0.2
+    container_name: job_mongo_express
+    restart: unless-stopped
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: admin123
+      ME_CONFIG_MONGODB_URL: mongodb://admin:admin123@mongodb:27017/
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: admin123
+    ports:
+      - "8081:8081"
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - job_network
+
+  # ────────────────────────────────────────────
+  #  5. AIRFLOW INIT — Migration DB + user admin
+  #     S'exécute une seule fois au démarrage
+  # ────────────────────────────────────────────
+  airflow-init:
+    <<: *airflow-common
+    container_name: job_airflow_init
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate
+        airflow users create \
+          --username admin \
+          --password admin123 \
+          --firstname Admin \
+          --lastname JobIntelligent \
+          --role Admin \
+          --email admin@jobintelligent.ma || true
+        echo "Airflow init terminé."
+    restart: "no"
+
+  # ────────────────────────────────────────────
+  #  6. AIRFLOW WEBSERVER
+  #     Accès : http://localhost:8080
+  #     Login : admin / admin123
+  # ────────────────────────────────────────────
+  airflow-webserver:
+    <<: *airflow-common
+    container_name: job_airflow_webserver
+    command: webserver
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # ────────────────────────────────────────────
+  #  7. AIRFLOW SCHEDULER
+  #     Exécute les DAGs selon le planning
+  # ────────────────────────────────────────────
+  airflow-scheduler:
+    <<: *airflow-common
+    container_name: job_airflow_scheduler
+    command: scheduler
+    restart: unless-stopped
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+# ────────────────────────────────────────────
+#  VOLUMES persistants
+# ────────────────────────────────────────────
+volumes:
+  postgres_data:
+  mongodb_data:
+  pgadmin_data:
+
+# ────────────────────────────────────────────
+#  RÉSEAU interne partagé entre tous les services
+# ────────────────────────────────────────────
+networks:
+  job_network:
+    driver: bridge

@@ -1,0 +1,24 @@
+# Projet Job Intelligent — Dépendances Python
+
+# Scraping
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.1.0
+selenium==4.18.1
+webdriver-manager==4.0.1
+PyPDF2==4.0.1
+
+# MongoDB
+pymongo==4.6.1
+
+# PostgreSQL
+psycopg2-binary==2.9.9
+
+# Transformation
+pandas==2.2.0   
+
+# NLP
+spacy==3.7.4
+
+# Utilitaires
+python-dotenv==1.0.1

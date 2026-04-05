@@ -1,0 +1,458 @@
+2026-03-31 03:20:18,026 [INFO] ==================================================
+2026-03-31 03:20:18,026 [INFO] Démarrage du scraper Emploi-public.ma
+2026-03-31 03:20:18,027 [INFO] ==================================================
+2026-03-31 03:20:18,127 [INFO] Connexion MongoDB établie.
+2026-03-31 03:20:18,128 [INFO] Scraping page 1/10 — https://www.emploi-public.ma/concours
+2026-03-31 03:20:18,504 [ERROR] Erreur requête page 1 : 404 Client Error: Not Found for url: https://www.emploi-public.ma/concours?page=1
+2026-03-31 03:20:18,504 [INFO] Scraping terminé — 0 offres extraites.
+2026-03-31 03:20:18,504 [WARNING] Aucune offre à sauvegarder.
+2026-03-31 03:20:18,504 [INFO] Sauvegarde MongoDB terminée.
+2026-03-31 03:21:29,417 [INFO] ==================================================
+2026-03-31 03:21:29,418 [INFO] Démarrage du scraper Emploi-public.ma
+2026-03-31 03:21:29,418 [INFO] ==================================================
+2026-03-31 03:21:29,442 [INFO] Connexion MongoDB établie.
+2026-03-31 03:21:29,443 [INFO] Scraping page 1/10 — https://www.emploi-public.ma/fr/concours-liste
+2026-03-31 03:21:30,084 [INFO]   → 0 offres trouvées sur cette page.
+2026-03-31 03:21:30,084 [INFO] Page 1 vide — fin de pagination.
+2026-03-31 03:21:30,084 [INFO] Scraping terminé — 0 offres extraites.
+2026-03-31 03:21:30,085 [WARNING] Aucune offre à sauvegarder.
+2026-03-31 03:21:30,085 [INFO] Sauvegarde MongoDB terminée.
+2026-03-31 03:25:39,884 [INFO] ==================================================
+2026-03-31 03:25:39,884 [INFO] Démarrage du scraper Emploi-public.ma v3
+2026-03-31 03:25:39,884 [INFO] ==================================================
+2026-03-31 03:25:39,909 [INFO] Connexion MongoDB établie.
+2026-03-31 03:25:39,909 [INFO] Étape 1 — Page principale : https://www.emploi-public.ma/fr/concours-liste
+2026-03-31 03:25:40,520 [INFO]   → 0 cartes trouvées dans ce bloc.
+2026-03-31 03:25:40,521 [INFO] Page principale : 0 offres.
+2026-03-31 03:25:42,522 [INFO] Étape 2 — Endpoint AJAX : https://www.emploi-public.ma/fr/loadCardsConcours
+2026-03-31 03:25:42,625 [INFO]   → 0 cartes trouvées dans ce bloc.
+2026-03-31 03:25:42,626 [INFO] AJAX : 0 cartes reçues, 0 nouvelles.
+2026-03-31 03:25:42,626 [INFO] Total final : 0 offres uniques.
+2026-03-31 03:25:42,626 [INFO] Scraping terminé — 0 offres extraites.
+2026-03-31 03:25:42,626 [WARNING] Aucune offre à sauvegarder.
+2026-03-31 03:25:42,626 [INFO] Sauvegarde MongoDB terminée.
+2026-03-31 03:35:57,708 [INFO] ==================================================
+2026-03-31 03:35:57,708 [INFO] Démarrage du scraper Emploi-public.ma v4 (Selenium)
+2026-03-31 03:35:57,709 [INFO] ==================================================
+2026-03-31 03:35:57,844 [INFO] ====== WebDriver manager ======
+2026-03-31 03:35:58,656 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 03:35:59,131 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 03:35:59,669 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 03:36:00,394 [INFO] WebDriver version 146.0.7680.165 selected
+2026-03-31 03:36:00,398 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.165/win32/chromedriver-win32.zip
+2026-03-31 03:36:00,399 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.165/win32/chromedriver-win32.zip
+2026-03-31 03:36:00,702 [INFO] Driver downloading response is 200
+2026-03-31 03:36:01,255 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 03:36:01,586 [INFO] Driver has been saved in cache [C:\Users\marouane\.wdm\drivers\chromedriver\win64\146.0.7680.165]
+2026-03-31 03:36:04,062 [INFO] Connexion MongoDB établie.
+2026-03-31 03:36:04,062 [INFO] Ouverture de la page : https://www.emploi-public.ma/fr/concours-liste?key_word=data
+2026-03-31 03:36:08,672 [INFO] Premières cartes chargées.
+2026-03-31 03:36:18,907 [INFO] Bouton 'charger plus' disparu — toutes les offres sont chargées.
+2026-03-31 03:36:18,907 [INFO] Total clics effectués : 0
+2026-03-31 03:36:18,954 [INFO] Total cartes dans le HTML final : 0
+2026-03-31 03:36:18,954 [INFO] Scraping terminé — 0 offres extraites.
+2026-03-31 03:36:18,954 [WARNING] Aucune offre à sauvegarder.
+2026-03-31 03:36:18,954 [INFO] Sauvegarde MongoDB terminée.
+2026-03-31 03:36:21,124 [INFO] Driver Selenium fermé.
+2026-03-31 03:39:13,643 [INFO] ==================================================
+2026-03-31 03:39:13,643 [INFO] Démarrage du scraper Emploi-public.ma v4 (Selenium)
+2026-03-31 03:39:13,643 [INFO] ==================================================
+2026-03-31 03:39:13,668 [INFO] ====== WebDriver manager ======
+2026-03-31 03:39:14,558 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 03:39:14,886 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 03:39:15,194 [INFO] Driver [C:\Users\marouane\.wdm\drivers\chromedriver\win64\146.0.7680.165\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-31 03:39:16,465 [INFO] Connexion MongoDB établie.
+2026-03-31 03:39:16,465 [INFO] Ouverture de la page : https://www.emploi-public.ma/fr/concours-liste?key_word=data
+2026-03-31 03:39:18,649 [INFO] Premières cartes chargées.
+2026-03-31 03:39:29,085 [INFO] Bouton 'charger plus' disparu — toutes les offres sont chargées.
+2026-03-31 03:39:29,086 [INFO] Total clics effectués : 0
+2026-03-31 03:39:29,107 [INFO] HTML final sauvegardé dans debug_page.html
+2026-03-31 03:39:29,136 [INFO] Total cartes dans le HTML final : 0
+2026-03-31 03:39:29,136 [INFO] Scraping terminé — 0 offres extraites.
+2026-03-31 03:39:29,136 [WARNING] Aucune offre à sauvegarder.
+2026-03-31 03:39:29,136 [INFO] Sauvegarde MongoDB terminée.
+2026-03-31 03:39:31,260 [INFO] Driver Selenium fermé.
+2026-03-31 03:41:46,154 [INFO] ==================================================
+2026-03-31 03:41:46,155 [INFO] Démarrage du scraper Emploi-public.ma v5
+2026-03-31 03:41:46,155 [INFO] ==================================================
+2026-03-31 03:41:46,179 [INFO] ====== WebDriver manager ======
+2026-03-31 03:41:47,072 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 03:41:47,380 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 03:41:47,664 [INFO] Driver [C:\Users\marouane\.wdm\drivers\chromedriver\win64\146.0.7680.165\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-31 03:41:48,728 [INFO] Connexion MongoDB établie.
+2026-03-31 03:41:48,728 [INFO] Scraping page 1/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=1
+2026-03-31 03:41:51,511 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 03:41:51,512 [INFO] Total cumulé : 9 offres.
+2026-03-31 03:41:53,513 [INFO] Scraping page 2/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=2
+2026-03-31 03:41:55,296 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 03:41:55,297 [INFO] Total cumulé : 18 offres.
+2026-03-31 03:41:57,298 [INFO] Scraping page 3/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=3
+2026-03-31 03:41:58,141 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 03:41:58,142 [INFO] Total cumulé : 27 offres.
+2026-03-31 03:42:00,142 [INFO] Scraping page 4/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=4
+2026-03-31 03:42:01,012 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 03:42:01,013 [INFO] Total cumulé : 36 offres.
+2026-03-31 03:42:03,014 [INFO] Scraping page 5/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=5
+2026-03-31 03:42:03,903 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 03:42:03,905 [INFO] Total cumulé : 45 offres.
+2026-03-31 03:42:05,905 [INFO] Scraping page 6/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=6
+2026-03-31 03:42:06,652 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 03:42:06,653 [INFO] Total cumulé : 54 offres.
+2026-03-31 03:42:08,653 [INFO] Scraping page 7/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=7
+2026-03-31 03:42:09,482 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 03:42:09,484 [INFO] Total cumulé : 63 offres.
+2026-03-31 03:42:11,484 [INFO] Scraping page 8/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=8
+2026-03-31 03:42:12,317 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 03:42:12,318 [INFO] Total cumulé : 72 offres.
+2026-03-31 03:42:14,318 [INFO] Scraping page 9/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=9
+2026-03-31 03:42:15,211 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 03:42:15,212 [INFO] Total cumulé : 81 offres.
+2026-03-31 03:42:17,212 [INFO] Scraping page 10/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=10
+2026-03-31 03:42:18,150 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 03:42:18,151 [INFO] Total cumulé : 90 offres.
+2026-03-31 03:42:20,152 [INFO] Scraping page 11/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=11
+2026-03-31 03:42:20,853 [INFO]   → 1 offres trouvées sur cette page.
+2026-03-31 03:42:20,853 [INFO] Total cumulé : 91 offres.
+2026-03-31 03:42:22,854 [INFO] Scraping terminé — 91 offres extraites.
+2026-03-31 03:42:22,882 [ERROR] Erreur bulk write : {'writeErrors': [{'index': 23, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: job_raw.emploi_public_raw index: titre_1_societe_1 dup key: { titre: "Publication de la liste des résultats pour le concours de recrutement d\'un Ingénieur DATA", societe: "Tamwilcom" }', 'keyPattern': {'titre': 1, 'societe': 1}, 'keyValue': {'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur DATA", 'societe': 'Tamwilcom'}, 'op': {'q': {'url': 'https://www.emploi-public.ma/fr/concours/details/1fb4b24b-15f7-4a84-9862-1b7062e6a574'}, 'u': {'$set': {'source': 'emploi_public', 'scraped_at': datetime.datetime(2026, 3, 31, 2, 41, 58, 142240, tzinfo=datetime.timezone.utc), 'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur DATA", 'societe': 'Tamwilcom', 'nb_postes': '1 poste', 'date_limite': 'Limite de dépôt : 8 Mars 2025', 'type_annonce': 'Résultat', 'url': 'https://www.emploi-public.ma/fr/concours/details/1fb4b24b-15f7-4a84-9862-1b7062e6a574', 'statut': 'actif'}}, 'multi': False, 'upsert': True}}, {'index': 29, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: job_raw.emploi_public_raw index: titre_1_societe_1 dup key: { titre: "Publication de la liste des résultats pour le concours de recrutement d\'un Maître de conférences grade A - Echelle 11", societe: "Université Sultan Moulay Slimane -Béni Mellal" }', 'keyPattern': {'titre': 1, 'societe': 1}, 'keyValue': {'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences grade A - Echelle 11", 'societe': 'Université Sultan Moulay Slimane -Béni Mellal'}, 'op': {'q': {'url': 'https://www.emploi-public.ma/fr/concours/details/3ff5862a-8bcb-11ef-810d-506b8df7d43c'}, 'u': {'$set': {'source': 'emploi_public', 'scraped_at': datetime.datetime(2026, 3, 31, 2, 42, 1, 12759, tzinfo=datetime.timezone.utc), 'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences grade A - Echelle 11", 'societe': 'Université Sultan Moulay Slimane -Béni Mellal', 'nb_postes': '1 poste', 'date_limite': 'Limite de dépôt : 2 Novembre 2024', 'type_annonce': 'Résultat', 'url': 'https://www.emploi-public.ma/fr/concours/details/3ff5862a-8bcb-11ef-810d-506b8df7d43c', 'statut': 'actif'}}, 'multi': False, 'upsert': True}}, {'index': 32, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: job_raw.emploi_public_raw index: titre_1_societe_1 dup key: { titre: "Publication de la liste des résultats pour le concours de recrutement d\'un Cadre Data Scientist", societe: "Agence Nationale des Ports" }', 'keyPattern': {'titre': 1, 'societe': 1}, 'keyValue': {'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Cadre Data Scientist", 'societe': 'Agence Nationale des Ports'}, 'op': {'q': {'url': 'https://www.emploi-public.ma/fr/concours/details/028409b2-7bfe-11ef-810d-506b8df7d43c'}, 'u': {'$set': {'source': 'emploi_public', 'scraped_at': datetime.datetime(2026, 3, 31, 2, 42, 1, 13005, tzinfo=datetime.timezone.utc), 'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Cadre Data Scientist", 'societe': 'Agence Nationale des Ports', 'nb_postes': '1 poste', 'date_limite': 'Limite de dépôt : 13 Octobre 2024', 'type_annonce': 'Résultat', 'url': 'https://www.emploi-public.ma/fr/concours/details/028409b2-7bfe-11ef-810d-506b8df7d43c', 'statut': 'actif'}}, 'multi': False, 'upsert': True}}, {'index': 35, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: job_raw.emploi_public_raw index: titre_1_societe_1 dup key: { titre: "Publication de la liste des résultats pour le concours de recrutement d\'un Maître de conférences grade A - Echelle 11", societe: "Université Sultan Moulay Slimane -Béni Mellal" }', 'keyPattern': {'titre': 1, 'societe': 1}, 'keyValue': {'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences grade A - Echelle 11", 'societe': 'Université Sultan Moulay Slimane -Béni Mellal'}, 'op': {'q': {'url': 'https://www.emploi-public.ma/fr/concours/details/a8fbea0c-1e91-11ef-810d-506b8df7d43c'}, 'u': {'$set': {'source': 'emploi_public', 'scraped_at': datetime.datetime(2026, 3, 31, 2, 42, 1, 13243, tzinfo=datetime.timezone.utc), 'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences grade A - Echelle 11", 'societe': 'Université Sultan Moulay Slimane -Béni Mellal', 'nb_postes': '1 poste', 'date_limite': 'Limite de dépôt : 16 Juin 2024', 'type_annonce': 'Résultat', 'url': 'https://www.emploi-public.ma/fr/concours/details/a8fbea0c-1e91-11ef-810d-506b8df7d43c', 'statut': 'actif'}}, 'multi': False, 'upsert': True}}, {'index': 41, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: job_raw.emploi_public_raw index: titre_1_societe_1 dup key: { titre: "Publication de la liste des résultats pour le concours de recrutement d\'un Cadre Data Scientist", societe: "Agence Nationale des Ports" }', 'keyPattern': {'titre': 1, 'societe': 1}, 'keyValue': {'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Cadre Data Scientist", 'societe': 'Agence Nationale des Ports'}, 'op': {'q': {'url': 'https://www.emploi-public.ma/fr/concours/details/7e58ce54-dadd-11ee-810d-506b8df7d43c'}, 'u': {'$set': {'source': 'emploi_public', 'scraped_at': datetime.datetime(2026, 3, 31, 2, 42, 3, 904774, tzinfo=datetime.timezone.utc), 'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Cadre Data Scientist", 'societe': 'Agence Nationale des Ports', 'nb_postes': '1 poste', 'date_limite': 'Limite de dépôt : 4 Avril 2024', 'type_annonce': 'Résultat', 'url': 'https://www.emploi-public.ma/fr/concours/details/7e58ce54-dadd-11ee-810d-506b8df7d43c', 'statut': 'actif'}}, 'multi': False, 'upsert': True}}, {'index': 47, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: job_raw.emploi_public_raw index: titre_1_societe_1 dup key: { titre: "Publication de la liste des résultats pour le concours de recrutement d\'un Maître de conférences grade A - Echelle 11", societe: "Université Sultan Moulay Slimane -Béni Mellal" }', 'keyPattern': {'titre': 1, 'societe': 1}, 'keyValue': {'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences grade A - Echelle 11", 'societe': 'Université Sultan Moulay Slimane -Béni Mellal'}, 'op': {'q': {'url': 'https://www.emploi-public.ma/fr/concours/details/06b161c9-6139-11ee-810d-506b8df7d43c'}, 'u': {'$set': {'source': 'emploi_public', 'scraped_at': datetime.datetime(2026, 3, 31, 2, 42, 6, 652784, tzinfo=datetime.timezone.utc), 'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences grade A - Echelle 11", 'societe': 'Université Sultan Moulay Slimane -Béni Mellal', 'nb_postes': '1 poste', 'date_limite': 'Limite de dépôt : 20 Octobre 2023', 'type_annonce': 'Résultat', 'url': 'https://www.emploi-public.ma/fr/concours/details/06b161c9-6139-11ee-810d-506b8df7d43c', 'statut': 'actif'}}, 'multi': False, 'upsert': True}}, {'index': 50, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: job_raw.emploi_public_raw index: titre_1_societe_1 dup key: { titre: "Publication de la liste des résultats pour le concours de recrutement d\'un Ingénieur DATA", societe: "Tamwilcom" }', 'keyPattern': {'titre': 1, 'societe': 1}, 'keyValue': {'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur DATA", 'societe': 'Tamwilcom'}, 'op': {'q': {'url': 'https://www.emploi-public.ma/fr/concours/details/9b53dcf3-f4aa-11ed-810d-506b8df7d43c'}, 'u': {'$set': {'source': 'emploi_public', 'scraped_at': datetime.datetime(2026, 3, 31, 2, 42, 6, 653023, tzinfo=datetime.timezone.utc), 'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur DATA", 'societe': 'Tamwilcom', 'nb_postes': '1 poste', 'date_limite': 'Limite de dépôt : 1 Juin 2023', 'type_annonce': 'Résultat', 'url': 'https://www.emploi-public.ma/fr/concours/details/9b53dcf3-f4aa-11ed-810d-506b8df7d43c', 'statut': 'actif'}}, 'multi': False, 'upsert': True}}, {'index': 78, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: job_raw.emploi_public_raw index: titre_1_societe_1 dup key: { titre: "Publication de la liste des résultats pour le concours de recrutement d\'un Data Analyst", societe: "Autorité Marocaine du Marché des Capitaux" }', 'keyPattern': {'titre': 1, 'societe': 1}, 'keyValue': {'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Data Analyst", 'societe': 'Autorité Marocaine du Marché des Capitaux'}, 'op': {'q': {'url': 'https://www.emploi-public.ma/fr/concours/details/0f0c4782-07e6-11eb-8ab0-506b8df7d43c'}, 'u': {'$set': {'source': 'emploi_public', 'scraped_at': datetime.datetime(2026, 3, 31, 2, 42, 15, 211937, tzinfo=datetime.timezone.utc), 'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Data Analyst", 'societe': 'Autorité Marocaine du Marché des Capitaux', 'nb_postes': '1 poste', 'date_limite': 'Limite de dépôt : 20 Octobre 2020', 'type_annonce': 'Résultat', 'url': 'https://www.emploi-public.ma/fr/concours/details/0f0c4782-07e6-11eb-8ab0-506b8df7d43c', 'statut': 'actif'}}, 'multi': False, 'upsert': True}}, {'index': 83, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: job_raw.emploi_public_raw index: titre_1_societe_1 dup key: { titre: "Publication de la liste des résultats pour le concours de recrutement d\'un Data Analyst", societe: "Autorité Marocaine du Marché des Capitaux" }', 'keyPattern': {'titre': 1, 'societe': 1}, 'keyValue': {'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Data Analyst", 'societe': 'Autorité Marocaine du Marché des Capitaux'}, 'op': {'q': {'url': 'https://www.emploi-public.ma/fr/concours/details/e48d9e22-16ae-11ea-8ab0-506b8df7d43c'}, 'u': {'$set': {'source': 'emploi_public', 'scraped_at': datetime.datetime(2026, 3, 31, 2, 42, 18, 151395, tzinfo=datetime.timezone.utc), 'titre': "Publication de la liste des résultats pour le concours de recrutement d'un Data Analyst", 'societe': 'Autorité Marocaine du Marché des Capitaux', 'nb_postes': '2 postes', 'date_limite': 'Limite de dépôt : 22 Décembre 2019', 'type_annonce': 'Résultat', 'url': 'https://www.emploi-public.ma/fr/concours/details/e48d9e22-16ae-11ea-8ab0-506b8df7d43c', 'statut': 'actif'}}, 'multi': False, 'upsert': True}}], 'writeConcernErrors': [], 'nInserted': 0, 'nUpserted': 82, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': [{'index': 0, '_id': ObjectId('69cb348e66ab8923a3b99fcf')}, {'index': 1, '_id': ObjectId('69cb348e66ab8923a3b99fd0')}, {'index': 2, '_id': ObjectId('69cb348e66ab8923a3b99fd1')}, {'index': 3, '_id': ObjectId('69cb348e66ab8923a3b99fd2')}, {'index': 4, '_id': ObjectId('69cb348e66ab8923a3b99fd3')}, {'index': 5, '_id': ObjectId('69cb348e66ab8923a3b99fd4')}, {'index': 6, '_id': ObjectId('69cb348e66ab8923a3b99fd5')}, {'index': 7, '_id': ObjectId('69cb348e66ab8923a3b99fd6')}, {'index': 8, '_id': ObjectId('69cb348e66ab8923a3b99fd7')}, {'index': 9, '_id': ObjectId('69cb348e66ab8923a3b99fd8')}, {'index': 10, '_id': ObjectId('69cb348e66ab8923a3b99fd9')}, {'index': 11, '_id': ObjectId('69cb348e66ab8923a3b99fda')}, {'index': 12, '_id': ObjectId('69cb348e66ab8923a3b99fdb')}, {'index': 13, '_id': ObjectId('69cb348e66ab8923a3b99fdc')}, {'index': 14, '_id': ObjectId('69cb348e66ab8923a3b99fdd')}, {'index': 15, '_id': ObjectId('69cb348e66ab8923a3b99fde')}, {'index': 16, '_id': ObjectId('69cb348e66ab8923a3b99fdf')}, {'index': 17, '_id': ObjectId('69cb348e66ab8923a3b99fe0')}, {'index': 18, '_id': ObjectId('69cb348e66ab8923a3b99fe1')}, {'index': 19, '_id': ObjectId('69cb348e66ab8923a3b99fe2')}, {'index': 20, '_id': ObjectId('69cb348e66ab8923a3b99fe3')}, {'index': 21, '_id': ObjectId('69cb348e66ab8923a3b99fe4')}, {'index': 22, '_id': ObjectId('69cb348e66ab8923a3b99fe5')}, {'index': 24, '_id': ObjectId('69cb348e66ab8923a3b99fe7')}, {'index': 25, '_id': ObjectId('69cb348e66ab8923a3b99fe8')}, {'index': 26, '_id': ObjectId('69cb348e66ab8923a3b99fe9')}, {'index': 27, '_id': ObjectId('69cb348e66ab8923a3b99fea')}, {'index': 28, '_id': ObjectId('69cb348e66ab8923a3b99feb')}, {'index': 30, '_id': ObjectId('69cb348e66ab8923a3b99fed')}, {'index': 31, '_id': ObjectId('69cb348e66ab8923a3b99fee')}, {'index': 33, '_id': ObjectId('69cb348e66ab8923a3b99ff0')}, {'index': 34, '_id': ObjectId('69cb348e66ab8923a3b99ff1')}, {'index': 36, '_id': ObjectId('69cb348e66ab8923a3b99ff3')}, {'index': 37, '_id': ObjectId('69cb348e66ab8923a3b99ff4')}, {'index': 38, '_id': ObjectId('69cb348e66ab8923a3b99ff5')}, {'index': 39, '_id': ObjectId('69cb348e66ab8923a3b99ff6')}, {'index': 40, '_id': ObjectId('69cb348e66ab8923a3b99ff7')}, {'index': 42, '_id': ObjectId('69cb348e66ab8923a3b99ff9')}, {'index': 43, '_id': ObjectId('69cb348e66ab8923a3b99ffa')}, {'index': 44, '_id': ObjectId('69cb348e66ab8923a3b99ffb')}, {'index': 45, '_id': ObjectId('69cb348e66ab8923a3b99ffc')}, {'index': 46, '_id': ObjectId('69cb348e66ab8923a3b99ffd')}, {'index': 48, '_id': ObjectId('69cb348e66ab8923a3b99fff')}, {'index': 49, '_id': ObjectId('69cb348e66ab8923a3b9a000')}, {'index': 51, '_id': ObjectId('69cb348e66ab8923a3b9a002')}, {'index': 52, '_id': ObjectId('69cb348e66ab8923a3b9a003')}, {'index': 53, '_id': ObjectId('69cb348e66ab8923a3b9a004')}, {'index': 54, '_id': ObjectId('69cb348e66ab8923a3b9a005')}, {'index': 55, '_id': ObjectId('69cb348e66ab8923a3b9a006')}, {'index': 56, '_id': ObjectId('69cb348e66ab8923a3b9a007')}, {'index': 57, '_id': ObjectId('69cb348e66ab8923a3b9a008')}, {'index': 58, '_id': ObjectId('69cb348e66ab8923a3b9a009')}, {'index': 59, '_id': ObjectId('69cb348e66ab8923a3b9a00a')}, {'index': 60, '_id': ObjectId('69cb348e66ab8923a3b9a00b')}, {'index': 61, '_id': ObjectId('69cb348e66ab8923a3b9a00c')}, {'index': 62, '_id': ObjectId('69cb348e66ab8923a3b9a00d')}, {'index': 63, '_id': ObjectId('69cb348e66ab8923a3b9a00e')}, {'index': 64, '_id': ObjectId('69cb348e66ab8923a3b9a00f')}, {'index': 65, '_id': ObjectId('69cb348e66ab8923a3b9a010')}, {'index': 66, '_id': ObjectId('69cb348e66ab8923a3b9a011')}, {'index': 67, '_id': ObjectId('69cb348e66ab8923a3b9a012')}, {'index': 68, '_id': ObjectId('69cb348e66ab8923a3b9a013')}, {'index': 69, '_id': ObjectId('69cb348e66ab8923a3b9a014')}, {'index': 70, '_id': ObjectId('69cb348e66ab8923a3b9a015')}, {'index': 71, '_id': ObjectId('69cb348e66ab8923a3b9a016')}, {'index': 72, '_id': ObjectId('69cb348e66ab8923a3b9a017')}, {'index': 73, '_id': ObjectId('69cb348e66ab8923a3b9a018')}, {'index': 74, '_id': ObjectId('69cb348e66ab8923a3b9a019')}, {'index': 75, '_id': ObjectId('69cb348e66ab8923a3b9a01a')}, {'index': 76, '_id': ObjectId('69cb348e66ab8923a3b9a01b')}, {'index': 77, '_id': ObjectId('69cb348e66ab8923a3b9a01c')}, {'index': 79, '_id': ObjectId('69cb348e66ab8923a3b9a01e')}, {'index': 80, '_id': ObjectId('69cb348e66ab8923a3b9a01f')}, {'index': 81, '_id': ObjectId('69cb348e66ab8923a3b9a020')}, {'index': 82, '_id': ObjectId('69cb348e66ab8923a3b9a021')}, {'index': 84, '_id': ObjectId('69cb348e66ab8923a3b9a023')}, {'index': 85, '_id': ObjectId('69cb348e66ab8923a3b9a024')}, {'index': 86, '_id': ObjectId('69cb348e66ab8923a3b9a025')}, {'index': 87, '_id': ObjectId('69cb348e66ab8923a3b9a026')}, {'index': 88, '_id': ObjectId('69cb348e66ab8923a3b9a027')}, {'index': 89, '_id': ObjectId('69cb348e66ab8923a3b9a028')}, {'index': 90, '_id': ObjectId('69cb348e66ab8923a3b9a029')}]}
+2026-03-31 03:42:22,882 [INFO] Sauvegarde MongoDB terminée.
+2026-03-31 03:42:24,990 [INFO] Driver Selenium fermé.
+2026-03-31 05:08:16,344 [INFO] ==================================================
+2026-03-31 05:08:16,345 [INFO] Démarrage du scraper Emploi-public.ma v5
+2026-03-31 05:08:16,345 [INFO] ==================================================
+2026-03-31 05:08:16,439 [INFO] ====== WebDriver manager ======
+2026-03-31 05:08:17,400 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 05:08:17,710 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 05:08:18,035 [INFO] Driver [C:\Users\marouane\.wdm\drivers\chromedriver\win64\146.0.7680.165\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-31 05:08:19,441 [INFO] Connexion MongoDB établie.
+2026-03-31 05:08:19,441 [INFO] Scraping page 1/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=1
+2026-03-31 05:08:22,080 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 05:08:22,081 [INFO] Extraction PDF pour : Avis de concours de recrutement de (Administrateur Datacenter & Infrastructure Système (RH 707/2025
+2026-03-31 05:08:22,082 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/3a19c855-6a5a-44e9-a6d5-29611af6d596
+2026-03-31 05:08:22,613 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/3a19c855-6a5a-44e9-a6d5-29611af6d596
+2026-03-31 05:08:22,950 [INFO] PDF extrait avec succès — 3678 caractères.
+2026-03-31 05:08:23,952 [INFO] Extraction PDF pour : Avis de concours de recrutement de DATA GOVERNANCE LEAD
+2026-03-31 05:08:23,952 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/84ea0f27-963a-480e-a8ef-b425c6a44b4a
+2026-03-31 05:08:24,403 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/84ea0f27-963a-480e-a8ef-b425c6a44b4a
+2026-03-31 05:08:24,784 [INFO] PDF extrait avec succès — 3702 caractères.
+2026-03-31 05:08:25,786 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Cadre Data Scientist
+2026-03-31 05:08:25,786 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/3b68a35a-058e-4944-8904-749923245a0a
+2026-03-31 05:08:26,280 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/3b68a35a-058e-4944-8904-749923245a0a
+2026-03-31 05:08:26,733 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:08:27,735 [INFO] Extraction PDF pour : Avis de concours de recrutement de Business Data Analyst (H/F) - Rabat
+2026-03-31 05:08:27,735 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/7ed52f5e-6b11-433e-850a-592fb0b263d4
+2026-03-31 05:08:28,200 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/7ed52f5e-6b11-433e-850a-592fb0b263d4
+2026-03-31 05:08:28,623 [INFO] PDF extrait avec succès — 4661 caractères.
+2026-03-31 05:08:29,624 [INFO] Extraction PDF pour : Avis de concours de recrutement de ARCHITECTE PLATEFORMES ET SOLUTIONS DATA
+2026-03-31 05:08:29,625 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/449702d9-307a-46ca-9cff-4aa8a7b2870a
+2026-03-31 05:08:30,119 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/449702d9-307a-46ca-9cff-4aa8a7b2870a
+2026-03-31 05:08:30,487 [INFO] PDF extrait avec succès — 3682 caractères.
+2026-03-31 05:08:31,490 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Data Scientist
+2026-03-31 05:08:31,491 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/2d9f24c5-872b-479e-9bd1-53ae0c006b8c
+2026-03-31 05:08:31,946 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/2d9f24c5-872b-479e-9bd1-53ae0c006b8c
+2026-03-31 05:08:32,266 [INFO] PDF extrait avec succès — 3001 caractères.
+2026-03-31 05:08:33,268 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Database & Data Integration Engineer
+2026-03-31 05:08:33,268 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/c373b3ad-0b78-423d-90f1-86588664706e
+2026-03-31 05:08:33,771 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/c373b3ad-0b78-423d-90f1-86588664706e
+2026-03-31 05:08:34,081 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:08:35,083 [INFO] Extraction PDF pour : Publication de la liste des convoqués pour l'examen écrit du concours de recrutement d'un (Formateur Animateur en lntelligence Artificielle et Big Data (RH 561/2025
+2026-03-31 05:08:35,083 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/aa440d76-31ac-4a5d-85b0-85171907fa67
+2026-03-31 05:08:35,572 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/aa440d76-31ac-4a5d-85b0-85171907fa67
+2026-03-31 05:08:36,138 [INFO] PDF extrait avec succès — 4849 caractères.
+2026-03-31 05:08:37,141 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Cadre analyste Data Donnée Démo & Veille Sectorielle
+2026-03-31 05:08:37,141 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/a7c0091c-2a17-4a92-bd72-ffe6c2b7ab04
+2026-03-31 05:08:37,623 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/a7c0091c-2a17-4a92-bd72-ffe6c2b7ab04
+2026-03-31 05:08:37,978 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:08:38,980 [INFO] Total cumulé : 9 offres.
+2026-03-31 05:08:40,980 [INFO] Scraping page 2/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=2
+2026-03-31 05:08:41,900 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 05:08:41,901 [INFO] Extraction PDF pour : Avis de concours de recrutement de Data Engineer
+2026-03-31 05:08:41,902 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/dbd3c92a-b813-4d5c-8409-73fe56518be6
+2026-03-31 05:08:42,349 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/dbd3c92a-b813-4d5c-8409-73fe56518be6
+2026-03-31 05:08:42,707 [INFO] PDF extrait avec succès — 2595 caractères.
+2026-03-31 05:08:43,709 [INFO] Extraction PDF pour : Avis de concours de recrutement de Data Engineer (BI et Intégration)
+2026-03-31 05:08:43,709 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/b04160ab-fe60-4bf8-b0fb-204b2826514b
+2026-03-31 05:08:44,199 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/b04160ab-fe60-4bf8-b0fb-204b2826514b
+2026-03-31 05:08:44,557 [INFO] PDF extrait avec succès — 2909 caractères.
+2026-03-31 05:08:45,559 [INFO] Extraction PDF pour : Avis de concours de recrutement de Chargé de maitrise d'ouvrage des projets Data
+2026-03-31 05:08:45,559 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/87ac89d3-ea4d-44bd-b83c-f02d4e067bf7
+2026-03-31 05:08:46,065 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/87ac89d3-ea4d-44bd-b83c-f02d4e067bf7
+2026-03-31 05:08:46,533 [INFO] PDF extrait avec succès — 2575 caractères.
+2026-03-31 05:08:47,535 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un (Administrateur Datacenter & Infrastructure Système (RH 238/2025
+2026-03-31 05:08:47,535 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/3fde484d-0c9a-4d64-8f75-b8484a70d77f
+2026-03-31 05:08:48,034 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/3fde484d-0c9a-4d64-8f75-b8484a70d77f
+2026-03-31 05:08:48,354 [INFO] PDF extrait avec succès — 3623 caractères.
+2026-03-31 05:08:49,356 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Chargés de Projet BI & Data Analytics
+2026-03-31 05:08:49,356 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/5cf038c1-4c22-47bf-a6e3-6bb824f65435
+2026-03-31 05:08:49,804 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/5cf038c1-4c22-47bf-a6e3-6bb824f65435
+2026-03-31 05:08:50,195 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:08:51,196 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur DATA
+2026-03-31 05:08:51,196 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/84d7cf6c-b38b-4f68-9a14-82340bd53469
+2026-03-31 05:08:51,705 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/84d7cf6c-b38b-4f68-9a14-82340bd53469
+2026-03-31 05:08:52,089 [INFO] PDF extrait avec succès — 5186 caractères.
+2026-03-31 05:08:53,091 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences grade A - Echelle 11
+2026-03-31 05:08:53,091 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/7e5d2012-b871-4620-8ee9-8d9ad3742483
+2026-03-31 05:08:54,100 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/7e5d2012-b871-4620-8ee9-8d9ad3742483
+2026-03-31 05:08:55,016 [INFO] PDF extrait avec succès — 5757 caractères.
+2026-03-31 05:08:56,018 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférence à la Faculté polydisciplinaire de Ouarzazate - spécialité Informatique, Intelligence artificielle et Data Science
+2026-03-31 05:08:56,018 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/ffbd38f0-8f8c-4fa8-9406-1e8ba7bcff1e
+2026-03-31 05:08:58,196 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/ffbd38f0-8f8c-4fa8-9406-1e8ba7bcff1e
+2026-03-31 05:08:58,547 [INFO] PDF extrait avec succès — 2 caractères.
+2026-03-31 05:08:59,549 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférence à l'École Nationale des Sciences Appliquées d'Agadir - spécialité Sciences de données, Big data et Intelligence Artificielle
+2026-03-31 05:08:59,549 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/fd894a62-0297-4db6-8d16-eedf83384f9f
+2026-03-31 05:09:00,401 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/fd894a62-0297-4db6-8d16-eedf83384f9f
+2026-03-31 05:09:00,901 [INFO] PDF extrait avec succès — 2 caractères.
+2026-03-31 05:09:01,902 [INFO] Total cumulé : 18 offres.
+2026-03-31 05:09:03,903 [INFO] Scraping page 3/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=3
+2026-03-31 05:09:04,806 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 05:09:04,807 [INFO] Extraction PDF pour : Publication de la liste des convoqués pour l'entretien oral du concours de recrutement d'un Maître de conférence à l'Ecole Nationale Supérieure de l'Intelligence Artificielle et Sciences des Données de Taroudant - spécialité Informatique, Big data et Intelligence Artificielle
+2026-03-31 05:09:04,807 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/11a3052d-71e3-42e6-81db-412c5144de98
+2026-03-31 05:09:05,637 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/11a3052d-71e3-42e6-81db-412c5144de98
+2026-03-31 05:09:06,258 [INFO] PDF extrait avec succès — 2 caractères.
+2026-03-31 05:09:07,260 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Data Engineer
+2026-03-31 05:09:07,260 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/36d49166-2e20-490d-b023-50495c8dd3d9
+2026-03-31 05:09:07,742 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/36d49166-2e20-490d-b023-50495c8dd3d9
+2026-03-31 05:09:08,496 [WARNING] Multiple definitions in dictionary at byte 0xf56bb for key /Info
+2026-03-31 05:09:08,496 [WARNING] Multiple definitions in dictionary at byte 0xf56c8 for key /Info
+2026-03-31 05:09:08,497 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:09:09,498 [INFO] Extraction PDF pour : Annulation du concours de recrutement d'un Chargés de Projet BI & Data Analytics
+2026-03-31 05:09:09,499 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/e06e87f8-b22b-4a77-8225-aca38ff546f1
+2026-03-31 05:09:10,029 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/e06e87f8-b22b-4a77-8225-aca38ff546f1
+2026-03-31 05:09:10,518 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:09:11,520 [INFO] Extraction PDF pour : Publication de la liste des convoqués pour l'examen écrit du concours de recrutement d'un (Formateur Animateur en intelligence Artificielle et Big Data (RH 44/2025
+2026-03-31 05:09:11,520 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/11311812-699b-40ce-ae48-353e0f4bf987
+2026-03-31 05:09:12,315 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/11311812-699b-40ce-ae48-353e0f4bf987
+2026-03-31 05:09:13,008 [INFO] PDF extrait avec succès — 4842 caractères.
+2026-03-31 05:09:14,009 [INFO] Extraction PDF pour : Annulation du concours de recrutement d'un Data Governance Lead
+2026-03-31 05:09:14,010 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/5a265c20-6c26-4ea8-97ca-cc463b6d2c30
+2026-03-31 05:09:14,868 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/5a265c20-6c26-4ea8-97ca-cc463b6d2c30
+2026-03-31 05:09:15,574 [INFO] PDF extrait avec succès — 3609 caractères.
+2026-03-31 05:09:16,576 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur DATA
+2026-03-31 05:09:16,576 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/1fb4b24b-15f7-4a84-9862-1b7062e6a574
+2026-03-31 05:09:17,050 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/1fb4b24b-15f7-4a84-9862-1b7062e6a574
+2026-03-31 05:09:17,441 [INFO] PDF extrait avec succès — 5187 caractères.
+2026-03-31 05:09:18,442 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un bureau d’ordre-coursier/appui aux investisseurs/veille et analyse data/communication /achats/système d’information/appui technique/
+2026-03-31 05:09:18,443 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/54c52631-73b2-4e44-bcad-5d9a02b636cd
+2026-03-31 05:09:19,292 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/54c52631-73b2-4e44-bcad-5d9a02b636cd
+2026-03-31 05:09:19,727 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:09:20,728 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Data Scientist
+2026-03-31 05:09:20,729 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/b7942ceb-a271-11ef-810d-506b8df7d43c
+2026-03-31 05:09:21,312 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/b7942ceb-a271-11ef-810d-506b8df7d43c
+2026-03-31 05:09:21,710 [INFO] PDF extrait avec succès — 2912 caractères.
+2026-03-31 05:09:22,712 [INFO] Extraction PDF pour : Publication de la liste des convoqués pour l'examen écrit du concours de recrutement d'un Maître de conférence au profit de ENSIASD Spécialité  Big Data et IA
+2026-03-31 05:09:22,712 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/703eeff8-9d11-11ef-810d-506b8df7d43c
+2026-03-31 05:09:23,494 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/703eeff8-9d11-11ef-810d-506b8df7d43c
+2026-03-31 05:09:23,939 [INFO] PDF extrait avec succès — 1491 caractères.
+2026-03-31 05:09:24,940 [INFO] Total cumulé : 27 offres.
+2026-03-31 05:09:26,941 [INFO] Scraping page 4/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=4
+2026-03-31 05:09:27,763 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 05:09:27,764 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Data Engineer
+2026-03-31 05:09:27,765 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/a963d29d-917d-11ef-810d-506b8df7d43c
+2026-03-31 05:09:28,343 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/a963d29d-917d-11ef-810d-506b8df7d43c
+2026-03-31 05:09:28,642 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:09:29,644 [INFO] Extraction PDF pour : Avis de concours de recrutement de Data Performance Analyst (H/F) - Rabat
+2026-03-31 05:09:29,644 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/d12c4bdd-8ca0-11ef-810d-506b8df7d43c
+2026-03-31 05:09:30,056 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/d12c4bdd-8ca0-11ef-810d-506b8df7d43c
+2026-03-31 05:09:30,475 [INFO] PDF extrait avec succès — 3875 caractères.
+2026-03-31 05:09:31,476 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences grade A - Echelle 11
+2026-03-31 05:09:31,477 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/3ff5862a-8bcb-11ef-810d-506b8df7d43c
+2026-03-31 05:09:32,368 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/3ff5862a-8bcb-11ef-810d-506b8df7d43c
+2026-03-31 05:09:32,746 [WARNING] Multiple definitions in dictionary at byte 0x6856f for key /Info
+2026-03-31 05:09:32,746 [WARNING] Multiple definitions in dictionary at byte 0x6857c for key /Info
+2026-03-31 05:09:32,746 [WARNING] Multiple definitions in dictionary at byte 0x68589 for key /Info
+2026-03-31 05:09:32,747 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:09:33,748 [INFO] Extraction PDF pour : Publication de la liste des convoqués pour l'examen écrit du concours de recrutement d'un Ingénieur d’état premier grade a l’Ecole Supérieure de l''Education et de la Formation Oujda.
+2026-03-31 05:09:33,748 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/27046e25-87f1-11ef-810d-506b8df7d43c
+2026-03-31 05:09:34,580 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/27046e25-87f1-11ef-810d-506b8df7d43c
+2026-03-31 05:09:36,042 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:09:37,043 [INFO] Extraction PDF pour : Publication de la liste des convoqués pour l'examen écrit du concours de recrutement d'un Maître de conférences à la FSA Ait Melloul spécialité Info.: Info: Sciences de données, IA,Big Data
+2026-03-31 05:09:37,043 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/b3d1c11f-7c04-11ef-810d-506b8df7d43c
+2026-03-31 05:09:37,895 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/b3d1c11f-7c04-11ef-810d-506b8df7d43c
+2026-03-31 05:09:38,693 [INFO] PDF extrait avec succès — 3510 caractères.
+2026-03-31 05:09:39,695 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Cadre Data Scientist
+2026-03-31 05:09:39,695 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/028409b2-7bfe-11ef-810d-506b8df7d43c
+2026-03-31 05:09:40,132 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/028409b2-7bfe-11ef-810d-506b8df7d43c
+2026-03-31 05:09:40,729 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:09:41,731 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférence à l''ENSIASD spécialité Informatique, Big data et Intelligence Artificielle
+2026-03-31 05:09:41,731 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/cc3b0907-7bf2-11ef-810d-506b8df7d43c
+2026-03-31 05:09:42,543 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/cc3b0907-7bf2-11ef-810d-506b8df7d43c
+2026-03-31 05:09:43,574 [INFO] PDF extrait avec succès — 3510 caractères.
+2026-03-31 05:09:44,576 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Cadre Data Scientist à la Division Observatoire de la Compétitivité
+2026-03-31 05:09:44,576 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/295edcdf-4359-11ef-810d-506b8df7d43c
+2026-03-31 05:09:45,046 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/295edcdf-4359-11ef-810d-506b8df7d43c
+2026-03-31 05:09:45,709 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:09:46,711 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences grade A - Echelle 11
+2026-03-31 05:09:46,711 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/a8fbea0c-1e91-11ef-810d-506b8df7d43c
+2026-03-31 05:09:47,602 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/a8fbea0c-1e91-11ef-810d-506b8df7d43c
+2026-03-31 05:09:48,178 [WARNING] Multiple definitions in dictionary at byte 0xcd06e for key /Info
+2026-03-31 05:09:48,178 [WARNING] Multiple definitions in dictionary at byte 0xcd07b for key /Info
+2026-03-31 05:09:48,178 [WARNING] Multiple definitions in dictionary at byte 0xcd088 for key /Info
+2026-03-31 05:09:48,179 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:09:49,180 [INFO] Total cumulé : 36 offres.
+2026-03-31 05:09:51,181 [INFO] Scraping page 5/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=5
+2026-03-31 05:09:52,034 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 05:09:52,035 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences à l’ENSIASD Taroudant spécialité Big Data et Intelligence Artificielle
+2026-03-31 05:09:52,036 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/855b0603-18f7-11ef-810d-506b8df7d43c
+2026-03-31 05:09:52,835 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/855b0603-18f7-11ef-810d-506b8df7d43c
+2026-03-31 05:09:53,525 [INFO] PDF extrait avec succès — 63 caractères.
+2026-03-31 05:09:54,526 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Data Analyst
+2026-03-31 05:09:54,526 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/e0481baf-f5b4-11ee-810d-506b8df7d43c
+2026-03-31 05:09:55,025 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/e0481baf-f5b4-11ee-810d-506b8df7d43c
+2026-03-31 05:09:55,360 [INFO] PDF extrait avec succès — 5480 caractères.
+2026-03-31 05:09:56,361 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Formateur en Business Intelligence et Data Analysis (RH 17/2024)
+2026-03-31 05:09:56,362 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/190e6263-f296-11ee-810d-506b8df7d43c
+2026-03-31 05:09:56,842 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/190e6263-f296-11ee-810d-506b8df7d43c
+2026-03-31 05:09:57,264 [INFO] PDF extrait avec succès — 5458 caractères.
+2026-03-31 05:09:58,266 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Data Engineer Socle
+2026-03-31 05:09:58,266 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/f326c67f-e85c-11ee-810d-506b8df7d43c
+2026-03-31 05:10:09,711 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/f326c67f-e85c-11ee-810d-506b8df7d43c
+2026-03-31 05:10:10,713 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Data Scientist
+2026-03-31 05:10:10,714 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/46fbf628-dca3-11ee-810d-506b8df7d43c
+2026-03-31 05:10:21,738 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/46fbf628-dca3-11ee-810d-506b8df7d43c
+2026-03-31 05:10:22,739 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Cadre Data Scientist
+2026-03-31 05:10:22,739 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/7e58ce54-dadd-11ee-810d-506b8df7d43c
+2026-03-31 05:10:33,921 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/7e58ce54-dadd-11ee-810d-506b8df7d43c
+2026-03-31 05:10:34,921 [INFO] Extraction PDF pour : Avis de concours de recrutement de Data Engineer
+2026-03-31 05:10:34,921 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/f9503f0a-b945-11ee-810d-506b8df7d43c
+2026-03-31 05:10:45,949 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/f9503f0a-b945-11ee-810d-506b8df7d43c
+2026-03-31 05:10:46,949 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Formateur en BI et Data Analysis (RH 483/2023)
+2026-03-31 05:10:46,950 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/d6057308-92b4-11ee-810d-506b8df7d43c
+2026-03-31 05:10:57,976 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/d6057308-92b4-11ee-810d-506b8df7d43c
+2026-03-31 05:10:58,977 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférence
+2026-03-31 05:10:58,977 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/671a7a39-78ca-11ee-810d-506b8df7d43c
+2026-03-31 05:11:10,048 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/671a7a39-78ca-11ee-810d-506b8df7d43c
+2026-03-31 05:11:11,049 [INFO] Total cumulé : 45 offres.
+2026-03-31 05:11:13,049 [INFO] Scraping page 6/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=6
+2026-03-31 05:11:14,051 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 05:11:14,052 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences grade A - Echelle 11
+2026-03-31 05:11:14,052 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/c59dfa2f-71b9-11ee-810d-506b8df7d43c
+2026-03-31 05:11:25,197 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/c59dfa2f-71b9-11ee-810d-506b8df7d43c
+2026-03-31 05:11:26,197 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Formateur en BI et Data Analysis (RH 393/2023)
+2026-03-31 05:11:26,197 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/3f774a80-6924-11ee-810d-506b8df7d43c
+2026-03-31 05:11:37,223 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/3f774a80-6924-11ee-810d-506b8df7d43c
+2026-03-31 05:11:38,223 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Maître de conférences grade A - Echelle 11
+2026-03-31 05:11:38,223 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/06b161c9-6139-11ee-810d-506b8df7d43c
+2026-03-31 05:11:49,253 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/06b161c9-6139-11ee-810d-506b8df7d43c
+2026-03-31 05:11:50,254 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur ou Master dans l’administration des bases de données (Data Science)
+2026-03-31 05:11:50,254 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/a49a5b75-4aff-11ee-810d-506b8df7d43c
+2026-03-31 05:12:01,304 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/a49a5b75-4aff-11ee-810d-506b8df7d43c
+2026-03-31 05:12:02,305 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un DATA Analyst (RH 315/2023)
+2026-03-31 05:12:02,305 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/d00b1d53-2d6d-11ee-810d-506b8df7d43c
+2026-03-31 05:12:13,457 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/d00b1d53-2d6d-11ee-810d-506b8df7d43c
+2026-03-31 05:12:14,457 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur DATA
+2026-03-31 05:12:14,457 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/9b53dcf3-f4aa-11ed-810d-506b8df7d43c
+2026-03-31 05:12:25,470 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/9b53dcf3-f4aa-11ed-810d-506b8df7d43c
+2026-03-31 05:12:26,471 [INFO] Extraction PDF pour : Annulation du concours de recrutement d'un INGENIEUR DATA (GESTION DE DONNEES)
+2026-03-31 05:12:26,471 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/819ef94a-daaf-11ed-810d-506b8df7d43c
+2026-03-31 05:12:37,545 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/819ef94a-daaf-11ed-810d-506b8df7d43c
+2026-03-31 05:12:38,545 [INFO] Extraction PDF pour : Avis de concours de recrutement de Enseignant-Chercheur en Mathématiques, Informatique, Data Sciences
+2026-03-31 05:12:38,545 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/20ab9645-d87d-11ed-810d-506b8df7d43c
+2026-03-31 05:12:49,493 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/20ab9645-d87d-11ed-810d-506b8df7d43c
+2026-03-31 05:12:50,494 [INFO] Extraction PDF pour : Avis de concours de recrutement de Safety Data Manager
+2026-03-31 05:12:50,494 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/c2783c99-c190-11ed-810d-506b8df7d43c
+2026-03-31 05:13:01,467 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/c2783c99-c190-11ed-810d-506b8df7d43c
+2026-03-31 05:13:02,467 [INFO] Total cumulé : 54 offres.
+2026-03-31 05:13:04,468 [INFO] Scraping page 7/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=7
+2026-03-31 05:13:05,324 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 05:13:05,325 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Responsable Data
+2026-03-31 05:13:05,325 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/e05fed4b-aebb-11ed-810d-506b8df7d43c
+2026-03-31 05:13:16,332 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/e05fed4b-aebb-11ed-810d-506b8df7d43c
+2026-03-31 05:13:17,332 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur DATA
+2026-03-31 05:13:17,332 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/11b0132e-a08f-11ed-810d-506b8df7d43c
+2026-03-31 05:13:28,323 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/11b0132e-a08f-11ed-810d-506b8df7d43c
+2026-03-31 05:13:29,324 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un  DATA SCIENTIST
+2026-03-31 05:13:29,324 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/b487eab1-64f6-11ed-810d-506b8df7d43c
+2026-03-31 05:13:40,406 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/b487eab1-64f6-11ed-810d-506b8df7d43c
+2026-03-31 05:13:41,406 [INFO] Extraction PDF pour : Avis de concours de recrutement de Ingénieur Data (intégration)
+2026-03-31 05:13:41,407 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/fc6fc20a-44c0-11ed-8ab0-506b8df7d43c
+2026-03-31 05:13:52,437 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/fc6fc20a-44c0-11ed-8ab0-506b8df7d43c
+2026-03-31 05:13:53,437 [INFO] Extraction PDF pour : Avis de concours de recrutement de Ingénieur Data (gestion de données)
+2026-03-31 05:13:53,437 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/c407b29e-44c0-11ed-8ab0-506b8df7d43c
+2026-03-31 05:14:04,486 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/c407b29e-44c0-11ed-8ab0-506b8df7d43c
+2026-03-31 05:14:05,486 [INFO] Extraction PDF pour : Avis de concours de recrutement de Architecte Data
+2026-03-31 05:14:05,486 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/760cc102-44c0-11ed-8ab0-506b8df7d43c
+2026-03-31 05:14:16,519 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/760cc102-44c0-11ed-8ab0-506b8df7d43c
+2026-03-31 05:14:17,520 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Cadre ingénieur Data Scientist
+2026-03-31 05:14:17,520 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/dfa3e6e6-0ccd-11ed-8ab0-506b8df7d43c
+2026-03-31 05:14:28,469 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/dfa3e6e6-0ccd-11ed-8ab0-506b8df7d43c
+2026-03-31 05:14:29,470 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur Data Socle
+2026-03-31 05:14:29,471 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/88d2277a-e801-11ec-8ab0-506b8df7d43c
+2026-03-31 05:14:40,498 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/88d2277a-e801-11ec-8ab0-506b8df7d43c
+2026-03-31 05:14:41,498 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur Data (Gestion des données)
+2026-03-31 05:14:41,499 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/1293ceb6-d12a-11ec-8ab0-506b8df7d43c
+2026-03-31 05:14:52,605 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/1293ceb6-d12a-11ec-8ab0-506b8df7d43c
+2026-03-31 05:14:53,610 [INFO] Total cumulé : 63 offres.
+2026-03-31 05:14:55,611 [INFO] Scraping page 8/11 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=8
+2026-03-31 05:14:57,124 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 05:14:57,129 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Data Custodian
+2026-03-31 05:14:57,132 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/a48d4e24-d129-11ec-8ab0-506b8df7d43c
+2026-03-31 05:15:08,902 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/a48d4e24-d129-11ec-8ab0-506b8df7d43c
+2026-03-31 05:15:09,903 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur Data (Intégration)
+2026-03-31 05:15:09,903 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/5e84ea26-d129-11ec-8ab0-506b8df7d43c
+2026-03-31 05:15:20,948 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/5e84ea26-d129-11ec-8ab0-506b8df7d43c
+2026-03-31 05:15:21,949 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Architecte Data
+2026-03-31 05:15:21,949 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/fead8fdd-d128-11ec-8ab0-506b8df7d43c
+2026-03-31 05:15:32,861 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/fead8fdd-d128-11ec-8ab0-506b8df7d43c
+2026-03-31 05:15:33,861 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur Data (Business Intelligence)
+2026-03-31 05:15:33,861 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/9a8ec749-d128-11ec-8ab0-506b8df7d43c
+2026-03-31 05:15:45,055 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/9a8ec749-d128-11ec-8ab0-506b8df7d43c
+2026-03-31 05:15:46,055 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un DATA ANALYST
+2026-03-31 05:15:46,056 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/89fc3efb-b679-11ec-8ab0-506b8df7d43c
+2026-03-31 05:15:57,104 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/89fc3efb-b679-11ec-8ab0-506b8df7d43c
+2026-03-31 05:15:58,104 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Responsble Data
+2026-03-31 05:15:58,105 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/27b909d7-ac90-11ec-8ab0-506b8df7d43c
+2026-03-31 05:16:09,136 [WARNING] Timeout lors de l'accès à https://www.emploi-public.ma/fr/concours/details/27b909d7-ac90-11ec-8ab0-506b8df7d43c
+2026-03-31 05:16:10,137 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Ingénieur d'Etat 1er grade - Echelle 11
+2026-03-31 05:16:10,137 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/4cb2bc6b-529e-11ec-8ab0-506b8df7d43c
+2026-03-31 05:16:13,655 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/aecd0df8a8ae01f556125bbca9a9f80e
+2026-03-31 05:16:22,602 [INFO] ==================================================
+2026-03-31 05:16:22,603 [INFO] Démarrage du scraper Emploi-public.ma v5
+2026-03-31 05:16:22,603 [INFO] ==================================================
+2026-03-31 05:16:22,621 [INFO] ====== WebDriver manager ======
+2026-03-31 05:16:23,781 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 05:16:24,098 [INFO] Get LATEST chromedriver version for google-chrome
+2026-03-31 05:16:24,434 [INFO] Driver [C:\Users\marouane\.wdm\drivers\chromedriver\win64\146.0.7680.165\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-31 05:16:25,607 [INFO] Connexion MongoDB établie.
+2026-03-31 05:16:25,607 [INFO] Scraping page 1/1 — https://www.emploi-public.ma/fr/concours-liste?key_word=data&page=1
+2026-03-31 05:16:27,797 [INFO]   → 9 offres trouvées sur cette page.
+2026-03-31 05:16:27,799 [INFO] Extraction PDF pour : Avis de concours de recrutement de (Administrateur Datacenter & Infrastructure Système (RH 707/2025
+2026-03-31 05:16:27,799 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/3a19c855-6a5a-44e9-a6d5-29611af6d596
+2026-03-31 05:16:28,255 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/3a19c855-6a5a-44e9-a6d5-29611af6d596
+2026-03-31 05:16:28,715 [INFO] PDF extrait avec succès — 3678 caractères.
+2026-03-31 05:16:29,716 [INFO] Extraction PDF pour : Avis de concours de recrutement de DATA GOVERNANCE LEAD
+2026-03-31 05:16:29,716 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/84ea0f27-963a-480e-a8ef-b425c6a44b4a
+2026-03-31 05:16:30,238 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/84ea0f27-963a-480e-a8ef-b425c6a44b4a
+2026-03-31 05:16:30,816 [INFO] PDF extrait avec succès — 3702 caractères.
+2026-03-31 05:16:31,818 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Cadre Data Scientist
+2026-03-31 05:16:31,818 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/3b68a35a-058e-4944-8904-749923245a0a
+2026-03-31 05:16:32,238 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/3b68a35a-058e-4944-8904-749923245a0a
+2026-03-31 05:16:33,506 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:16:34,507 [INFO] Extraction PDF pour : Avis de concours de recrutement de Business Data Analyst (H/F) - Rabat
+2026-03-31 05:16:34,508 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/7ed52f5e-6b11-433e-850a-592fb0b263d4
+2026-03-31 05:16:34,995 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/7ed52f5e-6b11-433e-850a-592fb0b263d4
+2026-03-31 05:16:35,758 [INFO] PDF extrait avec succès — 4661 caractères.
+2026-03-31 05:16:36,759 [INFO] Extraction PDF pour : Avis de concours de recrutement de ARCHITECTE PLATEFORMES ET SOLUTIONS DATA
+2026-03-31 05:16:36,759 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/449702d9-307a-46ca-9cff-4aa8a7b2870a
+2026-03-31 05:16:37,209 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/449702d9-307a-46ca-9cff-4aa8a7b2870a
+2026-03-31 05:16:37,623 [INFO] PDF extrait avec succès — 3682 caractères.
+2026-03-31 05:16:38,625 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Data Scientist
+2026-03-31 05:16:38,625 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/2d9f24c5-872b-479e-9bd1-53ae0c006b8c
+2026-03-31 05:16:39,057 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/2d9f24c5-872b-479e-9bd1-53ae0c006b8c
+2026-03-31 05:16:39,422 [INFO] PDF extrait avec succès — 3001 caractères.
+2026-03-31 05:16:40,423 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Database & Data Integration Engineer
+2026-03-31 05:16:40,423 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/c373b3ad-0b78-423d-90f1-86588664706e
+2026-03-31 05:16:40,865 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/c373b3ad-0b78-423d-90f1-86588664706e
+2026-03-31 05:16:41,592 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:16:42,593 [INFO] Extraction PDF pour : Publication de la liste des convoqués pour l'examen écrit du concours de recrutement d'un (Formateur Animateur en lntelligence Artificielle et Big Data (RH 561/2025
+2026-03-31 05:16:42,593 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/aa440d76-31ac-4a5d-85b0-85171907fa67
+2026-03-31 05:16:43,049 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/aa440d76-31ac-4a5d-85b0-85171907fa67
+2026-03-31 05:16:43,418 [INFO] PDF extrait avec succès — 4849 caractères.
+2026-03-31 05:16:44,420 [INFO] Extraction PDF pour : Publication de la liste des résultats pour le concours de recrutement d'un Cadre analyste Data Donnée Démo & Veille Sectorielle
+2026-03-31 05:16:44,420 [INFO] Navigation vers détail : https://www.emploi-public.ma/fr/concours/details/a7c0091c-2a17-4a92-bd72-ffe6c2b7ab04
+2026-03-31 05:16:45,153 [INFO] URL PDF détectée : https://www.emploi-public.ma/fr/concours/download/arrete/a7c0091c-2a17-4a92-bd72-ffe6c2b7ab04
+2026-03-31 05:16:46,035 [INFO] PDF extrait avec succès — 0 caractères.
+2026-03-31 05:16:47,040 [INFO] Total cumulé : 9 offres.
+2026-03-31 05:16:49,041 [INFO] Scraping terminé — 9 offres extraites.
+2026-03-31 05:16:49,050 [INFO] MongoDB — insérés : 9 | mis à jour : 0
+2026-03-31 05:16:49,051 [INFO] Sauvegarde MongoDB terminée.
+2026-03-31 05:16:51,404 [INFO] Driver Selenium fermé.

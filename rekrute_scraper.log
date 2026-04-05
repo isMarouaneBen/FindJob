@@ -1,0 +1,123 @@
+2026-03-30 23:01:31,098 [INFO] ==================================================
+2026-03-30 23:01:31,098 [INFO] Démarrage du scraper Rekrute
+2026-03-30 23:01:31,099 [INFO] ==================================================
+2026-03-30 23:01:31,159 [INFO] Connexion MongoDB établie.
+2026-03-30 23:01:31,159 [INFO] Scraping page 1/10 — https://www.rekrute.com/offres.html
+2026-03-30 23:01:32,222 [INFO]   → 50 offres trouvées sur cette page.
+2026-03-30 23:01:32,227 [INFO] Total cumulé : 50 offres.
+2026-03-30 23:01:34,228 [INFO] Scraping page 2/10 — https://www.rekrute.com/offres.html
+2026-03-30 23:01:34,746 [INFO]   → 41 offres trouvées sur cette page.
+2026-03-30 23:01:34,750 [INFO] Total cumulé : 91 offres.
+2026-03-30 23:01:36,751 [INFO] Scraping page 3/10 — https://www.rekrute.com/offres.html
+2026-03-30 23:01:37,040 [INFO]   → 0 offres trouvées sur cette page.
+2026-03-30 23:01:37,040 [INFO] Page 3 vide — arrêt de la pagination.
+2026-03-30 23:01:37,041 [INFO] Scraping terminé — 91 offres extraites au total.
+2026-03-30 23:01:37,050 [INFO] MongoDB — insérés : 91 | mis à jour : 0
+2026-03-30 23:01:37,050 [INFO] Sauvegarde MongoDB terminée.
+2026-03-30 23:30:02,608 [INFO] ==================================================
+2026-03-30 23:30:02,608 [INFO] Démarrage du scraper Rekrute v2
+2026-03-30 23:30:02,608 [INFO] ==================================================
+2026-03-30 23:30:02,631 [INFO] Connexion MongoDB établie.
+2026-03-30 23:30:02,631 [INFO] Scraping page liste 1/10
+2026-03-30 23:30:03,884 [INFO]   → 50 offres trouvées sur cette page.
+2026-03-30 23:30:03,888 [INFO]     Détail 1/50 : Responsable Satisfaction Client (H/F) | Rabat (Maroc)
+2026-03-30 23:30:06,148 [INFO]     Détail 2/50 : Développeur Full Stack Big Data | Rabat (Maroc)
+2026-03-30 23:30:08,465 [INFO]     Détail 3/50 : Administrateur Base de Données | Rabat (Maroc)
+2026-03-30 23:30:10,871 [INFO]     Détail 4/50 : Senior Database Administrator | Rabat (Maroc)
+2026-03-30 23:30:13,431 [INFO]     Détail 5/50 : Stagiaire AI Engineer (convention de stage obligatoire) (H/F) | Casablanca (Maroc)
+2026-03-30 23:30:15,736 [INFO]     Détail 6/50 : Vulnerability Management Analyst | Sala al Jadida (Maroc)
+2026-03-30 23:30:18,070 [INFO]     Détail 7/50 : Vulnerability Management Expert | Sala al Jadida (Maroc)
+2026-03-30 23:30:20,412 [INFO]     Détail 8/50 : Business Analyst - Engineering Inspection Services  (H/ F) | Casablanca (Maroc)
+2026-03-30 23:30:22,698 [INFO]     Détail 9/50 : Business Analyst Senior – Insurance (H/ F) | Casablanca (Maroc)
+2026-03-30 23:30:25,106 [INFO]     Détail 10/50 : Géomaticien / Spécialiste SIG | Taliouine (Maroc)
+2026-03-30 23:30:27,593 [INFO]     Détail 11/50 : Référent Contrats Déploiement Transport et Fixe | Rabat (Maroc)
+2026-03-30 23:30:29,922 [INFO]     Détail 12/50 : Software Engineer Python / DevOps | Casablanca (Maroc)
+2026-03-30 23:30:32,293 [INFO]     Détail 13/50 : Data Scientist / ML Engineer | Casablanca (Maroc)
+2026-03-30 23:30:34,631 [INFO]     Détail 14/50 : Data Engineer | casablanca (Maroc)
+2026-03-30 23:30:36,935 [INFO]     Détail 15/50 : Chargé(e) du Contrôle Financier et du Pilotage - Assurances & Crédit | Casablanca (Maroc)
+2026-03-30 23:30:39,249 [INFO]     Détail 16/50 : Référent technique Java (F/H) | Casablanca (Maroc)
+2026-03-30 23:30:41,706 [INFO]     Détail 17/50 : HR Business Partner and Compensation & Benefits Expert | RabatSaléKénitra Maroc Hybride (Maroc)
+2026-03-30 23:30:44,076 [INFO]     Détail 18/50 : Sr Machine Learning Engineer | Rabat (Maroc)
+2026-03-30 23:30:46,354 [INFO]     Détail 19/50 : Data & AI Engineering Team Leader | Rabat (Maroc)
+2026-03-30 23:30:48,657 [INFO]     Détail 20/50 : Sr Data Engineer | Rabat (Maroc)
+2026-03-30 23:30:50,996 [INFO]     Détail 21/50 : Senior Python Developer | Rabat (Maroc)
+2026-03-30 23:30:53,343 [INFO]     Détail 22/50 : Data analyste service client (H/F) | Rabat (Maroc)
+2026-03-30 23:30:55,903 [INFO]     Détail 23/50 : Tech lead Java (F/H) | Casablanca (Maroc)
+2026-03-30 23:30:58,271 [INFO]     Détail 24/50 : Développeur backend .NET Core / IA (H/F) | Casablanca (Maroc)
+2026-03-30 23:31:00,615 [INFO]     Détail 25/50 : Senior Data Scientist | Casablanca (Maroc)
+2026-03-30 23:31:02,942 [INFO]     Détail 26/50 : Associate Data Science Manager | Casablanca (Maroc)
+2026-03-30 23:31:05,278 [INFO]     Détail 27/50 : Product Manager | Casablanca (Maroc)
+2026-03-30 23:31:07,630 [INFO]     Détail 28/50 : Order Coordinator | El Jadida (Maroc)
+2026-03-30 23:31:10,003 [INFO]     Détail 29/50 : Scientist | Benguerir (Maroc)
+2026-03-30 23:31:12,392 [INFO]     Détail 30/50 : Architecte Cloud DATA/BIG DATA (F/H) | Casablanca (Maroc)
+2026-03-30 23:31:14,896 [INFO]     Détail 31/50 : Accountant | Casablanca (Maroc)
+2026-03-30 23:31:17,446 [INFO]     Détail 32/50 : SQL Database Engineer (H/F) (GMT-5/6) | Rabat, Rabat-Salé-Kénitra, Maroc (Maroc)
+2026-03-30 23:31:19,775 [INFO]     Détail 33/50 : Expert DBA-SQL (H/F) (GMT-5/6) | Rabat, Rabat-Salé-Kénitra, Maroc (Maroc)
+2026-03-30 23:31:22,152 [INFO]     Détail 34/50 : Responsable Pricing | Casablanca et périphérie (Maroc)
+2026-03-30 23:31:24,456 [INFO]     Détail 35/50 : Data Scientist / Ingénieur IA | Casablanca (Maroc)
+2026-03-30 23:31:26,832 [INFO]     Détail 36/50 : Data Analyst | Casablanca (Maroc)
+2026-03-30 23:31:29,184 [INFO]     Détail 37/50 : Product Manager (H/F) | Casablanca (Maroc)
+2026-03-30 23:31:31,474 [INFO]     Détail 38/50 : Développeur Fullstack net | Casablanca (Maroc)
+2026-03-30 23:31:33,770 [INFO]     Détail 39/50 : Chef de Projet BI | Casablanca (Maroc)
+2026-03-30 23:31:36,093 [INFO]     Détail 40/50 : Chargé(e) d’Etudes et Marketing Digital | Rabat (Maroc)
+2026-03-30 23:31:38,366 [INFO]     Détail 41/50 : Admissions Coordinator - SHBM | Benguerir (Maroc)
+2026-03-30 23:31:40,687 [INFO]     Détail 42/50 : Responsable Transport (H/F) | Casablanca (Maroc)
+2026-03-30 23:31:43,042 [INFO]     Détail 43/50 : Chef de Projet Transformation Data & Performance (H/F) | Casablanca (Maroc)
+2026-03-30 23:31:45,349 [INFO]     Détail 44/50 : Dutch & English Customer Care Representative | Casablanca (Maroc)
+2026-03-30 23:31:47,612 [INFO]     Détail 45/50 : German & English Customer Care Representative | Casablanca (Maroc)
+2026-03-30 23:31:49,862 [INFO]     Détail 46/50 : Administrateur Expert Middleware, Unix et Stockage (H/F) | Rabat, Rabat-Salé-Kénitra, Maroc (Maroc)
+2026-03-30 23:31:52,170 [INFO]     Détail 47/50 : Administrateur Swift (H/F) | Casablanca (Maroc)
+2026-03-30 23:31:54,452 [INFO]     Détail 48/50 : Data Analyst Sénior H/F | Rabat (Maroc)
+2026-03-30 23:31:56,753 [INFO]     Détail 49/50 : Data Engineer H/F | Rabat (Maroc)
+2026-03-30 23:31:59,087 [INFO]     Détail 50/50 : Azure Cloud Architect  (H/F) | Rabat, Rabat-Salé-Kénitra, Maroc (Maroc)
+2026-03-30 23:32:01,465 [INFO] Total cumulé : 50 offres.
+2026-03-30 23:32:03,466 [INFO] Scraping page liste 2/10
+2026-03-30 23:32:04,009 [INFO]   → 41 offres trouvées sur cette page.
+2026-03-30 23:32:04,013 [INFO]     Détail 1/41 : Ingénieur IP (H/F) | Rabat (Maroc)
+2026-03-30 23:32:06,190 [INFO]     Détail 2/41 : Ingénieur Etudes et Développement C#/.Net | Casablanca (Maroc)
+2026-03-30 23:32:08,452 [INFO]     Détail 3/41 : Equity Strategist | Casablanca (Maroc)
+2026-03-30 23:32:10,712 [INFO]     Détail 4/41 : Partner Program and Marketing | Province de Nouaceur, Casablanca-Settat, Maroc (Maroc)
+2026-03-30 23:32:13,007 [INFO]     Détail 5/41 : Process Engineer - Scale-Up of Waste Valorization Processes | Rabat (Maroc)
+2026-03-30 23:32:15,334 [INFO]     Détail 6/41 : Supervisor - Stores & Inventory | Casablanca (Maroc)
+2026-03-30 23:32:17,617 [INFO]     Détail 7/41 : Bioinformatician | Benguerir (Maroc)
+2026-03-30 23:32:19,910 [INFO]     Détail 8/41 : Capacity Building Manager | Laayoune (Maroc)
+2026-03-30 23:32:22,270 [INFO]     Détail 9/41 : Architecte Data & AI | Rabat-Salé-Kénitra (Maroc)
+2026-03-30 23:32:24,875 [INFO]     Détail 10/41 : Programme Yeelen du groupe Attijariwafa bank | casablanca (Maroc)
+2026-03-30 23:32:27,415 [INFO]     Détail 11/41 : Offre de Stage PFE  RH orienté Data Analyst | Casablanca (Maroc)
+2026-03-30 23:32:29,693 [INFO]     Détail 12/41 : Fraud Monitoring Officer | Casablanca (Maroc)
+2026-03-30 23:32:32,003 [INFO]     Détail 13/41 : Responsable Transport | Casablanca (Maroc)
+2026-03-30 23:32:34,278 [INFO]     Détail 14/41 : Quality Assurance Engineer | Casablanca (Maroc)
+2026-03-30 23:32:36,616 [INFO]     Détail 15/41 : Testeur QC confirmé | Casablanca (Maroc)
+2026-03-30 23:32:38,983 [INFO]     Détail 16/41 : Data Engineer Sénior (Data Platform) | Rabat (Maroc)
+2026-03-30 23:32:41,412 [INFO]     Détail 17/41 : Data Engineer Expérimenté (Data Platform) | Rabat (Maroc)
+2026-03-30 23:32:43,784 [INFO]     Détail 18/41 : Data Ops Sénior – Data Platform | Rabat (Maroc)
+2026-03-30 23:32:46,218 [INFO]     Détail 19/41 : Consultant BI & BA POWER BI | Rabat (Maroc)
+2026-03-30 23:32:48,616 [INFO]     Détail 20/41 : Data Platform Engineer | Rabat (Maroc)
+2026-03-30 23:32:51,141 [INFO]     Détail 21/41 : BI Developer - power apps - Confirmé | Rabat (Maroc)
+2026-03-30 23:32:53,709 [INFO]     Détail 22/41 : Application Support Specialist | Casablanca (Maroc)
+2026-03-30 23:32:56,044 [INFO]     Détail 23/41 : Architecte DATA & IA (Plateform & Socle) | Rabat (Maroc)
+2026-03-30 23:32:58,595 [INFO]     Détail 24/41 : DataOps Engineer | Rabat (Maroc)
+2026-03-30 23:33:01,170 [INFO]     Détail 25/41 : Data Scientist Sénior SQL/Python | Rabat (Maroc)
+2026-03-30 23:33:03,540 [INFO]     Détail 26/41 : DATA Engineer | Rabat (Maroc)
+2026-03-30 23:33:05,921 [INFO]     Détail 27/41 : Data Analyst | Rabat (Maroc)
+2026-03-30 23:33:08,291 [INFO]     Détail 28/41 : Data Scientist | Rabat (Maroc)
+2026-03-30 23:33:10,696 [INFO]     Détail 29/41 : Data Engineer | Rabat (Maroc)
+2026-03-30 23:33:13,019 [INFO]     Détail 30/41 : Project Management Officer | Rabat (Maroc)
+2026-03-30 23:33:15,378 [INFO]     Détail 31/41 : Accounting Data Integration specialist – Manager & Experienced Consultant | Casablanca (Maroc)
+2026-03-30 23:33:17,767 [INFO]     Détail 32/41 : AR/AP Masterdata Conversion Expert / Senior Manager ,Senior Consultant/Experienced Consultant | Casablanca (Maroc)
+2026-03-30 23:33:20,114 [INFO]     Détail 33/41 : Data Analyst (H/F) | Casablanca (Maroc)
+2026-03-30 23:33:22,402 [INFO]     Détail 34/41 : Data Preparation Workstream Manager | Casablanca (Maroc)
+2026-03-30 23:33:24,734 [INFO]     Détail 35/41 : Consultant Master Data Preparation | Casablanca (Maroc)
+2026-03-30 23:33:27,084 [INFO]     Détail 36/41 : Software Full Stack Developer, | Casablanca (France)
+2026-03-30 23:33:29,403 [INFO]     Détail 37/41 : Software Lead Developer | Casablanca (Maroc)
+2026-03-30 23:33:31,673 [INFO]     Détail 38/41 : Program Manager Smart Services / Technical Lead Data Quality (F/H) | Casablanca (Maroc)
+2026-03-30 23:33:33,993 [INFO]     Détail 39/41 : International Outreach Officer | Ifrane (Maroc)
+2026-03-30 23:33:36,273 [INFO]     Détail 40/41 : Data Engineer (F/H) | Casablanca (Maroc)
+2026-03-30 23:33:38,821 [INFO]     Détail 41/41 : Submit Your Spontaneous Application and Join Stellantis ! | Casablanca (Maroc)
+2026-03-30 23:33:41,273 [INFO] Total cumulé : 91 offres.
+2026-03-30 23:33:43,274 [INFO] Scraping page liste 3/10
+2026-03-30 23:33:43,648 [INFO]   → 0 offres trouvées sur cette page.
+2026-03-30 23:33:43,649 [INFO] Page 3 vide — fin de pagination.
+2026-03-30 23:33:43,649 [INFO] Scraping terminé — 91 offres extraites.
+2026-03-30 23:33:43,689 [INFO] MongoDB — insérés : 0 | mis à jour : 91
+2026-03-30 23:33:43,689 [INFO] Sauvegarde MongoDB terminée.
