@@ -1,0 +1,50 @@
+2026-04-19 00:56:57,797 [INFO] ==================================================
+2026-04-19 00:56:57,797 [INFO] Démarrage du scraper Adzuna (France / Data)
+2026-04-19 00:56:57,798 [INFO] ==================================================
+2026-04-19 00:58:57,585 [INFO] ==================================================
+2026-04-19 00:58:57,586 [INFO] Démarrage du scraper Adzuna (France / Data)
+2026-04-19 00:58:57,586 [INFO] ==================================================
+2026-04-19 00:58:57,668 [INFO] Connexion MongoDB établie.
+2026-04-19 00:58:57,668 [INFO] Adzuna — récupération page 1/20
+2026-04-19 00:58:59,870 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:00,870 [INFO] Adzuna — récupération page 2/20
+2026-04-19 00:59:01,995 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:02,996 [INFO] Adzuna — récupération page 3/20
+2026-04-19 00:59:04,170 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:05,171 [INFO] Adzuna — récupération page 4/20
+2026-04-19 00:59:06,544 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:07,545 [INFO] Adzuna — récupération page 5/20
+2026-04-19 00:59:08,578 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:09,579 [INFO] Adzuna — récupération page 6/20
+2026-04-19 00:59:10,664 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:11,665 [INFO] Adzuna — récupération page 7/20
+2026-04-19 00:59:12,882 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:13,883 [INFO] Adzuna — récupération page 8/20
+2026-04-19 00:59:14,897 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:15,897 [INFO] Adzuna — récupération page 9/20
+2026-04-19 00:59:16,832 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:17,833 [INFO] Adzuna — récupération page 10/20
+2026-04-19 00:59:18,815 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:19,815 [INFO] Adzuna — récupération page 11/20
+2026-04-19 00:59:21,231 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:22,232 [INFO] Adzuna — récupération page 12/20
+2026-04-19 00:59:23,179 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:24,180 [INFO] Adzuna — récupération page 13/20
+2026-04-19 00:59:25,312 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:26,312 [INFO] Adzuna — récupération page 14/20
+2026-04-19 00:59:27,697 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:28,698 [INFO] Adzuna — récupération page 15/20
+2026-04-19 00:59:29,604 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:30,604 [INFO] Adzuna — récupération page 16/20
+2026-04-19 00:59:31,885 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:32,885 [INFO] Adzuna — récupération page 17/20
+2026-04-19 00:59:34,087 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:35,087 [INFO] Adzuna — récupération page 18/20
+2026-04-19 00:59:36,144 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:37,144 [INFO] Adzuna — récupération page 19/20
+2026-04-19 00:59:38,162 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:39,163 [INFO] Adzuna — récupération page 20/20
+2026-04-19 00:59:40,167 [INFO]   → 50 offres extraites.
+2026-04-19 00:59:41,167 [INFO] Scraping terminé — 1000 offres extraites.
+2026-04-19 00:59:41,234 [INFO] MongoDB — insérés : 1000 | mis à jour : 0
+2026-04-19 00:59:41,234 [INFO] Sauvegarde MongoDB terminée.

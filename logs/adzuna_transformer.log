@@ -1,0 +1,1003 @@
+2026-04-19 01:30:17,333 [INFO] Reading raw offers from C:\Users\marouane\Desktop\FindJob\transformers\data\adzuna_raw.json
+2026-04-19 01:30:17,352 [INFO] Loaded 1000 raw offers
+2026-04-19 01:30:17,385 [INFO] Transformed offer | poste='Data Automation internship' | societe='Procter & Gamble' | lieu='Asnières-sur-Seine, Nanterre' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:17,388 [INFO] Transformed offer | poste='Data Engineer - Data Factory - Services Financiers - Nantes' | societe='Sopra Steria' | lieu='Nantes, Loire-Atlantique' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,390 [INFO] Transformed offer | poste='Alternance – Data Engineer – Services Financiers – Data factory -Nantes' | societe='Sopra Steria' | lieu='Nantes, Loire-Atlantique' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,392 [INFO] Transformed offer | poste='Big Data Engineer - Services Financiers - Ile de France' | societe='Sopra Steria' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,393 [INFO] Transformed offer | poste='Data Analyst - Data Factory - Services Financiers - Nantes' | societe='Sopra Steria' | lieu='Nantes, Loire-Atlantique' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,395 [INFO] Transformed offer | poste='DATA SCIENTIST' | societe='GROUPE CAISSE DES DEPOTS' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,397 [INFO] Transformed offer | poste='DATA ANALYST (F/H)' | societe='Expectra' | lieu='Toulouse 14e Canton, Toulouse' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:17,399 [INFO] Transformed offer | poste='Data Engineer' | societe='Extia' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,400 [INFO] Transformed offer | poste='Data Engineer - Aeroline - Aix-en-Provence' | societe='Sopra Steria' | lieu='Aix-en-Provence, Bouches-du-Rhône' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,402 [INFO] Transformed offer | poste='DATA ANALYST (F/H)' | societe='Expectra' | lieu='Toulouse 14e Canton, Toulouse' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:17,404 [INFO] Transformed offer | poste='Data Scientist' | societe='Direct Assurance' | lieu='Suresnes, Nanterre' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:17,405 [INFO] Transformed offer | poste='Ingénieur(e) Data Scientist confirmé(e) - Industrie - Toulouse' | societe='Sopra Steria' | lieu='Toulouse, Haute-Garonne' | contrat=None | seniorite=Confirmé | tech=1
+2026-04-19 01:30:17,407 [INFO] Transformed offer | poste='DATA SCIENTIST CONFIRME' | societe='Ministère des Armées' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Confirmé | tech=1
+2026-04-19 01:30:17,408 [INFO] Transformed offer | poste='DATA SCIENTIST' | societe='Ministère des Armées' | lieu='Malakoff, Antony' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,410 [INFO] Transformed offer | poste='Data Engineer' | societe='Degetel' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Confirmé | tech=0
+2026-04-19 01:30:17,411 [INFO] Transformed offer | poste='Stage Data Expert - Colomiers' | societe='Sopra Steria' | lieu='Blagnac, Toulouse' | contrat=CDD | seniorite=Stage | tech=0
+2026-04-19 01:30:17,413 [INFO] Transformed offer | poste='Alternance – Machine Learning Engineer / Data scientist (F/H)' | societe='Direct Assurance' | lieu='Suresnes, Nanterre' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,414 [INFO] Transformed offer | poste='Data Engineer / Data Scientist' | societe='Free-Work' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,415 [INFO] Transformed offer | poste='Data Analyst' | societe='GROUPE CAISSE DES DEPOTS' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,417 [INFO] Transformed offer | poste='Data Analyst - Pôle Data BdT F/H' | societe='GROUPE CAISSE DES DEPOTS' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,419 [INFO] Transformed offer | poste='DATA ANALYST (F/H)' | societe='Expectra' | lieu='Brive-la-Gaillarde-Sud-Ouest, Brive-la-Gaillarde' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,420 [INFO] Transformed offer | poste='DATA ANALYST (F/H)' | societe='Expectra' | lieu='Cholet 1er Canton, Cholet' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,421 [INFO] Transformed offer | poste='DATA ANALYST (F/H)' | societe='Expectra' | lieu='Haute-Garonne, Occitanie' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,423 [INFO] Transformed offer | poste='DATA ANALYST (F/H)' | societe='Expectra' | lieu='Brive-la-Gaillarde-Sud-Ouest, Brive-la-Gaillarde' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,424 [INFO] Transformed offer | poste='Data Scientist - Machine learning' | societe='Mp Data' | lieu='Saint-Cloud, Boulogne-Billancourt' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,425 [INFO] Transformed offer | poste='Data Engineer' | societe='HCLTech' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,427 [INFO] Transformed offer | poste='Data Engineer DataIku - Services Financiers – Lille' | societe='Sopra Steria' | lieu="Villeneuve-d'Ascq, Lille" | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,428 [INFO] Transformed offer | poste='Data Analyst' | societe='HCLTech' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,430 [INFO] Transformed offer | poste='Data engineer' | societe='Degetel' | lieu='Ile-de-France, France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,431 [INFO] Transformed offer | poste='Consultant DATA / Gouvernance de données - Pôle de spécialité DATA - Ile-de-France' | societe='Sopra Steria' | lieu='Courbevoie, Nanterre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,433 [INFO] Transformed offer | poste='Ingénieur(e) Data Scientist confirmé(e) - Industrie - Le Plessis Robinson' | societe='Sopra Steria' | lieu='Le Plessis-Robinson, Antony' | contrat=None | seniorite=Confirmé | tech=1
+2026-04-19 01:30:17,434 [INFO] Transformed offer | poste='Data Engineer' | societe='Armée de l’air et de l’espace' | lieu='Mont-de-Marsan, Landes' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,436 [INFO] Transformed offer | poste='Data Engineer / Data Scientist (IT)' | societe='ONSPARK' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,439 [INFO] Transformed offer | poste='Data Engineer Databricks – H/F' | societe='Synchrone Fr' | lieu='Ile-de-France, France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,440 [INFO] Transformed offer | poste='Data Engineer - H/F' | societe='E.Leclerc' | lieu='Castelnaudary, Carcassonne' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,442 [INFO] Transformed offer | poste='Data analyst' | societe='5 Degrés' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,443 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='Hlx Life Sciences' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,445 [INFO] Transformed offer | poste='Data Scientist' | societe='Free-Work' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,446 [INFO] Transformed offer | poste='Software Engineer – Big Data (H/F)' | societe='DGSE - Direction Générale de la Sécurité Extérieure' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,448 [INFO] Transformed offer | poste='Data analyst (f/h) (CDI)' | societe='MICHAEL PAGE' | lieu='Taverny, Pontoise' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,449 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Crédit Agricole Personal Finance & Mobility' | lieu='Massy, Palaiseau' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,451 [INFO] Transformed offer | poste='Data engineer h/f (CDI)' | societe="Mercato de l'emploi" | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=Confirmé | tech=0
+2026-04-19 01:30:17,452 [INFO] Transformed offer | poste='Data engineer h/f (CDI)' | societe="Mercato de l'emploi" | lieu='Deux-Sèvres, Nouvelle-Aquitaine' | contrat=CDI | seniorite=Confirmé | tech=0
+2026-04-19 01:30:17,454 [INFO] Transformed offer | poste='Data Engineer senior - Services Financiers - Lille' | societe='Sopra Steria' | lieu="Villeneuve-d'Ascq, Lille" | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,455 [INFO] Transformed offer | poste='Data Engineer confirmé(e) - Assurance - Lille' | societe='Sopra Steria' | lieu="Villeneuve-d'Ascq, Lille" | contrat=None | seniorite=Confirmé | tech=1
+2026-04-19 01:30:17,457 [INFO] Transformed offer | poste='Data Scientist / Analytics Engineer' | societe='White Circle' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,458 [INFO] Transformed offer | poste='DATA ANALYST EN INDUSTRIE (F/H)' | societe='Expectra' | lieu='Cholet 1er Canton, Cholet' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,460 [INFO] Transformed offer | poste='Stage - Data scientist (H/F)' | societe='Equancy | Groupe EDG' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:17,461 [INFO] Transformed offer | poste='Directeur Data Groupe IA & Analytics' | societe='Informatis-TS' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,462 [INFO] Transformed offer | poste='Data Scientist - Tabular Data' | societe='KLANIK' | lieu='Aube, Grand-Est' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,463 [INFO] Transformed offer | poste='Data Engineer' | societe='Sia' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,465 [INFO] Transformed offer | poste='Data Scientist Senior' | societe='Lincoln' | lieu='Ile-de-France, France' | contrat=None | seniorite=Senior | tech=4
+2026-04-19 01:30:17,466 [INFO] Transformed offer | poste='Technical Leader Data Scientist H/F' | societe='Safran' | lieu='Magny-les-Hameaux, Maurepas' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,468 [INFO] Transformed offer | poste='Senior Data analyst / Data scientist' | societe='Oderis' | lieu='2ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,469 [INFO] Transformed offer | poste='Data Engineer confirmé - expert PySpark - Services Financiers - Nantes' | societe='Sopra Steria' | lieu='Nantes, Loire-Atlantique' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,470 [INFO] Transformed offer | poste='Data Engineer' | societe='HCLTech' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,471 [INFO] Transformed offer | poste='Data Engineer' | societe='Daveo' | lieu='France' | contrat=None | seniorite=None | tech=3
+2026-04-19 01:30:17,473 [INFO] Transformed offer | poste='Senior Data Scientist - Blitz' | societe='Voodoo' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,475 [INFO] Transformed offer | poste='Data Engineer en charge de la base de référence' | societe='Ministère des Armées' | lieu='Creil, Senlis' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,476 [INFO] Transformed offer | poste='DATA SCIENTIST 4/11' | societe='Ministère des Armées' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,477 [INFO] Transformed offer | poste='Data Engineer Azure' | societe='Visian' | lieu='La Défense, Courbevoie' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:17,479 [INFO] Transformed offer | poste='Solution Architect, Big Data' | societe='Tencent Cloud' | lieu='France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,480 [INFO] Transformed offer | poste='Senior Data Scientist - IA (F/M)' | societe='Younited' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,482 [INFO] Transformed offer | poste='Data Engineer (CDI)' | societe='Toast' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,483 [INFO] Transformed offer | poste='Architecte DATA - Ile-de-France' | societe='Sopra Steria' | lieu='Courbevoie, Nanterre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,484 [INFO] Transformed offer | poste='Data/Analytics Engineer' | societe='Mistral Ai' | lieu='1er Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,486 [INFO] Transformed offer | poste='Data/Analytics Engineer' | societe='Mistral Ai' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,488 [INFO] Transformed offer | poste='Directeur de Projet Data – Migrations de Plateformes - Data Factory - Services Financiers - Nantes' | societe='Sopra Steria' | lieu='Nantes, Loire-Atlantique' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,489 [INFO] Transformed offer | poste='Data Scientist' | societe='Albatross' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,491 [INFO] Transformed offer | poste='Data Engineer Big Data / BI' | societe='adbi' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=Senior | tech=4
+2026-04-19 01:30:17,492 [INFO] Transformed offer | poste='Data Engineer Big Data/Teradata' | societe='VISIAN' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,494 [INFO] Transformed offer | poste='Data Engineer GCP & Big Data' | societe='Pyl.tech' | lieu='10ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=3
+2026-04-19 01:30:17,495 [INFO] Transformed offer | poste='Data Scientist (IT)' | societe='ONSPARK' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,497 [INFO] Transformed offer | poste='Data Scientist ‒ Fraud & Payment Analytics' | societe='Free-Work' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,498 [INFO] Transformed offer | poste='Data analyst h/f (CDI)' | societe="Mercato de l'emploi" | lieu='Deux-Sèvres, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,500 [INFO] Transformed offer | poste='Data analyst h/f (CDI)' | societe="Mercato de l'emploi" | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,501 [INFO] Transformed offer | poste='Data Analytics Engineer' | societe='Mirakl' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,502 [INFO] Transformed offer | poste='Data scientist' | societe='Innova Solutions' | lieu='Saint-Cloud, Boulogne-Billancourt' | contrat=None | seniorite=None | tech=3
+2026-04-19 01:30:17,503 [INFO] Transformed offer | poste='Data scientist' | societe='Innova Solutions' | lieu='Sceaux, Antony' | contrat=None | seniorite=None | tech=3
+2026-04-19 01:30:17,505 [INFO] Transformed offer | poste='Consultant Risk Data Analyst / Data Scientist F/H' | societe='Deloitte' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,506 [INFO] Transformed offer | poste='Data Scientist / Machine Learning Engineer (H/F)' | societe='FAB Group' | lieu='Pyrénées-Atlantiques, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,508 [INFO] Transformed offer | poste='Ingénieur IA-Big Data (H/F)Ingénieur IA-Big Data (H/F) (CDI)' | societe='Les Colettes Sourcing' | lieu='Seine-Maritime, Normandie' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,509 [INFO] Transformed offer | poste='Data Scientist - Machine Learning - Automobile' | societe='Mp Data' | lieu='Saint-Cloud, Boulogne-Billancourt' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:17,511 [INFO] Transformed offer | poste='Data and Analytics Director' | societe='SoTalent' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,512 [INFO] Transformed offer | poste='Data Engineer' | societe='Capgemini' | lieu='4ème-Arrondissement, Lyon' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,514 [INFO] Transformed offer | poste='Data Scientist – Machine Deep learning' | societe='Davidson Consulting' | lieu='Indre-et-Loire, Centre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,515 [INFO] Transformed offer | poste='Data Scientist – Machine Deep learning' | societe='Davidson Consulting' | lieu='Loiret, Centre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,517 [INFO] Transformed offer | poste='Data Scientist – Machine Deep learning' | societe='Davidson Consulting' | lieu='Sarthe, Pays de la Loire' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,518 [INFO] Transformed offer | poste='Data Engineer Cloud- H/F' | societe='Synchrone Fr' | lieu='Ile-de-France, France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,520 [INFO] Transformed offer | poste='Product Analytics - Data Scientist' | societe='Criteo Technology' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,522 [INFO] Transformed offer | poste='Oliver Wyman - Analyst/Senior Analyst- Data & IA - Paris' | societe='Oliver Wyman' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,523 [INFO] Transformed offer | poste='Alternance – Ingénieur(e) Big Data, Python, SQL, AWS – Aéronautique - Toulouse' | societe='Sopra Steria' | lieu='Blagnac, Toulouse' | contrat=Alternance | seniorite=Alternance | tech=4
+2026-04-19 01:30:17,524 [INFO] Transformed offer | poste='Business Analyst Data BI' | societe='Shift Consulting' | lieu='Lyon, Rhône' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,526 [INFO] Transformed offer | poste="Alternance - Ingénieur/e d'Etudes Big Data - Energie & Telecom - Lyon" | societe='Sopra Steria' | lieu='Limonest, Lyon' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,528 [INFO] Transformed offer | poste='AI Research Engineer / Data Scientist M/F' | societe='EDHEC Business School' | lieu='Nice, Alpes-Maritimes' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,529 [INFO] Transformed offer | poste='Data Scientist (AI Engineer)' | societe='Socotec' | lieu='France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,531 [INFO] Transformed offer | poste='Scrum Master Data (F/H)' | societe='ALTEN' | lieu='Boulogne-Billancourt, Hauts-de-Seine' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,532 [INFO] Transformed offer | poste='Data analyst thales h/f (Intérim)' | societe='Page Personnel' | lieu='Haute-Garonne, Occitanie' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:17,534 [INFO] Transformed offer | poste='Data Engineer Cloud' | societe='Néosoft' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,535 [INFO] Transformed offer | poste='Data Scientist - Tabular Data H/F' | societe='KLANIK' | lieu='Aube, Grand-Est' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,536 [INFO] Transformed offer | poste='Data Scientist' | societe='Mistral AI' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,538 [INFO] Transformed offer | poste='Data Scientist' | societe='Mistral AI' | lieu='1er Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,539 [INFO] Transformed offer | poste='Data Engineer / Data Scientist F/H' | societe='ADHOC CONSULT' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,541 [INFO] Transformed offer | poste='Ingénieur Data Confirmé - Services Financiers - Bordeaux' | societe='Sopra Steria' | lieu='Mérignac, Bordeaux' | contrat=None | seniorite=Confirmé | tech=1
+2026-04-19 01:30:17,542 [INFO] Transformed offer | poste='Lead Data Scientist RetD H/F (CDI)' | societe='Kaino' | lieu='Suresnes, Nanterre' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:17,544 [INFO] Transformed offer | poste='Data Analyst (Data Partner) – m/f/d' | societe='Voyage Privé' | lieu='Aix-en-Provence, Bouches-du-Rhône' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,545 [INFO] Transformed offer | poste='Expert Data Scientist - Data Analyst' | societe='Quadratic' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,547 [INFO] Transformed offer | poste='Stage Data Scientist - F/H' | societe='ChapsVision' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:17,548 [INFO] Transformed offer | poste='Data scientist' | societe='VeoNum' | lieu='Ille-et-Vilaine, Bretagne' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,550 [INFO] Transformed offer | poste='Directeur / Directrice Data Groupe' | societe='Informatis-TS' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,551 [INFO] Transformed offer | poste='Lead Data Analyst F/H' | societe='GROUPE CAISSE DES DEPOTS' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,552 [INFO] Transformed offer | poste='Senior Data Scientist H/F (CDI)' | societe='Kaino' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:17,554 [INFO] Transformed offer | poste='Data Scientist IA - H/F' | societe='Synchrone Fr' | lieu='Ile-de-France, France' | contrat=CDI | seniorite=None | tech=4
+2026-04-19 01:30:17,555 [INFO] Transformed offer | poste='Senior Data Scientist / AI Engineer H/F (CDI)' | societe='Bureau des Talents' | lieu='Puteaux, Nanterre' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:17,557 [INFO] Transformed offer | poste='Data Engineer Teradata & Big Data (H/F)' | societe='Scalian' | lieu='Neuilly-sur-Seine, Nanterre' | contrat=CDI | seniorite=Confirmé | tech=3
+2026-04-19 01:30:17,559 [INFO] Transformed offer | poste='Data Scientist Consultant (M/F)' | societe='TNP Consultants' | lieu='Levallois-Perret, Nanterre' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,560 [INFO] Transformed offer | poste='Lead Data Scientist H/F (CDI)' | societe='Kaino' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:17,561 [INFO] Transformed offer | poste='Big Data Engineer / Développeur Big Data H/F' | societe='Forums Talents Handicap' | lieu='Calvados, Normandie' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,563 [INFO] Transformed offer | poste='Data Analyst GCP' | societe='Lincoln' | lieu='Ile-de-France, France' | contrat=None | seniorite=Confirmé | tech=4
+2026-04-19 01:30:17,564 [INFO] Transformed offer | poste='Data Scientist' | societe='Veepee' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,565 [INFO] Transformed offer | poste='BUSINESS DATA ANALYST' | societe='ManpowerGroup' | lieu='Saint-Chamond, Saint-Etienne' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,567 [INFO] Transformed offer | poste='Alternance – Data Scientist Big Data & Intelligence Artificielle (H/F)' | societe='ESG' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,572 [INFO] Transformed offer | poste='Big Data Engineer / Développeur Big Data F/H' | societe='Atos' | lieu='Nantes, Loire-Atlantique' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,574 [INFO] Transformed offer | poste='Data Scientist Senior Consultant' | societe='JAKALA' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,575 [INFO] Transformed offer | poste='Data Analyst Power BI / Pilotage de la performance Cyber - Toulouse' | societe='Sopra Steria' | lieu='Blagnac, Toulouse' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:17,576 [INFO] Transformed offer | poste='Data scientist' | societe='CDISCOUNT' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,578 [INFO] Transformed offer | poste='Chef de Projet Data & IA – H/F' | societe='Synchrone Fr' | lieu='Ile-de-France, France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,579 [INFO] Transformed offer | poste='Data Scientist / AI Engineer' | societe='lemlist' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,580 [INFO] Transformed offer | poste='Data Engineer expérimenté(e)' | societe='OPEN' | lieu='Levallois-Perret, Nanterre' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,582 [INFO] Transformed offer | poste='Data Scientist ‒ Fraud & Payment Analytics (IT)' | societe='Ela Technology' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,584 [INFO] Transformed offer | poste='Data Engineer Big Data/Teradata - Freelance' | societe='Collective.work' | lieu='8ème Arrondissement, Paris' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:17,585 [INFO] Transformed offer | poste='Data Analyst & AI Intern - Vision Systems, Sensor Analytics & Industrial Big Data' | societe='TiHive' | lieu='Isère, Auvergne-Rhône-Alpes' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:17,586 [INFO] Transformed offer | poste='Senior Data Engineer Big Data - Freelance' | societe='Collective.work' | lieu='8ème Arrondissement, Paris' | contrat=CDD | seniorite=Senior | tech=2
+2026-04-19 01:30:17,588 [INFO] Transformed offer | poste='Data Platform Engineer H/F' | societe='Vusion Group' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,589 [INFO] Transformed offer | poste='Product Owner Data (F/H)' | societe='ALTEN' | lieu='Boulogne-Billancourt, Hauts-de-Seine' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,590 [INFO] Transformed offer | poste='Senior Data Scientist - Product Analytics' | societe='Criteo Technology' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,592 [INFO] Transformed offer | poste='Alternance – Data Scientist Big Data & Intelligence Artificielle (H/F)' | societe='Galileo Global Education' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=2
+2026-04-19 01:30:17,593 [INFO] Transformed offer | poste='Data engineer (H/F)' | societe='Ternair' | lieu='France' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:17,595 [INFO] Transformed offer | poste='Data Engineer confirmé(e)- Développement ETL - Services Financiers - Lille' | societe='Sopra Steria' | lieu="Villeneuve-d'Ascq, Lille" | contrat=None | seniorite=Confirmé | tech=2
+2026-04-19 01:30:17,596 [INFO] Transformed offer | poste='Architecte data' | societe='ALTEN' | lieu='Boulogne-Billancourt, Hauts-de-Seine' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,597 [INFO] Transformed offer | poste='Data-IA engineer H/F' | societe='Sabena technics' | lieu='Mérignac, Bordeaux' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,599 [INFO] Transformed offer | poste='Senior Data Scientist / Industrial Data Analyst' | societe='dsm-firmenich' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,600 [INFO] Transformed offer | poste='Data scientist' | societe='GROUPE IRCEM' | lieu='Roubaix, Lille' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,601 [INFO] Transformed offer | poste='Lead Data engineer' | societe='Néosoft' | lieu='Ile-de-France, France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,604 [INFO] Transformed offer | poste='CONSULTANT / CONSULTANTE DATA' | societe='Capgemini' | lieu='Aix-en-Provence, Bouches-du-Rhône' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,605 [INFO] Transformed offer | poste='Data Ingénieur- Services Financiers-Strasbourg' | societe='Sopra Steria' | lieu='Strasbourg, Strasbourg-Ville' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,606 [INFO] Transformed offer | poste='Data Analyst - Stage (F/H)' | societe='SFR' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:17,608 [INFO] Transformed offer | poste='Directeur Associé Data & Analytics (f/h) (CDI)' | societe='LHH' | lieu='8ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,609 [INFO] Transformed offer | poste='Data Engineer - Data Analyst (F/H)' | societe='Onepoint Sas' | lieu='Niort, Deux-Sèvres' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,611 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='Ipsen' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,612 [INFO] Transformed offer | poste='️ Data Engineer' | societe='Staycation' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,614 [INFO] Transformed offer | poste='Data Engineer Spark Scala - Services Financiers - Ile-De-France' | societe='Sopra Steria' | lieu='Courbevoie, Nanterre' | contrat=None | seniorite=None | tech=3
+2026-04-19 01:30:17,615 [INFO] Transformed offer | poste='Data Analyst' | societe='lemlist' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,617 [INFO] Transformed offer | poste='Analytics Engineer / Data Analyst - CDI' | societe='Collective.work' | lieu='La-Madeleine, Lille' | contrat=CDI | seniorite=Senior | tech=6
+2026-04-19 01:30:17,619 [INFO] Transformed offer | poste='Data Scientist / AI Engineer' | societe='ILLUIN Technology' | lieu='1er Arrondissement, Paris' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,621 [INFO] Transformed offer | poste='Data Scientist / AI Engineer' | societe='ILLUIN Technology' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,622 [INFO] Transformed offer | poste='Data Analyst Senior – Supply Chain' | societe='Laboratoires URGO' | lieu='Chevigny-Saint-Sauveur, Dijon' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,623 [INFO] Transformed offer | poste='Data engineer' | societe='CDISCOUNT' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,624 [INFO] Transformed offer | poste='Data scientist' | societe='Caisse des dépôts groupe' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:17,626 [INFO] Transformed offer | poste='Data Engineer @eXalt Ouest' | societe='eXalt' | lieu='Nantes, Loire-Atlantique' | contrat=None | seniorite=Confirmé | tech=0
+2026-04-19 01:30:17,627 [INFO] Transformed offer | poste='Data Analytics Manager' | societe='the Jungle' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,628 [INFO] Transformed offer | poste='Data Scientist' | societe='KLANIK' | lieu='1er-Arrondissement, Lyon' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,629 [INFO] Transformed offer | poste='Data Engineer confirmé' | societe='Forums Talents Handicap' | lieu='Allauch, Marseille' | contrat=CDI | seniorite=Confirmé | tech=0
+2026-04-19 01:30:17,631 [INFO] Transformed offer | poste='Expert Data Scientist : Palantir Foundry' | societe='Capgemini Invent' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,632 [INFO] Transformed offer | poste='Data scientist' | societe='CDISCOUNT' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,634 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Steamulo' | lieu='1er-Arrondissement, Lyon' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,635 [INFO] Transformed offer | poste='DATA ENGINEER 5A/13' | societe='Ministère des Armées' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,636 [INFO] Transformed offer | poste='Apprenticeship - Data Scientist' | societe='Amadeus' | lieu='Villeneuve-Loubet, Grasse' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,639 [INFO] Transformed offer | poste='Data Analyst / Data Scientist Supply Chain' | societe='Capgemini' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,641 [INFO] Transformed offer | poste='Data Scientist Machine Learning (Pau) - Freelance' | societe='Collective.work' | lieu='Pyrénées-Atlantiques, Nouvelle-Aquitaine' | contrat=CDD | seniorite=None | tech=2
+2026-04-19 01:30:17,643 [INFO] Transformed offer | poste='Data Scientist - AI Engineer - HCM' | societe='Socotec' | lieu='France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,645 [INFO] Transformed offer | poste='Data analyst junior h/f (CDI)' | societe='JD CONSULTANTS' | lieu='Cantal, Auvergne-Rhône-Alpes' | contrat=CDI | seniorite=Junior | tech=1
+2026-04-19 01:30:17,646 [INFO] Transformed offer | poste='DATA SCIENTIST' | societe=None | lieu='13ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,647 [INFO] Transformed offer | poste='Data Engineer/Data Analyst Senior - FR' | societe='Photon Group' | lieu='France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,649 [INFO] Transformed offer | poste='Machine Learning Engineer' | societe='Capgemini' | lieu='Toulouse, Haute-Garonne' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:17,650 [INFO] Transformed offer | poste='Business Analyst Data – H/F' | societe='Synchrone Fr' | lieu='Ile-de-France, France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,651 [INFO] Transformed offer | poste='Data Analyst H/F (CDI)' | societe='MICHAEL PAGE' | lieu='Villeneuve-la-Garenne, Nanterre' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,653 [INFO] Transformed offer | poste='Data Engineer Senior Big Data (H/F)' | societe='Scalian' | lieu='Neuilly-sur-Seine, Nanterre' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:17,654 [INFO] Transformed offer | poste='Consultant(e) Data Gouvernance - Industrie - Toulouse' | societe='Sopra Steria' | lieu='Toulouse, Haute-Garonne' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,655 [INFO] Transformed offer | poste='Product Owner - Data Platform' | societe='Lenstra' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,657 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='Kaino' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:17,658 [INFO] Transformed offer | poste='Data Annotator' | societe='Innodata Inc.' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,659 [INFO] Transformed offer | poste='STAGE - Data Scientist H/F - 6 mois' | societe='BNP PARIBAS' | lieu='France' | contrat=CDD | seniorite=Stage | tech=1
+2026-04-19 01:30:17,661 [INFO] Transformed offer | poste='Lead Data Scientist' | societe='Kaino' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:17,662 [INFO] Transformed offer | poste='Data analyst F/H' | societe='MBDA' | lieu='Sannois, Argenteuil' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,663 [INFO] Transformed offer | poste='Data analyst F/H' | societe='MBDA' | lieu='Saint-Cloud, Boulogne-Billancourt' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,665 [INFO] Transformed offer | poste='Data analyst F/H' | societe='MBDA' | lieu='Montreuil, Bobigny' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,666 [INFO] Transformed offer | poste='Data analyst F/H' | societe='MBDA' | lieu='1er Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,667 [INFO] Transformed offer | poste='Data analyst F/H' | societe='MBDA' | lieu='Le Plessis-Robinson, Antony' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,669 [INFO] Transformed offer | poste='HRO - DATA MODELER' | societe='Ministère des Armées' | lieu='Toulon, Var' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,670 [INFO] Transformed offer | poste='Senior Data Analyst' | societe='Product Technical' | lieu='France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,671 [INFO] Transformed offer | poste='Data Scientist' | societe='Maisons du Monde' | lieu='France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,673 [INFO] Transformed offer | poste='Data Engineer' | societe='Air Apps' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,674 [INFO] Transformed offer | poste='Business Analyst Data - MDM Informatica - Services Financiers - Ile-de-France' | societe='Sopra Steria' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=3
+2026-04-19 01:30:17,675 [INFO] Transformed offer | poste='Cloud Automation & Data Engineering - Aix-en-Provence' | societe='Sopra Steria' | lieu='Aix-en-Provence, Bouches-du-Rhône' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,677 [INFO] Transformed offer | poste='JURISTE DATA' | societe='Ministère des Armées' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,678 [INFO] Transformed offer | poste='Data Scientist | Machine Learning Engineer – Practice IA MARGO' | societe='Margo' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:17,679 [INFO] Transformed offer | poste='Consultant Data Engineer / Big Data (F/H)' | societe='Onepoint' | lieu='Pont-Rousseau, Rezé' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,681 [INFO] Transformed offer | poste='JURISTE DATA' | societe='Ministère des Armées' | lieu="Arcueil, L'Haÿ-les-Roses" | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,682 [INFO] Transformed offer | poste='DATA MANAGER' | societe='Ministère des Armées' | lieu='Tours, Indre-et-Loire' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,683 [INFO] Transformed offer | poste='Consultant Data Engineer - Big Data H/F' | societe='Onepoint' | lieu='Pont-Rousseau, Rezé' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,684 [INFO] Transformed offer | poste='Stage - Analytics Engineer Data Collab' | societe='Numberly' | lieu='9ème Arrondissement, Paris' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:17,686 [INFO] Transformed offer | poste='Consultant Data Engineer / Big Data (F/H)' | societe='Onepoint Sas' | lieu='Nantes, Loire-Atlantique' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,687 [INFO] Transformed offer | poste='Data Scientist / Machine Learning Engineer Confirmé H/F' | societe='DAVRICOURT' | lieu='Nord, Hauts-De-France' | contrat=CDI | seniorite=Confirmé | tech=4
+2026-04-19 01:30:17,689 [INFO] Transformed offer | poste='Data Scientist / Machine Learning Engineer Confirmé H/F' | societe='DAVRICOURT' | lieu='Nord, Hauts-De-France' | contrat=CDD | seniorite=Confirmé | tech=2
+2026-04-19 01:30:17,691 [INFO] Transformed offer | poste='Manager Machine Learning - Conseil - H/F (CDI)' | societe='ELITIS' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:17,692 [INFO] Transformed offer | poste='Data Scientist / Machine Learning Engineer Confirmé F/H' | societe='BRED Espace' | lieu='Roubaix-Ouest, Lille' | contrat=CDI | seniorite=Confirmé | tech=1
+2026-04-19 01:30:17,693 [INFO] Transformed offer | poste='Data Scientist / Machine Learning Engineer Confirmé F/H' | societe='DAVRICOURT' | lieu='Lille-Nord, Lille' | contrat=CDI | seniorite=Confirmé | tech=4
+2026-04-19 01:30:17,695 [INFO] Transformed offer | poste='Chef de produits DATA / Product Owner DATA' | societe='Ministère des Armées' | lieu='Tours, Indre-et-Loire' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,696 [INFO] Transformed offer | poste='Data Engineer Confirmé(e) - expert PySpark - Services Financiers - Ile de France' | societe='Sopra Steria' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,697 [INFO] Transformed offer | poste='Alternance – Machine Learning Engineer / Data scientist (F/H)' | societe='AXA' | lieu='Suresnes, Nanterre' | contrat=CDD | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,699 [INFO] Transformed offer | poste='Data Scientist IA Deep Learning' | societe='Bert. Technology France SAS' | lieu='Élancourt, Versailles' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,700 [INFO] Transformed offer | poste='Data Scientist - Entry Level' | societe='BlaBlaCar' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Junior | tech=0
+2026-04-19 01:30:17,701 [INFO] Transformed offer | poste='Scrum Master Data IA H/F' | societe='SYD Digital Care' | lieu='Deux-Sèvres, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,703 [INFO] Transformed offer | poste='Consultant data' | societe='Datatorii' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,704 [INFO] Transformed offer | poste='DATA SCIENTIST JUNIOR (IT)' | societe='Geniem' | lieu='Nord, Hauts-De-France' | contrat=CDD | seniorite=Junior | tech=3
+2026-04-19 01:30:17,705 [INFO] Transformed offer | poste='Data Scientist (Paris)' | societe='Sanofi' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,707 [INFO] Transformed offer | poste='Big Data Lead' | societe='N Consulting Ltd' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,709 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='Gorgias' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,710 [INFO] Transformed offer | poste='Data Engineer' | societe='Alma' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,712 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='DoubleVerify' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,713 [INFO] Transformed offer | poste='DATA ANALYST POWER BI (F/H)' | societe='NOVENCIA Group' | lieu='France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,714 [INFO] Transformed offer | poste='Data scientist [civil]' | societe='Comcyber' | lieu='Rennes-Sud-Ouest, Rennes' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,716 [INFO] Transformed offer | poste='Data Scientist - GenAI et Python H/F (CDI)' | societe='TalentsIT' | lieu='Roubaix, Lille' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:17,717 [INFO] Transformed offer | poste='AI & Machine Learning Engineer (M/F)' | societe='TNP Consultants' | lieu='Levallois-Perret, Nanterre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,718 [INFO] Transformed offer | poste='Data Engineer' | societe='Cabinet EKINOX' | lieu='Nord, Hauts-De-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,719 [INFO] Transformed offer | poste='Data Scientist Senior IA gen' | societe='StarClay' | lieu='Puteaux, Nanterre' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,722 [INFO] Transformed offer | poste='Lead Data Scientist R&D' | societe='Kaino' | lieu='Suresnes, Nanterre' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:17,723 [INFO] Transformed offer | poste='Lead Data Scientist' | societe='leakmited' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,724 [INFO] Transformed offer | poste='Lead Data Scientist' | societe='BIP Group' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,726 [INFO] Transformed offer | poste='Tech Lead Data Finance' | societe='THALES' | lieu='Vélizy-Villacoublay, Versailles' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:17,727 [INFO] Transformed offer | poste='Data Engineer' | societe='Dedale Intelligence' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,728 [INFO] Transformed offer | poste='Data Scientist (Paris)' | societe='Sanofi Group' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,730 [INFO] Transformed offer | poste='Expert Big Data / Lead Tech Big Data' | societe='Free-Work' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:17,731 [INFO] Transformed offer | poste=' Data Engineer confirmé – Environnement Data Platform / Gouvernance' | societe='Gentis Recruitment SAS' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Confirmé | tech=0
+2026-04-19 01:30:17,732 [INFO] Transformed offer | poste='DATA SCIENTIST (IT)' | societe='Codezys' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=CDD | seniorite=None | tech=2
+2026-04-19 01:30:17,734 [INFO] Transformed offer | poste='Apprenticeship - Data Engineer' | societe='Amadeus' | lieu='Villeneuve-Loubet, Grasse' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,735 [INFO] Transformed offer | poste='Data Engineer' | societe='Assystem' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,737 [INFO] Transformed offer | poste='Data Scientist (IT)' | societe='ESENCA' | lieu='Nord, Hauts-De-France' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:17,738 [INFO] Transformed offer | poste='Data Scientist (M/W)' | societe='Forums Talents Handicap' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,739 [INFO] Transformed offer | poste='Data scientist confirmé' | societe='Proxiel' | lieu='Aix en Provence Sud-Ouest, Aix-en-Provence' | contrat=Alternance | seniorite=Alternance | tech=2
+2026-04-19 01:30:17,741 [INFO] Transformed offer | poste='Consultant Data Scientist / AI Engineer' | societe='Licorne Society' | lieu='10ème Arrondissement, Paris' | contrat=CDD | seniorite=None | tech=3
+2026-04-19 01:30:17,742 [INFO] Transformed offer | poste='Data engineer Fabric - Microsoft H/F' | societe='Expertime' | lieu='Viroflay, Versailles' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,743 [INFO] Transformed offer | poste='Senior Data Scientist (H/F)' | societe='Chanel' | lieu='France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,745 [INFO] Transformed offer | poste='Distinguished ML Data Scientist' | societe='AVEVA' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,746 [INFO] Transformed offer | poste='Lead Data Scientist' | societe='ILLUIN Technology' | lieu='1er Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,747 [INFO] Transformed offer | poste='Lead Data Scientist' | societe='ILLUIN Technology' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,748 [INFO] Transformed offer | poste='STAGE – Data Scientist H/F - 6 mois' | societe='BNP PARIBAS' | lieu='Montreuil-sur-Epte, Pontoise' | contrat=CDD | seniorite=Stage | tech=1
+2026-04-19 01:30:17,750 [INFO] Transformed offer | poste='Data Analyst' | societe='Temeritati' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,751 [INFO] Transformed offer | poste='Data Scientist II' | societe='DoubleVerify' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,752 [INFO] Transformed offer | poste='Data Analytics Engineer - CDI' | societe='Recept AI' | lieu='2ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,753 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='Veepee' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,754 [INFO] Transformed offer | poste='Principal Engineer, Adtech AI & Data Science' | societe='Teads' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,756 [INFO] Transformed offer | poste='AI Product Data Scientist' | societe='Aircall' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,757 [INFO] Transformed offer | poste='Data Scientist' | societe='Capgemini' | lieu='1er Arrondissement, Paris' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,759 [INFO] Transformed offer | poste='Data Scientist' | societe='Ministere Interieur' | lieu='France' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:17,760 [INFO] Transformed offer | poste='Data analyst' | societe='CDISCOUNT' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,761 [INFO] Transformed offer | poste='Stagiaire Data Scientist - Products Data (H/F)' | societe='BearingPoint France' | lieu='La Défense, Courbevoie' | contrat=Stage | seniorite=Stage | tech=2
+2026-04-19 01:30:17,763 [INFO] Transformed offer | poste='Data Analyst' | societe='Veepee' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,765 [INFO] Transformed offer | poste='Data Analyst' | societe='Zefir' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,766 [INFO] Transformed offer | poste='Senior Data Analyst / Analytics Engineer - Freelance' | societe='Collective.work' | lieu='8ème Arrondissement, Paris' | contrat=CDD | seniorite=Senior | tech=0
+2026-04-19 01:30:17,767 [INFO] Transformed offer | poste='Data Scientist Senior' | societe='Eleveight Group' | lieu='France' | contrat=CDI | seniorite=Senior | tech=2
+2026-04-19 01:30:17,769 [INFO] Transformed offer | poste=' Data Engineer / Data Scientist – Profil hybride recherché (Secteur Public) - Freelance' | societe='Collective.work' | lieu='8ème Arrondissement, Paris' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,770 [INFO] Transformed offer | poste='Data Analyst Senior / Analytics Engineer - Freelance' | societe='Collective.work' | lieu='Tremblay-en-France, Le Raincy' | contrat=CDD | seniorite=Senior | tech=1
+2026-04-19 01:30:17,772 [INFO] Transformed offer | poste='Consultant Data Engineer - Paris (F/H)' | societe='Technology & Strategy' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,773 [INFO] Transformed offer | poste='Data Engineer' | societe='Bureau des Talents' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,774 [INFO] Transformed offer | poste='Product Data Scientist Intern' | societe='Criteo Technology' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:17,776 [INFO] Transformed offer | poste='Analytics Engineer / Data Analyst F/H' | societe='Arabelle Solutions' | lieu='La Courneuve, Saint-Denis' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,777 [INFO] Transformed offer | poste='Data Scientist - ALT (h/f)' | societe='Swiss Steel Group' | lieu='Ugine, Albertville' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,778 [INFO] Transformed offer | poste='Data Engineer - Analyste de données' | societe='DATA PRAXIS' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=3
+2026-04-19 01:30:17,780 [INFO] Transformed offer | poste='Data scientist H/F' | societe='Baker Tilly SI DAF' | lieu='Maine-et-Loire, Pays de la Loire' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,781 [INFO] Transformed offer | poste='Développeur·euse Full Stack Expérimenté·e - IA Factory H/F' | societe='Safran' | lieu='Malakoff, Antony' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,782 [INFO] Transformed offer | poste='Data Scientist - LLM' | societe='Gorgias' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,784 [INFO] Transformed offer | poste='Data Scientist Alternance H/F' | societe='DSTI School of Engineering' | lieu="Bouches-du-Rhône, Provence-Alpes-Côte d'Azur" | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,785 [INFO] Transformed offer | poste='Lead Data Engineer' | societe='leakmited' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:17,786 [INFO] Transformed offer | poste='Responsable Data (F/H)' | societe='Le Monde' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,787 [INFO] Transformed offer | poste='Data Scientist - Alternance' | societe='Forums Talents Handicap' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=CDD | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,788 [INFO] Transformed offer | poste='Data engineer F/H' | societe='FINEGAN' | lieu='Puteaux, Nanterre' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:17,790 [INFO] Transformed offer | poste='Data Engineer Senior @eXalt Nantes' | societe='eXalt' | lieu='Nantes, Loire-Atlantique' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,792 [INFO] Transformed offer | poste='Data Engineer GCP/AWS' | societe='Lincoln' | lieu='Boulogne-Billancourt, Hauts-de-Seine' | contrat=None | seniorite=None | tech=4
+2026-04-19 01:30:17,793 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='Shape the Future of Healthcare with HawkCell' | lieu='Lyon, Rhône' | contrat=None | seniorite=Junior | tech=1
+2026-04-19 01:30:17,794 [INFO] Transformed offer | poste='Lead Data Engineer Snowflake' | societe='Tenth Revolution Group' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,796 [INFO] Transformed offer | poste='Data Engineer - Azure cloud' | societe='Dataworks' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=6
+2026-04-19 01:30:17,797 [INFO] Transformed offer | poste='Senior Data Engineer' | societe='Eleveight Group' | lieu='France' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:17,799 [INFO] Transformed offer | poste='Data scientist F/H' | societe='MoOngy' | lieu='Nice, Alpes-Maritimes' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,800 [INFO] Transformed offer | poste='Data Scientist / AI Engineer (IT)' | societe='ESENCA' | lieu='Nord, Hauts-De-France' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:17,802 [INFO] Transformed offer | poste='Data Engineer Snowflake / DBT' | societe='eXalt Value' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,803 [INFO] Transformed offer | poste='Consultant Data Engineer Databricks' | societe='Pulsover' | lieu='France' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:17,804 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Studia' | lieu='Versailles, Yvelines' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,806 [INFO] Transformed offer | poste='Data Engineer' | societe='Devoteam Data Driven France' | lieu='Levallois-Perret, Nanterre' | contrat=None | seniorite=Senior | tech=3
+2026-04-19 01:30:17,807 [INFO] Transformed offer | poste='Data Engineer' | societe='Stellantis' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,809 [INFO] Transformed offer | poste='Data Scientist Confirmé' | societe='IQVIA' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,810 [INFO] Transformed offer | poste='Data Scientist Machine Learning - (H/F) - En alternance' | societe='Openclassrooms' | lieu="Val-d'Oise, Ile-de-France" | contrat=Alternance | seniorite=Alternance | tech=2
+2026-04-19 01:30:17,811 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='Bigblue' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,813 [INFO] Transformed offer | poste='Data Analyst/ Data Engineer F/H' | societe='ICSIS NORD' | lieu='Lille-Nord, Lille' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,815 [INFO] Transformed offer | poste='Data Engineer / Data Analyst (H/F)' | societe='ENOVA Consulting' | lieu='Rhône, Auvergne-Rhône-Alpes' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,816 [INFO] Transformed offer | poste='Alternance - Data Analyste / Data Engineer H/F' | societe='Spie' | lieu='Toulouse, Haute-Garonne' | contrat=CDI | seniorite=Alternance | tech=0
+2026-04-19 01:30:17,818 [INFO] Transformed offer | poste='Data Scientist – Machine Deep learning F/H' | societe='Davidson Consulting' | lieu='Tours, Indre-et-Loire' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,820 [INFO] Transformed offer | poste='Data Scientist – Machine Deep learning F/H' | societe='Davidson Consulting' | lieu='Orléans, Loiret' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,821 [INFO] Transformed offer | poste='Consultant(e) Data Scientist / AI Engineer' | societe='Licorne Society' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,823 [INFO] Transformed offer | poste='Senior Data Analyst Power BI / Business Analyst Data F/H' | societe='Devoteam Data Driven France' | lieu='Lyon, Rhône' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,825 [INFO] Transformed offer | poste='Data Engineer' | societe='White Circle' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,826 [INFO] Transformed offer | poste='Analytics Engineer' | societe='Tenth Revolution Group' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,828 [INFO] Transformed offer | poste='Fullstack Data Engineer' | societe='Mooncard' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,829 [INFO] Transformed offer | poste='Data Scientist Confirm' | societe='IQVIA' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,830 [INFO] Transformed offer | poste='Data steward f/h (CDI)' | societe='MICHAEL PAGE' | lieu='Nord, Hauts-De-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,831 [INFO] Transformed offer | poste='Data Scientist Manager' | societe='the Jungle' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,833 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='the Jungle' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,834 [INFO] Transformed offer | poste='Data Scientist: France' | societe='Shift Technology' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,836 [INFO] Transformed offer | poste='Tech Lead Data Engineer Snowflake' | societe='Tenth Revolution Group' | lieu='Ile-de-France, France' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:17,837 [INFO] Transformed offer | poste='Data Analyst internship' | societe='LexisNexis Risk Solutions' | lieu='France' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:17,839 [INFO] Transformed offer | poste='Data Analyst' | societe='Grohe R.L.' | lieu='La Défense, Courbevoie' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,840 [INFO] Transformed offer | poste='Data Scientist GenAI' | societe='Labs' | lieu='Bordeaux, Gironde' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,841 [INFO] Transformed offer | poste='Data Scientist GenAI' | societe='Labs' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,843 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='Teads' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,844 [INFO] Transformed offer | poste='Data Analyst Intern' | societe='Ovrsea' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:17,845 [INFO] Transformed offer | poste='Data Analyst Intern' | societe='Ovrsea' | lieu='10ème Arrondissement, Paris' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:17,846 [INFO] Transformed offer | poste='Data Engineer Lead' | societe='Nūmi' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:17,848 [INFO] Transformed offer | poste='Data Scientiste (H/F)' | societe='ADP' | lieu='Colombes, Nanterre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,849 [INFO] Transformed offer | poste='Data Scientist F/H' | societe='INNOVA SOLUTIONS' | lieu='Antony, Hauts-de-Seine' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:17,850 [INFO] Transformed offer | poste='Data Analyst & Data Quality - Alternance' | societe='Altares-D&B' | lieu='Puteaux, Nanterre' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:17,852 [INFO] Transformed offer | poste='Data Engineer Expérimenté(e)' | societe='Archery Data and Analytics' | lieu='Indre-et-Loire, Centre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,853 [INFO] Transformed offer | poste='Data Ingenieur' | societe='Comcyber' | lieu='Rennes-Sud-Ouest, Rennes' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,855 [INFO] Transformed offer | poste='AI ENGINEER - DATA SCIENTIST' | societe='SMILE' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:17,856 [INFO] Transformed offer | poste='Data Analyst internship' | societe='RELX INC' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:17,857 [INFO] Transformed offer | poste='Data Engineer' | societe='TechBiz Global GmbH' | lieu='France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,858 [INFO] Transformed offer | poste='Data Engineer' | societe='MakiPeople' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,859 [INFO] Transformed offer | poste='Practice Leader Data (H/F)' | societe='5 Degrés' | lieu='France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,861 [INFO] Transformed offer | poste='Data Engineer Python / Azure Sénior (IT)' | societe='VISIAN' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:17,862 [INFO] Transformed offer | poste='GESTIONNAIRE MASTER DATA (F/H)' | societe='Expectra' | lieu='Clichy, Nanterre' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,863 [INFO] Transformed offer | poste='DATA ANALYST' | societe='Carrefour' | lieu='Seine-Maritime, Normandie' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,864 [INFO] Transformed offer | poste='Data Engineer' | societe='ILLUIN Technology' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,866 [INFO] Transformed offer | poste='Data Engineer' | societe='ILLUIN Technology' | lieu='1er Arrondissement, Paris' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,867 [INFO] Transformed offer | poste='Data Engineer & Data Architect - Senior Consultant' | societe='Jakala' | lieu='11ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:17,868 [INFO] Transformed offer | poste='Data analyst (H/F) (Intérim)' | societe='MANPOWER FRANCE' | lieu='Toulouse 14e Canton, Toulouse' | contrat=CDD | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,870 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='BrightHeart' | lieu='10ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,871 [INFO] Transformed offer | poste='Data Analyst H/F (CDI)' | societe='REGIE DES TRANSPORTS METROPOLITAINS' | lieu='Allauch, Marseille' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,873 [INFO] Transformed offer | poste='Software Data Engineer | Python - Spark - AWS | Solution SaaS dans le Big Data' | societe='Octopus IT' | lieu='8ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=4
+2026-04-19 01:30:17,874 [INFO] Transformed offer | poste='Senior Data Scientist' | societe='Orakl Oncology' | lieu="Le Kremlin-Bicêtre, L'Haÿ-les-Roses" | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,875 [INFO] Transformed offer | poste='Alternance - IS Data Analyst / Engineer' | societe='Valeo' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:17,877 [INFO] Transformed offer | poste='Alternance - IS Data Analyst / Engineer' | societe='IS Domain - J' | lieu='Paris, Ile-de-France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:17,878 [INFO] Transformed offer | poste='Data Analyst' | societe='Free-Work' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,879 [INFO] Transformed offer | poste='Data Engineer' | societe='Joko' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,881 [INFO] Transformed offer | poste='Data Engineer' | societe='Joko' | lieu='3ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,882 [INFO] Transformed offer | poste='Alternance – Data Analyst (H/F) / Data & IA' | societe='Galileo Global Education' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=2
+2026-04-19 01:30:17,884 [INFO] Transformed offer | poste='Data Engineer – Plateforme Data Engineering' | societe='ALTEN' | lieu='Vitrolles, Istres' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,885 [INFO] Transformed offer | poste='Data & Cloud Engineer H/F' | societe='Fifty-Five' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,886 [INFO] Transformed offer | poste='Data Scientist Confirmé H/F' | societe='ACTIVUS GROUP' | lieu='Rhône, Auvergne-Rhône-Alpes' | contrat=None | seniorite=Confirmé | tech=1
+2026-04-19 01:30:17,888 [INFO] Transformed offer | poste='Senior Data Scientist W/M/D' | societe='Million Victories' | lieu='1er-Arrondissement, Lyon' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:17,889 [INFO] Transformed offer | poste='Confirmed Data Analyst - Data CRT' | societe='BlaBlaCar' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,891 [INFO] Transformed offer | poste='Data Engineer (Databricks /Azure)' | societe='Forums Talents Handicap' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:17,892 [INFO] Transformed offer | poste='Data Analyst Intern' | societe='Mirakl' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:17,894 [INFO] Transformed offer | poste='Data Engineer - Cloud' | societe='Visian' | lieu='La Défense, Courbevoie' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,895 [INFO] Transformed offer | poste='Ingénieur IA-Big Data Ingénieur IA-Big Data H/F' | societe='Les Colettes' | lieu='Bihorel, Rouen' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,896 [INFO] Transformed offer | poste='Data analyst' | societe='5 Degrés' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,898 [INFO] Transformed offer | poste='Data Engineer' | societe='David Kennedy Recruitment' | lieu='Lyon, Rhône' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,899 [INFO] Transformed offer | poste='Lead Data Scientist GenAI H/F (CDI)' | societe='Kaino' | lieu='Suresnes, Nanterre' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:17,900 [INFO] Transformed offer | poste='Lead Data Engineer - HealthTech / IA H/F (CDI)' | societe='Les Colettes Sourcing' | lieu='1er Arrondissement, Paris' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:17,901 [INFO] Transformed offer | poste='TEST DATA SCIENTIST' | societe='Qualitest Group' | lieu='France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,903 [INFO] Transformed offer | poste='Tech Lead Data Engineer Talend H/F' | societe='Externatic' | lieu='Villeurbanne, Lyon' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,904 [INFO] Transformed offer | poste='Architecte Big Data H/F' | societe=None | lieu='Rangueuil, Toulouse' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,905 [INFO] Transformed offer | poste='Architecte Big Data H/F' | societe=None | lieu='5ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,906 [INFO] Transformed offer | poste='Data Engineer' | societe='Forums Talents Handicap' | lieu='Ecully, Lyon' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:17,907 [INFO] Transformed offer | poste='Data Integration Lead' | societe='VBeyond Europe' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=3
+2026-04-19 01:30:17,909 [INFO] Transformed offer | poste='Data Scientist – Deep Learning / NLP (IT)' | societe='ESENCA' | lieu='Nord, Hauts-De-France' | contrat=CDD | seniorite=Senior | tech=3
+2026-04-19 01:30:17,910 [INFO] Transformed offer | poste='Data Engineer/Data Analyst Databricks & PowerBI H/F' | societe='Free-Work' | lieu='Lyon, Rhône' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:17,912 [INFO] Transformed offer | poste='Data Engineer/Data Analyst Databricks & PowerBI H/F' | societe='JEMS' | lieu='Rhône, Auvergne-Rhône-Alpes' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:17,913 [INFO] Transformed offer | poste='Ingénieur Data Scientist' | societe='STEP Consulting' | lieu='Isère, Auvergne-Rhône-Alpes' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,915 [INFO] Transformed offer | poste='Data Analyst (H/F) / Data Scientist(H/F)' | societe='Alten' | lieu='Toulouse, Haute-Garonne' | contrat=CDI | seniorite=Stage | tech=0
+2026-04-19 01:30:17,916 [INFO] Transformed offer | poste='Data Engineer H/F (CDI)' | societe='PLUS QUE PRO' | lieu='Bas-Rhin, Grand-Est' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,918 [INFO] Transformed offer | poste='Alternance – Data engineer - (H/F) / Data & IA' | societe='HETIC' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=3
+2026-04-19 01:30:17,919 [INFO] Transformed offer | poste='Lead Data Scientist Confirmé/e ou Sénior' | societe='Bial-X' | lieu='Limonest, Lyon' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,920 [INFO] Transformed offer | poste='Senior Data Analyst' | societe='swan.io' | lieu='11ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,922 [INFO] Transformed offer | poste='Data Scientist - Reinforcement Learning F/H' | societe='Thales' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,923 [INFO] Transformed offer | poste='Machine Learning Engineer/ AI Engineer H.F' | societe='Wewyse Reply' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,925 [INFO] Transformed offer | poste='Data Scientist Machine Learning / Deep Learning Aix en Provence/la (IT)' | societe='WorldWide People' | lieu='Aix en Provence Sud-Ouest, Aix-en-Provence' | contrat=CDD | seniorite=None | tech=5
+2026-04-19 01:30:17,926 [INFO] Transformed offer | poste='Data Engineer Senior (H/F)' | societe='Alten' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:17,927 [INFO] Transformed offer | poste='Ingénieur IA-Big Data Ingénieur IA-Big Data F/H' | societe='Les Colettes Sourcing' | lieu='Cany-Barville, Dieppe' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,928 [INFO] Transformed offer | poste='Werkstudent/Masterand – Data Analytics' | societe='Mecatronics Team' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,930 [INFO] Transformed offer | poste='Data Scientist (IT)' | societe='Codezys' | lieu='Lille, Nord' | contrat=CDD | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,931 [INFO] Transformed offer | poste='Data Engineer | Python - Spark - Hadoop | Spécialisé en Big Data | Paris ou Remote Partiel' | societe='Octopus IT' | lieu='8ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=6
+2026-04-19 01:30:17,932 [INFO] Transformed offer | poste='Alternance Data Analyst - Big Data 12 - Bordeaux. H/F' | societe='Sup de Vinci Bordeaux' | lieu='Talence, Bordeaux' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,933 [INFO] Transformed offer | poste='Senior Data Engineer H/F (CDI)' | societe='Bureau des Talents' | lieu='8ème Arrondissement, Paris' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:17,935 [INFO] Transformed offer | poste="Data Engineer (3 ans d'xp) (H/F)" | societe='Winside Technology' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,936 [INFO] Transformed offer | poste='Senior Data Scientist W/M/D' | societe='Million Victories' | lieu='1er-Arrondissement, Lyon' | contrat=CDD | seniorite=Senior | tech=1
+2026-04-19 01:30:17,937 [INFO] Transformed offer | poste='Data Analyst - Pôle Data BdT F/H' | societe='Caisse des dépôts groupe' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,939 [INFO] Transformed offer | poste='AI & Data Engineer' | societe='Kyndryl' | lieu='Grasse, Alpes-Maritimes' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,940 [INFO] Transformed offer | poste='Data scientist (H/F)' | societe='Devoteam Data Driven France' | lieu='Lille, Nord' | contrat=Alternance | seniorite=Alternance | tech=4
+2026-04-19 01:30:17,941 [INFO] Transformed offer | poste='Data scientist (KPOSDS2) F/H' | societe='IA SOFT' | lieu='Fontenay-sous-Bois, Nogent-sur-Marne' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,943 [INFO] Transformed offer | poste='Consultant Marketing Data Scientist' | societe='Sia' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,944 [INFO] Transformed offer | poste='Tech Lead Data' | societe='THALES' | lieu='Vélizy-Villacoublay, Versailles' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:17,945 [INFO] Transformed offer | poste='Chef de projet data h/f (CDI)' | societe="Mercato de l'emploi" | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,946 [INFO] Transformed offer | poste='Chef de projet data h/f (CDI)' | societe="Mercato de l'emploi" | lieu='Deux-Sèvres, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,948 [INFO] Transformed offer | poste='Data Analytics Lead' | societe='Bitstack' | lieu='France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,949 [INFO] Transformed offer | poste='Alternant(e) data scientist - h/f' | societe='Compagnie des Alpes' | lieu='Savoie, Auvergne-Rhône-Alpes' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:17,950 [INFO] Transformed offer | poste='Data Engineer F/H' | societe='VIVERIS' | lieu='France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,951 [INFO] Transformed offer | poste='Data Engineer' | societe='KLANIK' | lieu='1er-Arrondissement, Lyon' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:17,953 [INFO] Transformed offer | poste='Alternant Data Engineer' | societe='Forums Talents Handicap' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,954 [INFO] Transformed offer | poste='Consultant Data Analyst - Paris (F/H)' | societe='Technology & Strategy' | lieu='Ile-de-France, France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,955 [INFO] Transformed offer | poste='Consultant Data Analyst - Lyon (F/H)' | societe='NOVENCIA Group' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,956 [INFO] Transformed offer | poste='Senior Data Engineer H/F (CDI)' | societe='COGNIZANT FRANCE' | lieu='Puteaux, Nanterre' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:17,958 [INFO] Transformed offer | poste='Accelerator Data Scientist (Paris)' | societe='Sanofi' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,959 [INFO] Transformed offer | poste='Consultant Data Fabric' | societe='Datatorii' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,960 [INFO] Transformed offer | poste='Data scientist H/F' | societe=None | lieu='Rangueuil, Toulouse' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,961 [INFO] Transformed offer | poste='Data scientist H/F' | societe=None | lieu='5ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,963 [INFO] Transformed offer | poste='Data Scientist (F/M)' | societe='Nestle' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,964 [INFO] Transformed offer | poste='Une/Un Data Scientist confirmé(e)' | societe='Arcom' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=Confirmé | tech=2
+2026-04-19 01:30:17,965 [INFO] Transformed offer | poste='GEO DATA MANAGER' | societe='Ministère des Armées' | lieu='Creil, Senlis' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,967 [INFO] Transformed offer | poste='Data Scientist - Agentic - Freelance' | societe='Labs' | lieu='Bordeaux, Gironde' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,968 [INFO] Transformed offer | poste='Data Scientist - Agentic - Freelance' | societe='Labs' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:17,969 [INFO] Transformed offer | poste='Data engineer H/F' | societe=None | lieu='Lyon, Rhône' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:17,970 [INFO] Transformed offer | poste='Data engineer H/F' | societe=None | lieu='Lyon, Rhône' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:17,971 [INFO] Transformed offer | poste='Chef de projet Data' | societe='Datatorii' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:17,973 [INFO] Transformed offer | poste='Data Analyst - CDI - (F/H)' | societe='AGS - La garantie des salaires' | lieu='France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,974 [INFO] Transformed offer | poste='Big Data Engineer (H/F/NB)' | societe='Keyrus' | lieu='Levallois-Perret, Nanterre' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,975 [INFO] Transformed offer | poste='Data Analyste - Dataiku (H-F)' | societe='K-LAGAN France' | lieu='Niort, Deux-Sèvres' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,977 [INFO] Transformed offer | poste='Data Analyst - Quality F/H' | societe='La Banque Postale' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,978 [INFO] Transformed offer | poste='DATA ENGINEER DATABRICKS' | societe='AquisIT' | lieu='Bas-Rhin, Grand-Est' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:17,979 [INFO] Transformed offer | poste='Data Engineer H/F (CDI)' | societe='Kaino' | lieu='Gard, Occitanie' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,980 [INFO] Transformed offer | poste='DATA ENGINEER F/H' | societe='REALISATION DE SYSTEMES INFORMATIQUES INTEGRES - RS21' | lieu='Levallois-Perret, Nanterre' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:17,981 [INFO] Transformed offer | poste='Sales Data H/F' | societe='Devoteam' | lieu='Levallois-Perret, Nanterre' | contrat=None | seniorite=None | tech=6
+2026-04-19 01:30:17,983 [INFO] Transformed offer | poste='Data Scientist confirmé F/H' | societe='Atos' | lieu='Nantes, Loire-Atlantique' | contrat=CDI | seniorite=Confirmé | tech=3
+2026-04-19 01:30:17,984 [INFO] Transformed offer | poste='Data Ingénieur - Développement ETL - Services Financiers - Strasbourg' | societe='Sopra Steria' | lieu='Strasbourg, Strasbourg-Ville' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:17,985 [INFO] Transformed offer | poste='DATA SCIENTIST - sénior (IT)' | societe='Geniem' | lieu='Nord, Hauts-De-France' | contrat=CDD | seniorite=None | tech=2
+2026-04-19 01:30:17,986 [INFO] Transformed offer | poste='Data Scientist confirmé H/F' | societe='Forums Talents Handicap' | lieu='Loire-Atlantique, Pays de la Loire' | contrat=CDI | seniorite=Confirmé | tech=3
+2026-04-19 01:30:17,987 [INFO] Transformed offer | poste='Data Scientist Senior (IT)' | societe='NEOLYNK' | lieu='Nord, Hauts-De-France' | contrat=CDD | seniorite=Senior | tech=3
+2026-04-19 01:30:17,989 [INFO] Transformed offer | poste='Data scientist/AI engineering' | societe='Qualees' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:17,990 [INFO] Transformed offer | poste='Data Analyst Senior (Futur lead) | Startup spécialisée dans la DATA' | societe='Octopus IT' | lieu='8ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:17,991 [INFO] Transformed offer | poste='Consultant.e Data Engineer / Analytics Engineer - dbt' | societe='The Information Lab' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:17,993 [INFO] Transformed offer | poste='[alternance] data analyst - h/f' | societe='ATOL CONSEILS ET DEVELOPPEMENTS' | lieu='Gevrey-Chambertin, Dijon' | contrat=CDD | seniorite=Alternance | tech=0
+2026-04-19 01:30:17,994 [INFO] Transformed offer | poste='Apprenti data science / machine learning' | societe='GE Vernova' | lieu='Belfort, Territoire de Belfort' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,995 [INFO] Transformed offer | poste='Apprenti data science / machine learning' | societe='GE Vernova' | lieu='Belfort, Territoire de Belfort' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:17,997 [INFO] Transformed offer | poste='Alternant Data Engineer' | societe='Groupement Mousquetaires' | lieu='Châtillon, Antony' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:17,998 [INFO] Transformed offer | poste='Stagiaire Data engineer - Products Data (H/F)' | societe='BearingPoint France' | lieu='La Défense, Courbevoie' | contrat=Stage | seniorite=Stage | tech=2
+2026-04-19 01:30:18,000 [INFO] Transformed offer | poste='Senior Data Analyst / Analytics Engineer – Fintech - Freelance' | societe='Collective.work' | lieu='8ème Arrondissement, Paris' | contrat=CDD | seniorite=Senior | tech=0
+2026-04-19 01:30:18,001 [INFO] Transformed offer | poste='Alternance - HR Data analyst H/F' | societe='BNP PARIBAS' | lieu='Rueil-Malmaison, Nanterre' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,002 [INFO] Transformed offer | poste='Alternance - Analyste Data RISK - H/F' | societe='BNP PARIBAS' | lieu='Paris, Ile-de-France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,003 [INFO] Transformed offer | poste='ALTERNANCE – HR Data Analyst - F/H' | societe='THALES' | lieu='Toulouse, Haute-Garonne' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,004 [INFO] Transformed offer | poste='Alternance - Ingénieur Data Analyst - H/F' | societe='THALES' | lieu='Cannes, Grasse' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,005 [INFO] Transformed offer | poste='Data scientist (H/F)' | societe='STEP UP' | lieu='Puy-de-Dôme, Auvergne-Rhône-Alpes' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,007 [INFO] Transformed offer | poste='Alternance - Data Analyst RH H/F' | societe='BNP PARIBAS' | lieu='Paris, Ile-de-France' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,008 [INFO] Transformed offer | poste='Accelerator Data Scientist (Paris)' | societe='Sanofi Group' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,009 [INFO] Transformed offer | poste='Delivery Manager Data (F/H)' | societe='Aubay' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,010 [INFO] Transformed offer | poste='Consultant Data Management (F/H)' | societe='Aubay' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,012 [INFO] Transformed offer | poste='Data Analyst Lead' | societe='amo' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,013 [INFO] Transformed offer | poste='Data Analyst - Bordeaux' | societe='Free-Work' | lieu='Bordeaux, Gironde' | contrat=CDD | seniorite=None | tech=3
+2026-04-19 01:30:18,015 [INFO] Transformed offer | poste='alternant(e) Data Analyst / Chargé(e) de projet Data' | societe='Galileo Global Education' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,016 [INFO] Transformed offer | poste='Data Scientist Machine Learning Copilot - full remote (IT)' | societe='Net technologie' | lieu='France' | contrat=CDD | seniorite=None | tech=4
+2026-04-19 01:30:18,018 [INFO] Transformed offer | poste='Responsable data H/F' | societe='ACCES INDUSTRIE' | lieu='Bordeaux, Gironde' | contrat=CDI | seniorite=Junior | tech=0
+2026-04-19 01:30:18,019 [INFO] Transformed offer | poste='Ingénieur Data Machine Learning F/H' | societe='W.G. CONSULTING' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=None | tech=9
+2026-04-19 01:30:18,020 [INFO] Transformed offer | poste='Data analyst en alternance F/H' | societe='Walter Learning' | lieu='France' | contrat=CDI | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,022 [INFO] Transformed offer | poste='alternance 12 mois – Data scientiste et machine learning' | societe='Sanofi' | lieu='Montpellier, Hérault' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,023 [INFO] Transformed offer | poste='Ingénieur Data / Data Scientist - Secteur Aéronautique F/H' | societe='AKKODIS FRANCE SAS' | lieu='Marignane, Istres' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,025 [INFO] Transformed offer | poste='alternance 12 mois - Data scientiste et machine learning' | societe='Sanofi Group' | lieu='Montpellier, Hérault' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,026 [INFO] Transformed offer | poste='Data analytics engineer Confirmé(e)' | societe='Traxens' | lieu='Allauch, Marseille' | contrat=None | seniorite=Confirmé | tech=0
+2026-04-19 01:30:18,028 [INFO] Transformed offer | poste='Senior Data Engineer - Real time analytics' | societe='Aircall' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,029 [INFO] Transformed offer | poste='Data Scientist Expert En Ia-Machine Learning (F/H)' | societe='Choisir le Service Public' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=Senior | tech=2
+2026-04-19 01:30:18,030 [INFO] Transformed offer | poste='Data Engineer H/F' | societe='SAS Le Télégramme' | lieu='Taulé, Morlaix' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,032 [INFO] Transformed offer | poste='Lead Data Analyst' | societe='Caisse des dépôts groupe' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=Senior | tech=1
+2026-04-19 01:30:18,033 [INFO] Transformed offer | poste='Data analyste en alternance - Paris' | societe='Galileo Global Education' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,035 [INFO] Transformed offer | poste='Data Engineer confirmé F/H' | societe='Capgemini' | lieu='Allauch, Marseille' | contrat=CDI | seniorite=Confirmé | tech=0
+2026-04-19 01:30:18,036 [INFO] Transformed offer | poste='Data scientist H/F' | societe='Innova Solutions' | lieu='Clamart, Antony' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,037 [INFO] Transformed offer | poste='Data scientist H/F' | societe='Innova Solutions' | lieu='Saint-Cloud, Boulogne-Billancourt' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,038 [INFO] Transformed offer | poste='Data Engineer' | societe='Nestle' | lieu='Vittel, Neufchâteau' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,040 [INFO] Transformed offer | poste='Chef de projet data' | societe='Extia' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,041 [INFO] Transformed offer | poste='Data Analyst' | societe='Visian' | lieu='La Défense, Courbevoie' | contrat=CDI | seniorite=Confirmé | tech=0
+2026-04-19 01:30:18,042 [INFO] Transformed offer | poste='Lead Data Architecte F/H' | societe="RTE - Réseau de transport d'électricité" | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:18,044 [INFO] Transformed offer | poste='Product Data Analyst' | societe='Dust' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,045 [INFO] Transformed offer | poste='Data Analyst' | societe='Free-Work' | lieu='Boulogne-Billancourt, Hauts-de-Seine' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:18,046 [INFO] Transformed offer | poste='Data Analyst' | societe='GRLCI' | lieu='Saint-Cloud, Boulogne-Billancourt' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:18,048 [INFO] Transformed offer | poste='Data analyst' | societe='CDISCOUNT' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,049 [INFO] Transformed offer | poste='Data Analyst (h/f)' | societe='DSI Entreprise Adaptée etlusive' | lieu='13ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,051 [INFO] Transformed offer | poste='Data analyst' | societe='Davidson Consulting' | lieu='Haute-Garonne, Occitanie' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,052 [INFO] Transformed offer | poste='Data Analyst' | societe='Assystem' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,053 [INFO] Transformed offer | poste='Data analyst' | societe='MBway Lyon' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,055 [INFO] Transformed offer | poste='Data Analyst' | societe=None | lieu='13ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,056 [INFO] Transformed offer | poste='Data analyst' | societe='Davidson Consulting' | lieu='Haute-Garonne, Occitanie' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,057 [INFO] Transformed offer | poste='Data Analyst' | societe='Coinhouse' | lieu='1er Arrondissement, Paris' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,059 [INFO] Transformed offer | poste='Senior consultant – frog data' | societe='frog' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,060 [INFO] Transformed offer | poste='Data Analyst' | societe='Eleveight Group' | lieu='France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,062 [INFO] Transformed offer | poste='Data Analyst Risque de Crédit H/F' | societe='Crédit Agricole Personal Finance & Mobility' | lieu='Massy, Palaiseau' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,063 [INFO] Transformed offer | poste='Data analyst' | societe='Alphabet France Fleet Management' | lieu='Yvelines, Ile-de-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,064 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='EQUANS' | lieu='Saint-Herblain, Nantes' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,066 [INFO] Transformed offer | poste='Data scientist H/F' | societe='Recrutement Hôpital Foch' | lieu='Suresnes, Nanterre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,067 [INFO] Transformed offer | poste='Data analyst' | societe='CDISCOUNT' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,069 [INFO] Transformed offer | poste='Data analyst' | societe='Cdiscount' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,070 [INFO] Transformed offer | poste='Data analyst' | societe='CDISCOUNT' | lieu='Seine-Maritime, Normandie' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,071 [INFO] Transformed offer | poste='Data analyst' | societe='CDISCOUNT' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,073 [INFO] Transformed offer | poste='Data Engineer Python / Azure Sénior - CDI' | societe='Collective.work' | lieu='8ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:18,074 [INFO] Transformed offer | poste='Alternance - Data Engineer Junior' | societe='La Plateforme' | lieu='Allauch, Marseille' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,075 [INFO] Transformed offer | poste='Data Analyste' | societe='Free-Work' | lieu='Brive-la-Gaillarde, Corrèze' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,077 [INFO] Transformed offer | poste='Data Analyste' | societe='OCTOGONE' | lieu='Brive-la-Gaillarde-Sud-Ouest, Brive-la-Gaillarde' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,078 [INFO] Transformed offer | poste='Data engineer senior – totalenergies digital factory h/f (CDI)' | societe='TOTALENERGIES SE' | lieu='1er Arrondissement, Paris' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:18,080 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Crédit Agricole CIB' | lieu='Montrouge, Antony' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,081 [INFO] Transformed offer | poste='AI Engineer – Data Scientist (H/F)' | societe='W HUB' | lieu='Nord, Hauts-De-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,083 [INFO] Transformed offer | poste='Data Scientist Alternance H/F' | societe='DSTI School of Engineering' | lieu='La-Madeleine, Lille' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,084 [INFO] Transformed offer | poste='Expert Data Gouvernance' | societe='APGAR' | lieu='Neuilly-sur-Seine, Nanterre' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,085 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Macif' | lieu='Niort, Deux-Sèvres' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,087 [INFO] Transformed offer | poste='Data, Analytics & Intelligence Artificielle' | societe='Forums Talents Handicap' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=CDD | seniorite=Senior | tech=1
+2026-04-19 01:30:18,088 [INFO] Transformed offer | poste='Data Analyst' | societe='IQVIA' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,089 [INFO] Transformed offer | poste='Data Analyst' | societe='IQVIA' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,090 [INFO] Transformed offer | poste='Senior Data Engineer - Core Data Platform Team' | societe='Teads' | lieu='Montpellier, Hérault' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,092 [INFO] Transformed offer | poste='Data analyst' | societe='CDISCOUNT' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,093 [INFO] Transformed offer | poste='Accelerator Data Scientist (Paris)' | societe='Sanofi' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,094 [INFO] Transformed offer | poste='Data Analyst: Merchant Intelligence' | societe='Jobgether' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,096 [INFO] Transformed offer | poste='Support – Data Analyst' | societe='DGTL Performance' | lieu='Puy-de-Dôme, Auvergne-Rhône-Alpes' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,097 [INFO] Transformed offer | poste='Data Scientist F/H' | societe='Forums Talents Handicap' | lieu='France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,098 [INFO] Transformed offer | poste='Business Analytics & Data transformation' | societe='Forums Talents Handicap' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:18,099 [INFO] Transformed offer | poste='Data Scientist - Santé Numérique (Alternance)' | societe='Aivancity Nice' | lieu="Alpes-Maritimes, Provence-Alpes-Côte d'Azur" | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,101 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Crédit Mutuel Arkéa' | lieu='France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,102 [INFO] Transformed offer | poste='Data Scientist - Luxe (Alternance)' | societe='Aivancity Nice' | lieu="Alpes-Maritimes, Provence-Alpes-Côte d'Azur" | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,103 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='KLANIK' | lieu='1er-Arrondissement, Lyon' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:18,104 [INFO] Transformed offer | poste='Intern - Risk Analytics - Data Scientist Assistant H/F' | societe='ENGIE' | lieu='La Défense, Courbevoie' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:18,105 [INFO] Transformed offer | poste='Consultant Senior H/F - Expert GCP (Infra/Archi/Data)' | societe='Sopra Steria' | lieu='Courbevoie, Nanterre' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,107 [INFO] Transformed offer | poste='Data Engineer Sénior (H/F)' | societe='QUANTEAM ' | lieu='Ile-de-France, France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,108 [INFO] Transformed offer | poste='Data Engineer Sénior' | societe='Proxiad' | lieu='Mougins, Grasse' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:18,109 [INFO] Transformed offer | poste='Azure / Fabric Data Engineer (Microsoft)' | societe='Devoteam | Microsoft Partner' | lieu='Levallois-Perret, Nanterre' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:18,111 [INFO] Transformed offer | poste='Data engineer - Alternance' | societe='Affluences' | lieu='12ème Arrondissement, Paris' | contrat=Alternance | seniorite=Alternance | tech=2
+2026-04-19 01:30:18,112 [INFO] Transformed offer | poste='Data Engineer AWS F/H' | societe='AS International Group' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:18,113 [INFO] Transformed offer | poste='Data Analyst / Data Partner (Skywise)' | societe='STEP UP' | lieu='Toulouse 14e Canton, Toulouse' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,114 [INFO] Transformed offer | poste='Machine Learning Engineer en Alternance H/F' | societe='DSTI School of Engineering' | lieu='Talence, Bordeaux' | contrat=Alternance | seniorite=Alternance | tech=2
+2026-04-19 01:30:18,115 [INFO] Transformed offer | poste='Data Engineer GCP F/H' | societe='Worldgrid' | lieu='Ile-de-France, France' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:18,117 [INFO] Transformed offer | poste='Data Analyst - Performance' | societe='Assystem' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,118 [INFO] Transformed offer | poste='Alternance (F/H) : Data Engineer' | societe='LVMH RECHERCHE' | lieu='Saint-Jean-de-Braye, Orléans' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,120 [INFO] Transformed offer | poste='Director of Data & Analytics [Relocate to Dubai]' | societe='Talent Seed' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,121 [INFO] Transformed offer | poste='Data scientist (H/F)' | societe='Amiltone' | lieu='Lille, Nord' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:18,122 [INFO] Transformed offer | poste='Managing consultant/consultante Strategy Data & IA / Master Data Management - PARIS' | societe='Capgemini Invent' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,124 [INFO] Transformed offer | poste='Accelerator Data Scientist (Paris)' | societe='Sanofi Group' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,125 [INFO] Transformed offer | poste='BUSINESS ANALYST CONFIRME & DATA ENGINEER BIG DATA – Spark / Hadoop / Databricks H/F' | societe='CNP Assurances' | lieu='France' | contrat=None | seniorite=Confirmé | tech=4
+2026-04-19 01:30:18,127 [INFO] Transformed offer | poste='Concepteur - Développeur Bi & Analyste Data H/F' | societe='Sciences Po' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:18,128 [INFO] Transformed offer | poste='Data Scientist (IT)' | societe='ANDEMA' | lieu='Nord, Hauts-De-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,129 [INFO] Transformed offer | poste='Alternance - Data Scientist Junior' | societe='La Plateforme' | lieu='Allauch, Marseille' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,130 [INFO] Transformed offer | poste='Data Scientist (IT)' | societe='Nicholson SAS' | lieu='Ile-de-France, France' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:18,132 [INFO] Transformed offer | poste='Stage Data Scientist' | societe='Ace Énergie' | lieu='8ème Arrondissement, Paris' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,133 [INFO] Transformed offer | poste='Data Scientist F/H' | societe='Kaptiv' | lieu='Saint-Benoît, La Réunion' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,134 [INFO] Transformed offer | poste='Data Scientist IA (IT)' | societe='R&S TELECOM' | lieu='Ile-de-France, France' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,135 [INFO] Transformed offer | poste='Stage – Data Scientist' | societe='Quinten Health' | lieu='17ème Arrondissement, Paris' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,137 [INFO] Transformed offer | poste='Data Engineer' | societe='Kaino' | lieu='Gard, Occitanie' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,138 [INFO] Transformed offer | poste='Stage - Data Scientist' | societe='Polynom' | lieu='Rueil-Malmaison, Nanterre' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:18,140 [INFO] Transformed offer | poste='Architecte Data (H/F) (CDI)' | societe='LHH' | lieu='La Défense, Courbevoie' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,141 [INFO] Transformed offer | poste='Data Scientist (CDI)' | societe='Elax Energie' | lieu='3ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,142 [INFO] Transformed offer | poste='Data Engineer - Senior Consultant' | societe='Jakala' | lieu='11ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,144 [INFO] Transformed offer | poste='Data scientist F/H' | societe='DEVOTEAM' | lieu='Lille-Nord, Lille' | contrat=CDI | seniorite=Alternance | tech=4
+2026-04-19 01:30:18,145 [INFO] Transformed offer | poste='Data scientist H/F' | societe='STEP UP' | lieu='Puy-de-Dôme, Auvergne-Rhône-Alpes' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:18,146 [INFO] Transformed offer | poste='Data scientist F/H' | societe='STEP UP' | lieu='Saint-Donat, Issoire' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,148 [INFO] Transformed offer | poste='Data Scientist Senior' | societe='LittleBigCode' | lieu='17ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=3
+2026-04-19 01:30:18,149 [INFO] Transformed offer | poste='Data Ops H/F (CDI)' | societe='Kaino' | lieu='8ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,150 [INFO] Transformed offer | poste='Tech Lead Data Engineer GCP H/F' | societe='EY Fabernovel, part of EY Studio+' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,152 [INFO] Transformed offer | poste='Data Scientist / GenAI /LLM (IT)' | societe='Pickmeup' | lieu='France' | contrat=CDD | seniorite=None | tech=2
+2026-04-19 01:30:18,153 [INFO] Transformed offer | poste='Ingénieur Data - Data Scientist - Secteur Aéronautique H/F' | societe='Akkodis' | lieu='Châteauneuf-les-Martigues, Marignane' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,154 [INFO] Transformed offer | poste='Data Engineer - data modelling and C# skills' | societe='Shift Technology' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,156 [INFO] Transformed offer | poste='LEAD DATA SCIENTIST (F/H)' | societe='Expectra' | lieu='Saint-Georges-lès-Baillargeaux, Poitiers' | contrat=CDI | seniorite=Senior | tech=2
+2026-04-19 01:30:18,157 [INFO] Transformed offer | poste='Data Analyst - Stage' | societe='Polène Paris' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,158 [INFO] Transformed offer | poste='Senior Data Engineer | Python - Scala - Spark - AWS | Solution SaaS dans le Big Data' | societe='Octopus IT' | lieu='8ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=5
+2026-04-19 01:30:18,160 [INFO] Transformed offer | poste='Data Scientist F/H' | societe='CREDIT MUTUEL ARKEA' | lieu='Le-Relecq-Kerhuon, Brest' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,161 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='CNP Assurances' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,162 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='CNP Assurances' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,164 [INFO] Transformed offer | poste='Senior Data Analyst Power BI / Business Analyst Data F/H' | societe='DEVOTEAM' | lieu='Lyon, Rhône' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,165 [INFO] Transformed offer | poste='Data Platform Engineer - Azure Data Platform H/F' | societe='WeVii' | lieu='Talence, Bordeaux' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:18,166 [INFO] Transformed offer | poste='Stage : Data Analyst (H/F) / Data Scientist(H/F)' | societe='Alten' | lieu='Haute-Garonne, Occitanie' | contrat=CDD | seniorite=Stage | tech=0
+2026-04-19 01:30:18,168 [INFO] Transformed offer | poste='Intern Macro Data Scientist' | societe='QuantCube Technology' | lieu='2ème Arrondissement, Paris' | contrat=Stage | seniorite=Stage | tech=2
+2026-04-19 01:30:18,169 [INFO] Transformed offer | poste='Consultant Data Analyst Direction Financière H/F' | societe='Primexis' | lieu='Puteaux, Nanterre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,170 [INFO] Transformed offer | poste='Responsable Service Data & IA H/F' | societe='Alpes Contrôles' | lieu='Argonay, Annecy' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,171 [INFO] Transformed offer | poste='Stagiaire Data Scientist (H/F)' | societe='Paris Saint-Germain Football' | lieu='Boulogne-Billancourt, Hauts-de-Seine' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,173 [INFO] Transformed offer | poste='Data Engineer confirmé' | societe='Capgemini' | lieu='Aix en Provence Sud-Ouest, Aix-en-Provence' | contrat=None | seniorite=Confirmé | tech=0
+2026-04-19 01:30:18,174 [INFO] Transformed offer | poste='Data Engineer/Data Analyst Databricks et PowerBI F/H' | societe='JEMS' | lieu='Lyon, Rhône' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:18,175 [INFO] Transformed offer | poste='Revenue Data Analyst F/H (CDI)' | societe='Morgan Philips Specialist Recruitment' | lieu='Chevreuse, Rambouillet' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,176 [INFO] Transformed offer | poste='Manager data & it (f/h) (CDI)' | societe='MICHAEL PAGE' | lieu='La Défense, Courbevoie' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,178 [INFO] Transformed offer | poste='Stage 6 mois - Data Analyst & Engineer Data RH / Analytics Engineer HR F/H' | societe='BlueLink International' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:18,179 [INFO] Transformed offer | poste='Senior Policy Data Scientist' | societe='Technopolis Group' | lieu='12ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,180 [INFO] Transformed offer | poste='Data Platform Product Manager H/F (CDI)' | societe='Kaino' | lieu='8ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,181 [INFO] Transformed offer | poste='[STAGE] Data Scientist H/F' | societe='Socotec' | lieu='Villebon-sur-Yvette, Palaiseau' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,183 [INFO] Transformed offer | poste='Senior AI Data Scientist' | societe='MLabs' | lieu='France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,184 [INFO] Transformed offer | poste='Data Engineer' | societe='Sekoia.io' | lieu='10ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,185 [INFO] Transformed offer | poste='Data engineer' | societe='Davidson Consulting' | lieu='Haute-Garonne, Occitanie' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,186 [INFO] Transformed offer | poste='Data Engineer' | societe='Ogury' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,187 [INFO] Transformed offer | poste='Data Engineer-Scientist AWS (IT)' | societe='INSYCO' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=None | tech=2
+2026-04-19 01:30:18,189 [INFO] Transformed offer | poste='Data Engineer' | societe='Shape It' | lieu='La-Madeleine, Lille' | contrat=CDI | seniorite=Confirmé | tech=0
+2026-04-19 01:30:18,190 [INFO] Transformed offer | poste='AI ENGINEER - DATA SCIENTIST (IT)' | societe='SMILE' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,191 [INFO] Transformed offer | poste='Data Engineer' | societe='Sfeir' | lieu='Strasbourg, Strasbourg-Ville' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,192 [INFO] Transformed offer | poste='Data Engineer' | societe='Naboo' | lieu='10ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=3
+2026-04-19 01:30:18,194 [INFO] Transformed offer | poste='Data engineer h/f' | societe='agap2IT' | lieu='Isère, Auvergne-Rhône-Alpes' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,195 [INFO] Transformed offer | poste='Data Engineer' | societe='Advanced Schema' | lieu='16ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,197 [INFO] Transformed offer | poste='Data Engineer' | societe='Forums Talents Handicap' | lieu='Isère, Auvergne-Rhône-Alpes' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,198 [INFO] Transformed offer | poste='CDI - Data Scientist - H/F' | societe='Médiaperformances' | lieu='La Défense, Courbevoie' | contrat=CDI | seniorite=Senior | tech=2
+2026-04-19 01:30:18,199 [INFO] Transformed offer | poste='Data engineer GenAI' | societe='Capgemini' | lieu='Pyrénées-Atlantiques, Nouvelle-Aquitaine' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,201 [INFO] Transformed offer | poste='Data Engineer' | societe='Capgemini' | lieu='Isère, Auvergne-Rhône-Alpes' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,202 [INFO] Transformed offer | poste='DATA ENGINEER (H/F)' | societe='Conserto' | lieu='Saint-Herblain, Nantes' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,203 [INFO] Transformed offer | poste='Data Engineer' | societe='Bial-X' | lieu='Limonest, Lyon' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,204 [INFO] Transformed offer | poste='Ingénieur Data' | societe='Intelcia Tech' | lieu='Neuilly-sur-Seine, Nanterre' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:18,206 [INFO] Transformed offer | poste='Data Engineer' | societe='The Product Crew' | lieu='19ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,207 [INFO] Transformed offer | poste='Data Scientist (H/F)' | societe='Withings' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,209 [INFO] Transformed offer | poste='Apprenti.e Data Analyst / Data Engineer F/H' | societe='SARPI' | lieu='Limay, Mantes-la-Jolie' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,210 [INFO] Transformed offer | poste='DATA ENGINEER' | societe='Carrefour' | lieu='Seine-Maritime, Normandie' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,211 [INFO] Transformed offer | poste='Stage Data Scientist H/F' | societe='Socotec' | lieu='Villebon-sur-Yvette, Palaiseau' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,212 [INFO] Transformed offer | poste='Architecte Big Data F/H' | societe='CARREVOLUTIS' | lieu='Caen, Calvados' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,214 [INFO] Transformed offer | poste='Data engineer' | societe='CDISCOUNT' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,215 [INFO] Transformed offer | poste='SENIOR DATA SCIENTIST F/H' | societe='CDISCOUNT' | lieu='Bordeaux, Gironde' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,217 [INFO] Transformed offer | poste='Ingénieur / Ingénieure Data - Data Engineer' | societe='Mutuelle de Poitiers' | lieu='Vienne, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,218 [INFO] Transformed offer | poste='Data Analyst (F/H)' | societe='STEP UP' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,219 [INFO] Transformed offer | poste='Data Engineer (F/H)' | societe='RS2i' | lieu='Levallois-Perret, Nanterre' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,221 [INFO] Transformed offer | poste='Data Engineer H/F' | societe='Steamulo' | lieu='1er-Arrondissement, Lyon' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,222 [INFO] Transformed offer | poste='Alternant(e) Data Engineer & Data Analyst - Fleet Data Operations F/H' | societe='Safran' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,223 [INFO] Transformed offer | poste='Data Scientist Senior - H/F' | societe='Suez' | lieu='France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,225 [INFO] Transformed offer | poste='Data Engineer (Spark)' | societe='Shape It' | lieu='1er-Arrondissement, Lyon' | contrat=CDI | seniorite=Confirmé | tech=1
+2026-04-19 01:30:18,226 [INFO] Transformed offer | poste='Intégrateur Data Analytics H/F' | societe='Siemens' | lieu='Châtillon, Antony' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,227 [INFO] Transformed offer | poste='Lead Data Scientist - BI Prediction' | societe='Voodoo' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,228 [INFO] Transformed offer | poste='Data Engineer - H/F' | societe='E.LECLERC' | lieu='Seine-Maritime, Normandie' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,230 [INFO] Transformed offer | poste='Consultant Senior/Manager - Lead Data Science & Data Scientist Senior' | societe='Forums Talents Handicap' | lieu='Hauts-de-Seine, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,231 [INFO] Transformed offer | poste='Data Engineer Cloud - H/F' | societe='Licorne Society' | lieu='10ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,233 [INFO] Transformed offer | poste='Data Engineer (H/F)' | societe='Amiltone' | lieu='Lille, Nord' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,234 [INFO] Transformed offer | poste='Data Scientist (F/H)' | societe='Swiss Life' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,235 [INFO] Transformed offer | poste='Alternance : Alternance - Data Engineer/Data Scientist (F/H) Paris' | societe='Groupe BPCE' | lieu='Paris, Ile-de-France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,237 [INFO] Transformed offer | poste='Data Scientist F/H' | societe='ADP GSI FRANCE' | lieu='Nanterre, Hauts-de-Seine' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,238 [INFO] Transformed offer | poste='Data Scientist (Modélisation statistique, reinforcement learning)-(h/f) (IT)' | societe='emagine Consulting SARL' | lieu="Charles-de-Gaulles Aéroport, Val-d'Oise" | contrat=CDD | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,239 [INFO] Transformed offer | poste='Consultant Senior/ Manager H/F - Data Gouvernance - île-de-france' | societe='Sopra Steria' | lieu='Courbevoie, Nanterre' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,240 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Crédit Agricole CIB' | lieu='Saint-Quentin-en-Yvelines, Versailles' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,242 [INFO] Transformed offer | poste='Data Scientist - F/H - Lille' | societe='Mp Data' | lieu='Nord, Hauts-De-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,243 [INFO] Transformed offer | poste='Data Scientist - la banque (Alternance)' | societe='Aivancity Nice' | lieu="Alpes-Maritimes, Provence-Alpes-Côte d'Azur" | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,244 [INFO] Transformed offer | poste='Data Scientist x Software Engineer - Intermediate' | societe='Metroscope' | lieu='8ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,246 [INFO] Transformed offer | poste='Data Engineer - Aerospatial - Toulouse' | societe='Forums Talents Handicap' | lieu='Haute-Garonne, Occitanie' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,247 [INFO] Transformed offer | poste='Senior/Staff Data Analyst – Care Analytics' | societe='Back Market' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,248 [INFO] Transformed offer | poste='ALTERNANCE - Data Scientist (H/F)' | societe='Hermes' | lieu='Paris, Ile-de-France' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,249 [INFO] Transformed offer | poste='Solution Architect, Big Data' | societe='Tencent' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,251 [INFO] Transformed offer | poste='Data Analyst Intern' | societe='Joko' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,252 [INFO] Transformed offer | poste='Data Analyst Intern' | societe='Joko' | lieu='3ème Arrondissement, Paris' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,253 [INFO] Transformed offer | poste='Business Data Analyst H/F (CDI)' | societe='MANAGING' | lieu='Schweighouse-sur-Moder, Haguenau' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,254 [INFO] Transformed offer | poste='Data Analyst (F/H)' | societe='Studi' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,255 [INFO] Transformed offer | poste='Ingénieur de production BIG DATA' | societe='ITS Group SA' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,256 [INFO] Transformed offer | poste='Alternance Data Engineer - Toulouse H/F' | societe='ISCOD' | lieu='Rangueuil, Toulouse' | contrat=CDD | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,257 [INFO] Transformed offer | poste='Alternance Data Engineer - Toulouse (F/H)' | societe='ISCOD' | lieu='Rangueuil, Toulouse' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,259 [INFO] Transformed offer | poste='Tech Lead DATA & IA (H/F)' | societe='GROUPE ALLIANCE' | lieu='France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,260 [INFO] Transformed offer | poste='Poste Interne - Data Engineer / Data Architect H/F' | societe='mc2i' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,261 [INFO] Transformed offer | poste='Alternant Data Analyst - Projet Transverse et Data H/F' | societe='LCL' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,263 [INFO] Transformed offer | poste='Senior Marketing Science Analyst - Hybrid, Data-Driven Growth' | societe='OMD' | lieu='Cannes, Grasse' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,265 [INFO] Transformed offer | poste='Data Engineer Python – Data Platform & Data Governance (IT)' | societe='Deodis' | lieu='Ile-de-France, France' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:18,266 [INFO] Transformed offer | poste='Senior Data/AI Engineer' | societe='Eleveight Group' | lieu='France' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:18,267 [INFO] Transformed offer | poste='Lead Data Scientist GenAI' | societe='Kaino' | lieu='Suresnes, Nanterre' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,269 [INFO] Transformed offer | poste='Tech Lead - Data Engineer Confirmé H/F' | societe='MP Data' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,270 [INFO] Transformed offer | poste='AI Data Engineer' | societe='MLabs' | lieu='France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,271 [INFO] Transformed offer | poste='Data Architect - Azure' | societe='O2MAX' | lieu='4ème-Arrondissement, Lyon' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,272 [INFO] Transformed offer | poste='Data Scientist Senior F/H' | societe='Socotec' | lieu='Villebon-sur-Yvette, Palaiseau' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,274 [INFO] Transformed offer | poste='DATA ENGINEER (H/F)' | societe='Magnet GBH' | lieu='La Trinité, Martinique' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,275 [INFO] Transformed offer | poste='Business & Data Analyst - CDI' | societe='Collective.work' | lieu='1er-Arrondissement, Lyon' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,276 [INFO] Transformed offer | poste='Data Operations Specialist- Mions' | societe='Cainiao Group' | lieu='Mions, Lyon' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,277 [INFO] Transformed offer | poste='Stage - Data Scientist AI/GenAI H/F - 6mois' | societe='BNP PARIBAS' | lieu='Montreuil-sur-Epte, Pontoise' | contrat=CDD | seniorite=Stage | tech=1
+2026-04-19 01:30:18,279 [INFO] Transformed offer | poste='Data scientist Senior (IT)' | societe='CAT-AMANIA' | lieu='Ile-de-France, France' | contrat=CDD | seniorite=Senior | tech=0
+2026-04-19 01:30:18,280 [INFO] Transformed offer | poste='Data Consultant' | societe='Singulier' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,282 [INFO] Transformed offer | poste='Directeur(rice) de projet / Business developper Data / IA - Industrie - Le Plessis Robinson' | societe='Sopra Steria' | lieu='Le Plessis-Robinson, Antony' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,283 [INFO] Transformed offer | poste='Ingénieur IA-Big Data (H/F)Ingénieur IA-Big Data (H/F)' | societe='Les Colettes Sourcing' | lieu='Seine-Maritime, Normandie' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,285 [INFO] Transformed offer | poste='Data Scientist et Expert traitement du signal sonore' | societe='Sales Republik' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,286 [INFO] Transformed offer | poste='Data Engineer senior' | societe='Atlanse' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,287 [INFO] Transformed offer | poste='Data Scientist Expérimenté H/F' | societe='Klee Group' | lieu='Le Plessis-Robinson, Antony' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,288 [INFO] Transformed offer | poste='ALTERNANCE - Développeur / Data Scientist – Surveillance de l’Espace (SSA) - F/H' | societe='THALES' | lieu='Toulouse, Haute-Garonne' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,290 [INFO] Transformed offer | poste='Stage : Data Scientist F/H' | societe='BPIfrance' | lieu='France' | contrat=CDD | seniorite=Stage | tech=1
+2026-04-19 01:30:18,291 [INFO] Transformed offer | poste='Alternance - Data Analyst' | societe='AXA' | lieu='9ème Arrondissement, Paris' | contrat=CDD | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,293 [INFO] Transformed offer | poste='Data Engineer Databricks' | societe='Datatorii' | lieu='1er Arrondissement, Paris' | contrat=None | seniorite=None | tech=8
+2026-04-19 01:30:18,294 [INFO] Transformed offer | poste='Data Scientist Internship (6 months)' | societe='Shift Technology' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,295 [INFO] Transformed offer | poste='Consultant Data H/F' | societe='LCL - Fonctions Centrales' | lieu="Villejuif, L'Haÿ-les-Roses" | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,296 [INFO] Transformed offer | poste='Data Advisory Manager' | societe='APGAR' | lieu='Neuilly-sur-Seine, Nanterre' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,298 [INFO] Transformed offer | poste='Data Analyst Alternance H/F' | societe='DSTI School of Engineering' | lieu='Nice 13e Canton, Nice' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,299 [INFO] Transformed offer | poste='Data Analyst Alternance H/F' | societe='DSTI School of Engineering' | lieu='Paris, Ile-de-France' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,300 [INFO] Transformed offer | poste='Alternance Data Engineer - Toulouse H/F' | societe='ISCOD' | lieu='Rangueuil, Toulouse' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,301 [INFO] Transformed offer | poste='Data Scientist Gen.AI (h/f) (IT)' | societe='emagine Consulting SARL' | lieu='France' | contrat=CDD | seniorite=None | tech=2
+2026-04-19 01:30:18,302 [INFO] Transformed offer | poste='Gestionnaire Master Data' | societe='Goyard' | lieu='Carcassonne, Aude' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,304 [INFO] Transformed offer | poste='Senior Azure Data Engineer H/F (CDI)' | societe='Kaino' | lieu='8ème Arrondissement, Paris' | contrat=CDI | seniorite=Senior | tech=2
+2026-04-19 01:30:18,305 [INFO] Transformed offer | poste="Data Scientist spécialisé en Traitement de l'Image H/F" | societe='Ministère des Armées' | lieu='France' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:18,306 [INFO] Transformed offer | poste='Data Analyst Aéronautique & Flight Data Monitoring F/H' | societe='AKKODIS FRANCE SAS' | lieu='Blagnac, Toulouse' | contrat=CDI | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,308 [INFO] Transformed offer | poste='Consultant Data / IA' | societe='QWANZA' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,309 [INFO] Transformed offer | poste='Data Scientist F/H' | societe='CHU DE RENNES' | lieu='Ille-et-Vilaine, Bretagne' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,310 [INFO] Transformed offer | poste='Data Scientist (H/F)' | societe='MyCommunIT' | lieu='2ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,312 [INFO] Transformed offer | poste='Data Engineer - Data Factory - Services Financiers - Nantes' | societe='Sopra Steria' | lieu='Nantes, Loire-Atlantique' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,313 [INFO] Transformed offer | poste='Ingénieur Java Big Data | Java, Python, Scala, Spark | SaaS Big Data B2B' | societe='Octopus IT' | lieu='8ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=5
+2026-04-19 01:30:18,315 [INFO] Transformed offer | poste='Agentic AI & Data Scientist' | societe='Kyndryl' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,316 [INFO] Transformed offer | poste='Alternance – Data Analyst' | societe='Paris School of Business' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,317 [INFO] Transformed offer | poste='Data Scientist (F/H) - CDI' | societe='Collective.work' | lieu='Deux-Sèvres, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,319 [INFO] Transformed offer | poste='Graduate Programme Tech – CIB ITO, Data Scientist F/H' | societe='BNP PARIBAS' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,320 [INFO] Transformed offer | poste='Senior Data Scientist H/F' | societe='Air Liquide' | lieu='France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,321 [INFO] Transformed offer | poste='Consultant.e Data Expérimenté.e - Développement Régional Lille' | societe='Sopra Steria' | lieu="Villeneuve-d'Ascq, Lille" | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,323 [INFO] Transformed offer | poste='Agentic AI & Data Scientist' | societe='Kyndryl' | lieu='Grasse, Alpes-Maritimes' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,324 [INFO] Transformed offer | poste='Consultant(e) Senior à Manager – Stratégie Data – Aix-En-Provence' | societe='Sopra Steria' | lieu='Aix-en-Provence, Bouches-du-Rhône' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,326 [INFO] Transformed offer | poste='Data Engineer F/H' | societe='CGI' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,327 [INFO] Transformed offer | poste='ALTERNANCE - Data Scientist (H/F)' | societe='Hermes' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Alternance | tech=2
+2026-04-19 01:30:18,329 [INFO] Transformed offer | poste='Data Scientist - AI Marketplace Platform' | societe='Labs' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,330 [INFO] Transformed offer | poste='Data Scientist - AI Marketplace Platform' | societe='Labs' | lieu='Bordeaux, Gironde' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,331 [INFO] Transformed offer | poste='DATA Scientist H/F' | societe='Smile Group' | lieu='Villeurbanne, Lyon' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,333 [INFO] Transformed offer | poste='Data Science Manager' | societe='Teads' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,334 [INFO] Transformed offer | poste='Data Engineer Databricks' | societe='KOMEET TECHNOLOGIES' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,335 [INFO] Transformed offer | poste='Data Engineer – Plateforme Data Engineering (H/F)' | societe='ALTEN' | lieu='Boulogne-Billancourt, Hauts-de-Seine' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,337 [INFO] Transformed offer | poste='Analytics Engineer' | societe='Free-Work' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,338 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Crédit Agricole CIB' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,340 [INFO] Transformed offer | poste='Applied AI Data Scientist (CEO Office)' | societe='TheSoul Group' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,341 [INFO] Transformed offer | poste='Chef de projet BI et Big Data (F/H)' | societe='NOVENCIA Groupe' | lieu='Lyon, Rhône' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,342 [INFO] Transformed offer | poste='Data Scientist (H/F) | Stage' | societe='DataScientest' | lieu='La Défense, Courbevoie' | contrat=Stage | seniorite=Stage | tech=3
+2026-04-19 01:30:18,343 [INFO] Transformed offer | poste='Senior Data Analyst & Analytics Engineer - Franchise (H/F)' | societe='Decathlon Digital FR' | lieu='France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,344 [INFO] Transformed offer | poste='Consultant Senior - Data IA Product Owner à Data Scientist H/F' | societe='Square Management' | lieu='Neuilly-sur-Seine, Nanterre' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,346 [INFO] Transformed offer | poste='Data Scientist F/H' | societe='Forums Talents Handicap' | lieu='Rhône, Auvergne-Rhône-Alpes' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,347 [INFO] Transformed offer | poste='Data Analytics Engineering H/F' | societe='LCL' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,348 [INFO] Transformed offer | poste='Data analyst / Analytics engineer - CDI - Paris (H/F)' | societe="L'atelier des Chefs" | lieu='16ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,350 [INFO] Transformed offer | poste="Data Analyst / Analytics Engineer - Stage de fin d'études" | societe='Recept AI' | lieu='2ème Arrondissement, Paris' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:18,351 [INFO] Transformed offer | poste='Data Scientist confirmé F/H' | societe='SARL PROXIEL' | lieu='Allauch, Marseille' | contrat=CDI | seniorite=Alternance | tech=2
+2026-04-19 01:30:18,353 [INFO] Transformed offer | poste='Alternance - Agro Data Scientist F/H' | societe='Groupe Roullier' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,354 [INFO] Transformed offer | poste='Consultant BI / Data Analyst (H/F)' | societe='Darwin Partners' | lieu='France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,356 [INFO] Transformed offer | poste='Data Scientist F/H' | societe='Oxalys Technologies' | lieu='Marseille, Bouches-du-Rhône' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,357 [INFO] Transformed offer | poste='Product Owner Data (Senior)' | societe='ALTEN' | lieu='Boulogne-Billancourt, Hauts-de-Seine' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,358 [INFO] Transformed offer | poste='Intern, Data Science' | societe='Rakuten' | lieu='France' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:18,360 [INFO] Transformed offer | poste='Data Engineer - Data Factory - Services Financiers - Nantes' | societe='Forums Talents Handicap' | lieu='Loire-Atlantique, Pays de la Loire' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,361 [INFO] Transformed offer | poste='Data Analyst F/H' | societe='ecosystem' | lieu='La Défense, Courbevoie' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,362 [INFO] Transformed offer | poste='Data Analyst Junior F/H - Stage' | societe='24S' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:18,364 [INFO] Transformed offer | poste='Alternance - Analyste des Risques Opérationnels & Data H/F' | societe='BNP PARIBAS' | lieu='Pantin, Bobigny' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,365 [INFO] Transformed offer | poste='Data Engineer Databricks' | societe='Hexateam' | lieu='8ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,366 [INFO] Transformed offer | poste='Apprenti(e) Data Analyst Marketing F/H' | societe='BPM GROUP' | lieu='Orvault, Nantes' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,368 [INFO] Transformed offer | poste='Apprenti(e) Data Analyst Marketing F/H' | societe='BPM GROUP' | lieu='Ingré, Orléans' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,369 [INFO] Transformed offer | poste='Stage - ESG Reporting & Data Analyst H/F' | societe='BNP PARIBAS' | lieu='Puteaux, Nanterre' | contrat=CDD | seniorite=Stage | tech=0
+2026-04-19 01:30:18,370 [INFO] Transformed offer | poste='Data Engineer F/H' | societe='SpikeeLabs' | lieu='Nice, Alpes-Maritimes' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,371 [INFO] Transformed offer | poste='Data Scientist FREELANCE H/F' | societe='Devoteam Innovative Tech France' | lieu='Marseille, Bouches-du-Rhône' | contrat=Freelance | seniorite=None | tech=0
+2026-04-19 01:30:18,373 [INFO] Transformed offer | poste='SENIOR DATA SCIENTIST F/H' | societe='Cdiscount' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,374 [INFO] Transformed offer | poste='Data Scientist & Référent IA' | societe='Crédit Agricole CIB' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,375 [INFO] Transformed offer | poste='ALTERNANCE - Ingénieure / Ingénieur en Data Science' | societe='ArianeGroup' | lieu='Saint-Médard-en-Jalles, Bordeaux' | contrat=Alternance | seniorite=Alternance | tech=2
+2026-04-19 01:30:18,376 [INFO] Transformed offer | poste='Business Data Analyst Intern' | societe='Back Market' | lieu='Paris, Ile-de-France' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,378 [INFO] Transformed offer | poste='Practice Leader Data' | societe='5 Degrés' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,379 [INFO] Transformed offer | poste='Data Scientist en ALTERNANCE H/F' | societe='Groupama' | lieu='Lyon, Rhône' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,380 [INFO] Transformed offer | poste='Cybersecurity Expert – Data Protection' | societe='HCLTech' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,381 [INFO] Transformed offer | poste='Chef de projet Data / Data Engineer (H/F)' | societe='Daher Aerospace' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,383 [INFO] Transformed offer | poste='Alternance – Data scientist F/H' | societe='Forums Talents Handicap' | lieu='Rhône, Auvergne-Rhône-Alpes' | contrat=CDI | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,384 [INFO] Transformed offer | poste='Data Assets Manager H/F' | societe='Safran' | lieu='Massy, Palaiseau' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,385 [INFO] Transformed offer | poste='Senior Data Engineer' | societe='Bureau des Talents' | lieu='8ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,386 [INFO] Transformed offer | poste='Data Engineer - H/F' | societe='agap2IT' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,388 [INFO] Transformed offer | poste='Data Engineer (H/F)' | societe='fortil' | lieu='17ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,389 [INFO] Transformed offer | poste='Consultant Data H/F' | societe='THALES' | lieu='Vélizy-Villacoublay, Versailles' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,390 [INFO] Transformed offer | poste='Consultant Data H/F' | societe='THALES' | lieu='Aix-en-Provence, Bouches-du-Rhône' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,392 [INFO] Transformed offer | poste='Consultant Data H/F' | societe='Thales' | lieu='Lyon, Rhône' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,393 [INFO] Transformed offer | poste='Data Controleur Comptable H/F' | societe="CERFRANCE Côtes d'Armor" | lieu='Dinan-Est, Dinan' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:18,394 [INFO] Transformed offer | poste='Director Data Strategy & Governance - PARIS' | societe='Capgemini Invent' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,396 [INFO] Transformed offer | poste='Data Scientist F/H' | societe='EDF' | lieu='Lyon, Rhône' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,397 [INFO] Transformed offer | poste='Ingénieur Data HR ACCES' | societe='Ministère des Armées' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:18,398 [INFO] Transformed offer | poste='Data Scientist Python - Senior - Lyon' | societe='Temeritati' | lieu='France' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,400 [INFO] Transformed offer | poste='Senior Data Scientist - AI Core' | societe='Back Market' | lieu='18ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,401 [INFO] Transformed offer | poste='Senior Data Scientist - AI Core' | societe='Back Market' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,402 [INFO] Transformed offer | poste='Data Analytics Enigneer (IT)' | societe='Phaidon London- Glocomms' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:18,404 [INFO] Transformed offer | poste='Manager Data Science & AI - Consulting' | societe='Dataworks' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,405 [INFO] Transformed offer | poste=' Data Scientist Confirmé – Computer Vision' | societe='Free-Work' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,406 [INFO] Transformed offer | poste='Senior Data Scientist / AI Engineer H/F' | societe='Bureau des Talents' | lieu='Puteaux, Nanterre' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,407 [INFO] Transformed offer | poste='Alternant Data Analyst' | societe='Product Marketing' | lieu='Seine-Saint-Denis, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,409 [INFO] Transformed offer | poste='Data Scientist (H/F)' | societe='GoMind' | lieu='11ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,410 [INFO] Transformed offer | poste='Senior Data Scientist - F/M' | societe='Genesis' | lieu='Nanterre, Hauts-de-Seine' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,412 [INFO] Transformed offer | poste='Data Scientist Confirmé(e) F/H' | societe='CGI' | lieu='France' | contrat=None | seniorite=Confirmé | tech=0
+2026-04-19 01:30:18,413 [INFO] Transformed offer | poste='CDD - HR Data Analyst (HF)' | societe='Hermes' | lieu='France' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:18,414 [INFO] Transformed offer | poste='Alternant Data Analyst' | societe='Valeo' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,416 [INFO] Transformed offer | poste='Data Consultant H/F' | societe='Singulier' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,417 [INFO] Transformed offer | poste='Business Owner de la Tribu Data-IA Performance Entreprise - Lead Data H/F' | societe='MAIF' | lieu='Deux-Sèvres, Nouvelle-Aquitaine' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,418 [INFO] Transformed offer | poste='Data Ingenieur (e) F/H' | societe='EDF' | lieu='Palaiseau, Essonne' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,419 [INFO] Transformed offer | poste=' Azure Platform Engineer – Data & Analytics Platform' | societe='Gentis Recruitment SAS' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,421 [INFO] Transformed offer | poste='Data Engineer (H/F)' | societe='Ippon Technologies' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,421 [INFO] Transformed offer | poste='Data Engineer H/F' | societe='Cabinet EKINOX' | lieu='Nord, Hauts-De-France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,423 [INFO] Transformed offer | poste='Data Engineer (F/M)' | societe='Neovoxia' | lieu='9ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,424 [INFO] Transformed offer | poste='Machine Learning Engineer H/F' | societe='NEXTON' | lieu='Bordeaux, Gironde' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,425 [INFO] Transformed offer | poste='Stage - Data Scientist H/F' | societe='JCDecaux' | lieu='Neuilly-sur-Seine, Nanterre' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,426 [INFO] Transformed offer | poste='Data scientist - Senior F/H' | societe='CTS Corporate' | lieu='Nantes, Loire-Atlantique' | contrat=CDI | seniorite=Alternance | tech=3
+2026-04-19 01:30:18,428 [INFO] Transformed offer | poste='Data Business Analyst' | societe='DXC Technology' | lieu='France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,430 [INFO] Transformed offer | poste='Data Analyst H/F' | societe='ESG' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,431 [INFO] Transformed offer | poste='Data analytics backend engineer go / clickhouse (h/f) - h/f' | societe='WALLIX' | lieu='8ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,433 [INFO] Transformed offer | poste='Data analytics backend engineer go / clickhouse (h/f) - h/f' | societe='WALLIX' | lieu='Ille-et-Vilaine, Bretagne' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,434 [INFO] Transformed offer | poste='Data Platform Engineer H/F' | societe='Step Up' | lieu='Talence, Bordeaux' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,435 [INFO] Transformed offer | poste='Data & Analytics Engineer (SQL / DBT) (IT)' | societe='Nicholson SAS' | lieu='Rhône, Auvergne-Rhône-Alpes' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:18,437 [INFO] Transformed offer | poste='Data Scientist Intern (H/F)' | societe='Datafolio' | lieu='Nord, Hauts-De-France' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,438 [INFO] Transformed offer | poste='Ingénieur DATA' | societe='Eleveight Group' | lieu='France' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,440 [INFO] Transformed offer | poste='Data officer - data factory F/H' | societe='EURO-INFORMATION DEVELOPPEMENTS' | lieu='Nantes, Loire-Atlantique' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:18,441 [INFO] Transformed offer | poste='Data officer - data factory F/H' | societe='EURO-INFORMATION DEVELOPPEMENTS' | lieu="Villeneuve-d'Ascq, Lille" | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:18,443 [INFO] Transformed offer | poste='Lead Data Engineer - HealthTech / IA' | societe='LES COLETTES SOURCING' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=3
+2026-04-19 01:30:18,444 [INFO] Transformed offer | poste='Alternant Data Analyst (F/H)' | societe='Carrefour France' | lieu='Essonne, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,446 [INFO] Transformed offer | poste='DATA ANALYST (H/F)' | societe='Lobellia Conseil' | lieu='Montrouge, Antony' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,447 [INFO] Transformed offer | poste='Alternance - Data Scientist H/F' | societe='Sup de Vinci Rennes' | lieu='Betton, Rennes' | contrat=Alternance | seniorite=Alternance | tech=2
+2026-04-19 01:30:18,448 [INFO] Transformed offer | poste='Data Scientist LLM / AI H/F' | societe='Expleo' | lieu='Montigny-le-Bretonneux, Versailles' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,449 [INFO] Transformed offer | poste='Consultant Data Analyst - Niji H/F' | societe='Niji' | lieu='Betton, Rennes' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,451 [INFO] Transformed offer | poste='Ingénieur Big Data / Vertica (H/F)' | societe='CITECH' | lieu='Lille, Nord' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,452 [INFO] Transformed offer | poste='Ingénieur Big Data / Vertica (H/F)' | societe='CITECH' | lieu='Strasbourg, Strasbourg-Ville' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,453 [INFO] Transformed offer | poste='Data Business Analyst Freelance H/F' | societe=None | lieu='Vélizy-Villacoublay, Versailles' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:18,454 [INFO] Transformed offer | poste='Senior Data Analyst (EU Timezones Only)' | societe='Fabulous' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,456 [INFO] Transformed offer | poste='Data Engineer (F/H)' | societe='Aubay' | lieu='Deux-Sèvres, Nouvelle-Aquitaine' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,457 [INFO] Transformed offer | poste='DATA TESTING ENGINEER' | societe='Olenick Global S.A' | lieu='France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,459 [INFO] Transformed offer | poste='Data Scientist Senior - CDD - Freelance' | societe='Collective.work' | lieu='8ème Arrondissement, Paris' | contrat=CDD | seniorite=Senior | tech=1
+2026-04-19 01:30:18,460 [INFO] Transformed offer | poste='Machine Learning Engineer' | societe='Sia' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,461 [INFO] Transformed offer | poste='Ingénieur Big Data en alternance (All gender)' | societe='Alfa Laval Spiral' | lieu='Chalon-sur-Saône, Saône-et-Loire' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,462 [INFO] Transformed offer | poste='246242/Data Scientist/IA Gen/Machine Learning / Deep Learning - Nantes (IT)' | societe='WorldWide People' | lieu='Nantes, Loire-Atlantique' | contrat=CDD | seniorite=None | tech=2
+2026-04-19 01:30:18,464 [INFO] Transformed offer | poste='Data Scientist Machine Learning / Deep Learning Aix en Provence/l (IT) / Freelance' | societe='Free-Work' | lieu='Aix-en-Provence, Bouches-du-Rhône' | contrat=Freelance | seniorite=None | tech=5
+2026-04-19 01:30:18,465 [INFO] Transformed offer | poste='Data Scientist Machine Learning / Deep Learning Aix en Provence/l (IT) / Freelance' | societe='WorldWide People' | lieu='Aix en Provence Sud-Ouest, Aix-en-Provence' | contrat=CDD | seniorite=None | tech=5
+2026-04-19 01:30:18,466 [INFO] Transformed offer | poste='Consultant Data Analyst - Niji H/F' | societe='Niji' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,467 [INFO] Transformed offer | poste='Alternance Data Analyst - Croix (F/H)' | societe='ISCOD' | lieu='Roubaix-Ouest, Lille' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,468 [INFO] Transformed offer | poste='Data Centre Project Manager' | societe='Insight Global' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,470 [INFO] Transformed offer | poste='Data Scientist H/F - CDI' | societe='Plebicom' | lieu='Ecully, Lyon' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,472 [INFO] Transformed offer | poste='Accelerator Digital Lead Data Scientist (Lyon)' | societe='Sanofi' | lieu='Lyon, Rhône' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,473 [INFO] Transformed offer | poste='Data Manager H/F' | societe='BME FRANCE' | lieu='Boulogne-Billancourt, Hauts-de-Seine' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,474 [INFO] Transformed offer | poste='Data Engineer / Data Ops (H/F)' | societe='QODEXIA' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:18,476 [INFO] Transformed offer | poste='DATA ANALYST (F/H)' | societe='Expectra' | lieu='13ème Arrondissement, Paris' | contrat=CDD | seniorite=Senior | tech=0
+2026-04-19 01:30:18,477 [INFO] Transformed offer | poste='DATA ENGINEER F/H' | societe='AKKODIS FRANCE SAS' | lieu='Bordeaux, Gironde' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,478 [INFO] Transformed offer | poste='Data QA / Data Tester / Ingénieur Qualité Data H/F' | societe='Forums Talents Handicap' | lieu='Loire-Atlantique, Pays de la Loire' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,480 [INFO] Transformed offer | poste='Data Analyst - BTP (Alternance)' | societe='Aivancity Paris' | lieu="Villejuif, L'Haÿ-les-Roses" | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,481 [INFO] Transformed offer | poste='Senior Data Engineer | Python - Spark | Spécialiste en Big Data | Paris ou Remote Partiel' | societe='Octopus IT' | lieu='8ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,482 [INFO] Transformed offer | poste='Manager, Big Data Architecture – Professional Services (DWH, Data Engineering & Migrations)' | societe='Databricks' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,484 [INFO] Transformed offer | poste='Senior Data Engineer' | societe='Yubo' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,485 [INFO] Transformed offer | poste='Data Engineer H/F' | societe='data-major' | lieu='Ecully, Lyon' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,486 [INFO] Transformed offer | poste='Senior Data engineer' | societe='Cafeyn' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,488 [INFO] Transformed offer | poste='Data manager Réseau H/F (CDI)' | societe='MICHAEL PAGE' | lieu='Ille-et-Vilaine, Bretagne' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,489 [INFO] Transformed offer | poste='Data Engineering Manager - Data Infrastructure' | societe='Contentsquare' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,490 [INFO] Transformed offer | poste='Lead Data Scientist H/F' | societe='MGEN' | lieu='3ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,492 [INFO] Transformed offer | poste='DATA Engineer - Environnement Databricks H/F' | societe='ACSSI' | lieu="Villeneuve-d'Ascq, Lille" | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,494 [INFO] Transformed offer | poste='Data Engineer | Python - Azure | IA & Machine Learning | Paris ou Remote Partiel' | societe='OCTOPUS IT' | lieu='8ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=3
+2026-04-19 01:30:18,495 [INFO] Transformed offer | poste='Alternance Data Engineer - Toulouse (F/H)' | societe='ISCOD ALTERNANCE' | lieu='Toulouse, Haute-Garonne' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,496 [INFO] Transformed offer | poste='Data Analyste Senior - H/F' | societe='Talan' | lieu='Nantes, Loire-Atlantique' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,498 [INFO] Transformed offer | poste='Data Engineer (H/F)' | societe='Safran.AI' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,499 [INFO] Transformed offer | poste='Consultant – Data Analyst' | societe='Sia' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,501 [INFO] Transformed offer | poste='Référent des données (data engineer/Data steward)' | societe='Plateforme des Données de Santé u002F Health Data Hub' | lieu='15ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,502 [INFO] Transformed offer | poste='Forward Deployed Data Scientist, AI Deployment' | societe='Braze' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,503 [INFO] Transformed offer | poste='Data Engineer - Foundational' | societe='Harmattan AI' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,504 [INFO] Transformed offer | poste='Data Engineer F/H' | societe='AKKODIS FRANCE SAS' | lieu='Niort, Deux-Sèvres' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,506 [INFO] Transformed offer | poste='Lead Data Engineer - CDI Paris - Theodo Data' | societe='Theodo' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:18,507 [INFO] Transformed offer | poste='Data engineer H/F' | societe='MP Data' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,508 [INFO] Transformed offer | poste='Senior Data Scientist (EU Timezones Only)' | societe='Fabulous' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,509 [INFO] Transformed offer | poste='Alternance Data Analyst - Croix H/F' | societe='ISCOD' | lieu='Roubaix-Ouest, Lille' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,510 [INFO] Transformed offer | poste='Lead Data Scientist H/F' | societe='MGEN' | lieu='France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,512 [INFO] Transformed offer | poste='Data Engineer F/H' | societe='MP DATA' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,513 [INFO] Transformed offer | poste='Data engineer [alternance]' | societe='Scal-e' | lieu='1er Arrondissement, Paris' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,515 [INFO] Transformed offer | poste='Cloud Data Engineer AWS F/H' | societe='VIVERIS' | lieu='Grenoble, Isère' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,516 [INFO] Transformed offer | poste='DATA ANALYST (F/H)' | societe='Expectra' | lieu='Toulouse 14e Canton, Toulouse' | contrat=CDD | seniorite=Senior | tech=1
+2026-04-19 01:30:18,517 [INFO] Transformed offer | poste='Data Architect' | societe='La Javaness' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,518 [INFO] Transformed offer | poste='Accelerator Digital Lead Data Scientist (Lyon)' | societe='Sanofi Group' | lieu='Lyon, Rhône' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,520 [INFO] Transformed offer | poste='Data Engineer H/F' | societe='KLANIK' | lieu='1er-Arrondissement, Lyon' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:18,521 [INFO] Transformed offer | poste='Data Analyst en Alternance - Paris' | societe='ESG' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,522 [INFO] Transformed offer | poste='Data Engineer Digital - Prestation - Freelance' | societe='Collective.work' | lieu='Deux-Sèvres, Nouvelle-Aquitaine' | contrat=CDD | seniorite=None | tech=2
+2026-04-19 01:30:18,524 [INFO] Transformed offer | poste='Data Engineer (F/H)' | societe='Ippon Technologies' | lieu='Lille, Nord' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:18,525 [INFO] Transformed offer | poste='Data Engineer F/H' | societe='RANDSTAD DIGITAL FRANCE' | lieu='Grasse, Alpes-Maritimes' | contrat=CDI | seniorite=Junior | tech=0
+2026-04-19 01:30:18,527 [INFO] Transformed offer | poste='Data Engineer F/H' | societe='Business et Decision' | lieu='Loire-Atlantique, Pays de la Loire' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:18,528 [INFO] Transformed offer | poste='DATA ANALYST F/H' | societe='Expectra' | lieu='Blagnac, Toulouse' | contrat=CDD | seniorite=Senior | tech=1
+2026-04-19 01:30:18,529 [INFO] Transformed offer | poste='Senior Data engineer (H/F/N)' | societe='Believe' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,531 [INFO] Transformed offer | poste='Data & Cloud Engineer (H/F)' | societe='Fifty-Five' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,532 [INFO] Transformed offer | poste='Talent Acquisition Specialist Data en Alternance H/F' | societe='Capgemini' | lieu='Pont-Rousseau, Rezé' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,533 [INFO] Transformed offer | poste='Alternance Data Scientist - IA Engineer - Paris H/F' | societe='ISCOD' | lieu='Paris, Ile-de-France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,535 [INFO] Transformed offer | poste='Alternance Data Scientist/ IA Engineer - Paris H/F' | societe='ISCOD' | lieu='2ème Arrondissement, Paris' | contrat=CDD | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,536 [INFO] Transformed offer | poste='Alternance Data Scientist/ IA Engineer - Paris (F/H)' | societe='ISCOD' | lieu='2ème Arrondissement, Paris' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,538 [INFO] Transformed offer | poste='Ingénieur DevOps - Plateforme Data H/F' | societe='ANFSI' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,539 [INFO] Transformed offer | poste='Data Engineer Alternance H/F' | societe='DSTI School of Engineering' | lieu='Fontaine, Grenoble' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,540 [INFO] Transformed offer | poste='Alternance : Alternance - Data Scientist F/H' | societe='Bouygues' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,542 [INFO] Transformed offer | poste='Calibration Data Infrastructure Engineer H/F (CDI)' | societe='Les Colettes Sourcing' | lieu='15ème Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,543 [INFO] Transformed offer | poste='Manager data - ia h/f (CDI)' | societe='W HUNT' | lieu='1er Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,544 [INFO] Transformed offer | poste='Consultant Data - Senior H/F' | societe='Assystem' | lieu='La Défense, Courbevoie' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,545 [INFO] Transformed offer | poste='Consultant Data Gouvernance H/F' | societe='Assystem' | lieu='Montrouge, Antony' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,546 [INFO] Transformed offer | poste='Data Analyst Alternance' | societe='SCOR' | lieu='Ile-de-France, France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,548 [INFO] Transformed offer | poste='Assistant Data Scientist H/F' | societe='Crédit Agricole CIB' | lieu='Montrouge, Antony' | contrat=CDD | seniorite=Stage | tech=1
+2026-04-19 01:30:18,549 [INFO] Transformed offer | poste='Data Analyst / BI' | societe='GoMind' | lieu='11ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,551 [INFO] Transformed offer | poste='Alternance – Data scientist F/H' | societe='Framatome' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,552 [INFO] Transformed offer | poste='Data Analyst GCP' | societe='Proxiad' | lieu='Aix en Provence Sud-Ouest, Aix-en-Provence' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,553 [INFO] Transformed offer | poste='Data Analyst Sénior' | societe='Proxiad' | lieu='Aix en Provence Sud-Ouest, Aix-en-Provence' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,555 [INFO] Transformed offer | poste='ALTERNANCE - Data Analyst' | societe='Spirica' | lieu='Paris, Ile-de-France' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,556 [INFO] Transformed offer | poste='Data Analyst ESG' | societe='FM LOGISTIC' | lieu='France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,558 [INFO] Transformed offer | poste='Business data analyst - h/f' | societe='MAYOLY' | lieu='Rueil-Malmaison, Nanterre' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,559 [INFO] Transformed offer | poste='Data Scientist (Modélisation statistique, reinforcement learning)-(h/f) (IT) / Freelance' | societe='Free-Work' | lieu='Roissy-en-Brie, Torcy' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,560 [INFO] Transformed offer | poste='Data Scientist (Modélisation statistique, reinforcement learning)-(h/f) (IT) / Freelance' | societe='emagine Consulting SARL' | lieu="Charles-de-Gaulles Aéroport, Val-d'Oise" | contrat=CDD | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,562 [INFO] Transformed offer | poste='Data analyst - CDI' | societe='Collective.work' | lieu='Massy, Palaiseau' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,563 [INFO] Transformed offer | poste='Data Engineer (H/F)' | societe='Ippon Technologies' | lieu='Lyon, Rhône' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,565 [INFO] Transformed offer | poste='Data Scientist - NLP - Automobile' | societe='Mp Data' | lieu='Saint-Cloud, Boulogne-Billancourt' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:18,566 [INFO] Transformed offer | poste='Data Analyst / Scientist Senior - Lutte contre la fraude - Freelance' | societe='Collective.work' | lieu='Aix en Provence Sud-Ouest, Aix-en-Provence' | contrat=CDD | seniorite=Senior | tech=1
+2026-04-19 01:30:18,567 [INFO] Transformed offer | poste='Data Analyst & Performance' | societe='RICHEL Group' | lieu='Orgon, Arles' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,569 [INFO] Transformed offer | poste='Data Analyst & Performance' | societe='RICHEL Group' | lieu='Orgon, Arles' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,570 [INFO] Transformed offer | poste='Data Scientist - NLP/LLM' | societe='Mp Data' | lieu='Saint-Cloud, Boulogne-Billancourt' | contrat=None | seniorite=Senior | tech=4
+2026-04-19 01:30:18,572 [INFO] Transformed offer | poste='Senior Machine Learning Engineer - Freelance' | societe='Collective.work' | lieu='8ème Arrondissement, Paris' | contrat=CDD | seniorite=Senior | tech=2
+2026-04-19 01:30:18,573 [INFO] Transformed offer | poste='Data Analyst Confirmé' | societe='Bial-X' | lieu='Limonest, Lyon' | contrat=None | seniorite=Confirmé | tech=1
+2026-04-19 01:30:18,574 [INFO] Transformed offer | poste='Responsable data H/F' | societe=None | lieu='France' | contrat=CDI | seniorite=Senior | tech=2
+2026-04-19 01:30:18,576 [INFO] Transformed offer | poste='Architecte Décisionnel Data' | societe='Temeritati' | lieu='Deux-Sèvres, Nouvelle-Aquitaine' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,577 [INFO] Transformed offer | poste='Data Engineer Digital - Prestation - Freelance' | societe='Collective.work' | lieu='Deux-Sèvres, Nouvelle-Aquitaine' | contrat=CDD | seniorite=None | tech=2
+2026-04-19 01:30:18,578 [INFO] Transformed offer | poste='Data Scientist (F/H) - ALTERNANCE' | societe='Macif' | lieu='Sorigny, Tours' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,579 [INFO] Transformed offer | poste='Architecte Data Expérimenté H/F' | societe='LCL' | lieu="Villejuif, L'Haÿ-les-Roses" | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:18,581 [INFO] Transformed offer | poste='Ingénieur Data Analyst - Business Analyst Data H/F' | societe='ALTEN' | lieu='Vitrolles, Istres' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,582 [INFO] Transformed offer | poste='ML Engineer / Data Scientist F/H' | societe='Les Artisans Recrutement' | lieu='Tourcoing, Lille' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,583 [INFO] Transformed offer | poste='Data Engineer-Scientist AWS (IT) / Freelance' | societe='INSYCO' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=None | tech=2
+2026-04-19 01:30:18,585 [INFO] Transformed offer | poste='Data Engineer GCP (H/F)' | societe='Meritis' | lieu='Aix en Provence Sud-Ouest, Aix-en-Provence' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,586 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Fed Group' | lieu='France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,587 [INFO] Transformed offer | poste='Data scientist Senior (IT)' | societe='VISIAN' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,589 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Free-Work' | lieu='France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,590 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='FED SAS' | lieu='Rives, Grenoble' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,591 [INFO] Transformed offer | poste='Data scientist H/F' | societe='Cureety' | lieu='3ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,592 [INFO] Transformed offer | poste='Data Scientist - Senior Consultant' | societe='Jakala' | lieu='11ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,594 [INFO] Transformed offer | poste='Consultant·e Expert·e Analytics/Data Engineer - dbt Snowflake F/H' | societe='ActinVision' | lieu='Ile-de-France, France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,595 [INFO] Transformed offer | poste='Talent Acquisition Specialist Data en alternance' | societe='Forums Talents Handicap' | lieu='Loire-Atlantique, Pays de la Loire' | contrat=CDD | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,597 [INFO] Transformed offer | poste='Data Scientist 4/11' | societe='Ministère des armées. Liberté, égalité, fraternité.' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,598 [INFO] Transformed offer | poste='Data Scientist & Référent IA' | societe='Crédit Agricole CIB' | lieu='Saint-Quentin-en-Yvelines, Versailles' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,599 [INFO] Transformed offer | poste='Data Scientist - (H/F)' | societe='DAVRICOURT' | lieu='Seine-Maritime, Normandie' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:18,600 [INFO] Transformed offer | poste='Senior Data Engineer' | societe='The Fork' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,602 [INFO] Transformed offer | poste='Senior Data Engineer' | societe='TheFork' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,603 [INFO] Transformed offer | poste='Consultant Data Confirmé H/F' | societe='Seenovate' | lieu='Rangueuil, Toulouse' | contrat=None | seniorite=Confirmé | tech=3
+2026-04-19 01:30:18,605 [INFO] Transformed offer | poste='Architecte Fonctionnel Data H/F' | societe='Groupe Alliance' | lieu='Coulaines, Le Mans' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,606 [INFO] Transformed offer | poste='Data Platform Engineer (F/H)' | societe='STEP UP' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,607 [INFO] Transformed offer | poste='Stagiaire Data Scientist / IA' | societe='Hiboo Systems SAS' | lieu='12ème Arrondissement, Paris' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,609 [INFO] Transformed offer | poste='Data Scientist F/H' | societe='Capgemini Engineering France' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,610 [INFO] Transformed offer | poste='Data Engineer - BTP (Alternance)' | societe='Aivancity Paris' | lieu="Villejuif, L'Haÿ-les-Roses" | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,611 [INFO] Transformed offer | poste='Alternance : Data Scientist H/F' | societe='Radio France' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,612 [INFO] Transformed offer | poste='Data scientist H/F' | societe='AFNOR Groupe' | lieu='18ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,614 [INFO] Transformed offer | poste='Data Scientist - F/H' | societe='DAVRICOURT' | lieu='Bolbec, Le Havre' | contrat=CDI | seniorite=None | tech=3
+2026-04-19 01:30:18,615 [INFO] Transformed offer | poste='Data Engineer (F/H)' | societe='Ippon Technologies' | lieu='Bordeaux, Gironde' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,616 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Fed Group' | lieu='Rives, Grenoble' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,618 [INFO] Transformed offer | poste='Data Scientist (H/F)' | societe='W HUB' | lieu='Nord, Hauts-De-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,619 [INFO] Transformed offer | poste='Data Scientist (H/F)' | societe='QODEXIA' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,620 [INFO] Transformed offer | poste='Data Scientist - H/F' | societe='DAVRICOURT' | lieu='Seine-Maritime, Normandie' | contrat=CDD | seniorite=None | tech=3
+2026-04-19 01:30:18,621 [INFO] Transformed offer | poste='Lead Data Engineer (H/F)' | societe='Ippon Technologies' | lieu='Ile-de-France, France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,623 [INFO] Transformed offer | poste='Data Analyst Apprentice - Sept 2026' | societe='Pernod Ricard' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,624 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Crédit Agricole CIB' | lieu='France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,626 [INFO] Transformed offer | poste='DATA ANALYST (F/H)' | societe='Expectra' | lieu='Toulouse 14e Canton, Toulouse' | contrat=CDD | seniorite=None | tech=1
+2026-04-19 01:30:18,627 [INFO] Transformed offer | poste='Alternant Data Analyst H/F' | societe='GEODIS' | lieu='Levallois-Perret, Nanterre' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,628 [INFO] Transformed offer | poste='Stage : Stage - Data scientist' | societe='Axa En France' | lieu='France' | contrat=CDD | seniorite=Stage | tech=1
+2026-04-19 01:30:18,629 [INFO] Transformed offer | poste='data scientist F/H' | societe='CARREVOLUTIS' | lieu='Lyon, Rhône' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:18,631 [INFO] Transformed offer | poste='Senior Data Engineer (H/F)' | societe='Allphins' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,632 [INFO] Transformed offer | poste='Data Architect F/H (CDI)' | societe='MICHAEL PAGE' | lieu='Nord, Hauts-De-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,633 [INFO] Transformed offer | poste='Data Manager H/F (CDI)' | societe='WNSEARCH MONTPELLIER INDUSTRIE' | lieu='Ille-et-Vilaine, Bretagne' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,635 [INFO] Transformed offer | poste='Data Scientist H/F' | societe='Crédit Agricole CIB' | lieu='Montrouge, Antony' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,636 [INFO] Transformed offer | poste='Architecte Data F/H (CDI)' | societe='MICHAEL PAGE' | lieu='Allauch, Marseille' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,637 [INFO] Transformed offer | poste='Dpo - juriste data / rgpd h/f (CDI)' | societe='MICHAEL PAGE' | lieu='1er Arrondissement, Paris' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,638 [INFO] Transformed offer | poste='Ingénieur data center / cloud h/f (CDI)' | societe='MICHAEL PAGE' | lieu='Rueil-Malmaison, Nanterre' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,639 [INFO] Transformed offer | poste='Architecte Data H/F (CDI)' | societe='MICHAEL PAGE' | lieu='La Défense, Courbevoie' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,640 [INFO] Transformed offer | poste='Data Engineer (F/H)' | societe='Axeria iard' | lieu='Lyon, Rhône' | contrat=None | seniorite=None | tech=2
+2026-04-19 01:30:18,642 [INFO] Transformed offer | poste='Data Scientist H/F - Nantes' | societe='AVISIA' | lieu='Loire-Atlantique, Pays de la Loire' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,643 [INFO] Transformed offer | poste='Head of Data (FR)' | societe='WeWard' | lieu='2ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,645 [INFO] Transformed offer | poste='Data Scientist F/H' | societe='CARREVOLUTIS' | lieu='Marseille, Bouches-du-Rhône' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,646 [INFO] Transformed offer | poste='Architecte Data H/F (CDI)' | societe='MICHAEL PAGE' | lieu='Semur-en-Auxois, Montbard' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,647 [INFO] Transformed offer | poste='Ingénieur Data H/F (CDI)' | societe='MICHAEL PAGE' | lieu='Cambrai-Ouest, Cambrai' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,648 [INFO] Transformed offer | poste='Stage Data Scientist H/F' | societe='Fives Groupe' | lieu='Chasse-sur-Rhône, Vienne' | contrat=Stage | seniorite=Stage | tech=0
+2026-04-19 01:30:18,649 [INFO] Transformed offer | poste='Data Engineer F/H' | societe='Onepoint Sas' | lieu='Bordeaux, Gironde' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,651 [INFO] Transformed offer | poste='Apprenti Data scientist H/F' | societe='CNC' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,652 [INFO] Transformed offer | poste='Data engineer F/H' | societe='Docaposte' | lieu='Lyon, Rhône' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,653 [INFO] Transformed offer | poste='Ingénieur électricité data center (f/h) (CDI)' | societe='MICHAEL PAGE' | lieu='La Défense, Courbevoie' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,654 [INFO] Transformed offer | poste='ALTERNANCE - Data Analyst F/H' | societe='Conduent' | lieu='Valence, Drôme' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,656 [INFO] Transformed offer | poste='Big Data Engineer - Services Financiers - Ile de France' | societe='Sopra Steria' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,657 [INFO] Transformed offer | poste='Data Engineer (F/H)' | societe='NOVENCIA Groupe' | lieu='Lyon, Rhône' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,658 [INFO] Transformed offer | poste='Senior Data scientist (IA/NLP)' | societe='Finfrog' | lieu='8ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,660 [INFO] Transformed offer | poste='Data Analyst - Data Factory - Services Financiers - Nantes' | societe='Sopra Steria' | lieu='Nantes, Loire-Atlantique' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,661 [INFO] Transformed offer | poste='Senior Data Analytics Engineer "Distribution & Hotel Services" F/H/X' | societe='AccorCorpo' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,663 [INFO] Transformed offer | poste='Data Scientist - Flexibilité Énergétique' | societe='Hello Watt' | lieu='18ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,664 [INFO] Transformed offer | poste='DATA Analyst H/F' | societe='Smile Group' | lieu='Asnières-sur-Seine, Nanterre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,666 [INFO] Transformed offer | poste='Data Manager confirmé – Gouvernance Data / Data Quality / Catalogage - Freelance' | societe='Collective.work' | lieu='8ème Arrondissement, Paris' | contrat=CDD | seniorite=Confirmé | tech=0
+2026-04-19 01:30:18,667 [INFO] Transformed offer | poste='Data Engineer (H/F)' | societe='Ippon Technologies' | lieu='Toulouse, Haute-Garonne' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,668 [INFO] Transformed offer | poste='Data Engineer - H/F' | societe='Talan' | lieu='Nantes, Loire-Atlantique' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,670 [INFO] Transformed offer | poste='Data Platform Engineer (H/F)' | societe='Scalian' | lieu='Bordeaux, Gironde' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,671 [INFO] Transformed offer | poste='Alternance Data Analyst Power BI F/H' | societe='ACTIALE' | lieu='Plérin, Saint-Brieuc' | contrat=CDD | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,672 [INFO] Transformed offer | poste='Alternance Data Analyst Power BI F/H' | societe='ACTIALE' | lieu='Châtelaudren, Saint-Brieuc' | contrat=CDD | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,674 [INFO] Transformed offer | poste='Alternance Data Analyst Power BI F/H' | societe='ACTIALE' | lieu="Côtes-d'Armor, Bretagne" | contrat=CDD | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,675 [INFO] Transformed offer | poste='Data Lead' | societe='MakiPeople' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,676 [INFO] Transformed offer | poste='Data Analyst F/H' | societe='EXALT' | lieu='Paris, Ile-de-France' | contrat=CDI | seniorite=Confirmé | tech=1
+2026-04-19 01:30:18,677 [INFO] Transformed offer | poste='Lead data engineer géospatial - IA H/F (CDI)' | societe='LEA Recrutement' | lieu='Hérault, Occitanie' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,679 [INFO] Transformed offer | poste='Business Analyst - ERP & Data' | societe='Quantis' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,680 [INFO] Transformed offer | poste='Consultant Data Confirmé H/F' | societe='Seenovate' | lieu='Pont-Rousseau, Rezé' | contrat=None | seniorite=Confirmé | tech=1
+2026-04-19 01:30:18,682 [INFO] Transformed offer | poste='Consultant Data Confirmé H/F' | societe='Seenovate' | lieu='Betton, Rennes' | contrat=None | seniorite=Confirmé | tech=1
+2026-04-19 01:30:18,683 [INFO] Transformed offer | poste='DATA ANALYST F/H' | societe='Geser Best' | lieu='Brive-la-Gaillarde, Corrèze' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,684 [INFO] Transformed offer | poste='Product Owner Data H/F' | societe='Randstad Digital' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,685 [INFO] Transformed offer | poste='Environmental Data Scientist F/H' | societe='GREEN PRAXIS' | lieu='Allauch, Marseille' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,687 [INFO] Transformed offer | poste='Développeur - Plateforme Data H/F' | societe='ANFSI' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,688 [INFO] Transformed offer | poste='Développeur - Plateforme Data H/F' | societe='ANFSI' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,690 [INFO] Transformed offer | poste='Data Analyst / Assistant comptable H/F (CDI)' | societe='TALENTS FINANCE' | lieu='Val-de-Marne, Ile-de-France' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,691 [INFO] Transformed offer | poste='DATA ENGINEER F/H' | societe="Mercato de l'emploi" | lieu='Bordeaux, Gironde' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,692 [INFO] Transformed offer | poste='DATA ENGINEER F/H' | societe="Mercato de l'emploi" | lieu='Niort, Deux-Sèvres' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,693 [INFO] Transformed offer | poste='Architecte Data et Solutions F/H' | societe='UNIVERSITE DE BORDEAUX' | lieu='Gradignan, Bordeaux' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,695 [INFO] Transformed offer | poste='Modern Data Stack - Product Owner Data & IA - Snowflake H/F' | societe='Devoteam' | lieu='Levallois-Perret, Nanterre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,696 [INFO] Transformed offer | poste='Senior Data Analyst - Product' | societe='Pennylane' | lieu='9ème Arrondissement, Paris' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,697 [INFO] Transformed offer | poste='Technicien Data - ERP H/F' | societe='Ingeliance Technologies' | lieu='Seine-Maritime, Normandie' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,698 [INFO] Transformed offer | poste='Alternance - Data Engineer - Services Publics - Nantes' | societe='Forums Talents Handicap' | lieu='Loire-Atlantique, Pays de la Loire' | contrat=CDD | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,700 [INFO] Transformed offer | poste='Machine Learning Engineer (F/H)' | societe='NOVENCIA Groupe' | lieu='Lyon, Rhône' | contrat=CDI | seniorite=Senior | tech=1
+2026-04-19 01:30:18,701 [INFO] Transformed offer | poste='Data Scientist (H/F) - CDI' | societe='Unibail-Rodamco-Westfield' | lieu='France' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,703 [INFO] Transformed offer | poste='Alternance - Ingénieur Développeur Application Web / Data analyst - F/H' | societe='THALES' | lieu='Cannes, Grasse' | contrat=Alternance | seniorite=Alternance | tech=1
+2026-04-19 01:30:18,704 [INFO] Transformed offer | poste='Data Architect F/H' | societe='PROBAYES' | lieu='Grenoble, Isère' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,705 [INFO] Transformed offer | poste='Data Analyst F/H' | societe='GESER BEST' | lieu='Rennes, Ille-et-Vilaine' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,707 [INFO] Transformed offer | poste='Data analyste F/H' | societe='Testmatmut' | lieu='Bihorel, Rouen' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,708 [INFO] Transformed offer | poste='Senior Data Analyst/BI Engineer - Freelance' | societe='Collective.work' | lieu='La-Madeleine, Lille' | contrat=CDD | seniorite=Senior | tech=2
+2026-04-19 01:30:18,709 [INFO] Transformed offer | poste='Data Engineer F/H' | societe='Onepoint' | lieu='Gironde, Nouvelle-Aquitaine' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,710 [INFO] Transformed offer | poste='Data Analyst F/H' | societe='RANDSTAD DIGITAL FRANCE' | lieu='Lyon, Rhône' | contrat=CDI | seniorite=None | tech=1
+2026-04-19 01:30:18,712 [INFO] Transformed offer | poste='Data Architecte H/F' | societe='CREDIT MUTUEL ARKEA' | lieu='Guipavas, Brest' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,713 [INFO] Transformed offer | poste='Data Architecte H/F' | societe='CREDIT MUTUEL ARKEA' | lieu='Daoulas, Brest' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,714 [INFO] Transformed offer | poste='Data Architecte H/F' | societe='CREDIT MUTUEL ARKEA' | lieu='Le-Relecq-Kerhuon, Brest' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,715 [INFO] Transformed offer | poste='Data Architecte H/F' | societe='CREDIT MUTUEL ARKEA' | lieu="Brest-L'Hermitage-Gouesnou, Brest" | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,717 [INFO] Transformed offer | poste='Senior Data Analytics Engineer "Distribution & Hotel Services" F/M/X' | societe='AccorCorpo' | lieu='Issy-les-Moulineaux, Boulogne-Billancourt' | contrat=None | seniorite=Senior | tech=0
+2026-04-19 01:30:18,718 [INFO] Transformed offer | poste='Data Engineer - Paris/Lille' | societe='skiils' | lieu='Suresnes, Nanterre' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,719 [INFO] Transformed offer | poste='Alternance - Data Engineer H/F' | societe='Sup de Vinci Rennes' | lieu='Betton, Rennes' | contrat=Alternance | seniorite=Alternance | tech=3
+2026-04-19 01:30:18,721 [INFO] Transformed offer | poste='Leader Delivery Data H/F' | societe='Groupe Avem' | lieu='Chartres-de-Bretagne, Bruz' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,722 [INFO] Transformed offer | poste='Senior Data Analyst (Customer Success)' | societe='Pigment' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,723 [INFO] Transformed offer | poste='Data Engineer Confirmé F/H' | societe='Socotec' | lieu='Villebon-sur-Yvette, Palaiseau' | contrat=None | seniorite=Confirmé | tech=0
+2026-04-19 01:30:18,724 [INFO] Transformed offer | poste='APPRENTISSAGE - Data scientist (F/H)' | societe='DASSAULT SYSTEMES' | lieu='Le Bar-sur-Loup, Grasse' | contrat=CDD | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,726 [INFO] Transformed offer | poste='Stage Data Scientist F/H' | societe='Fives Solios' | lieu='Chasse-sur-Rhône, Vienne' | contrat=Stage | seniorite=Stage | tech=1
+2026-04-19 01:30:18,727 [INFO] Transformed offer | poste='Consultant Senior H/F - Expert AWS (Infra/Archi/Data)' | societe='Sopra Steria' | lieu='Courbevoie, Nanterre' | contrat=None | seniorite=Senior | tech=2
+2026-04-19 01:30:18,729 [INFO] Transformed offer | poste='Tech Lead / Big Data Engineer - F/H' | societe='CS GROUP' | lieu='France' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:18,730 [INFO] Transformed offer | poste='Data Scientist - CDI F/H' | societe='Collective' | lieu='Nice, Alpes-Maritimes' | contrat=CDI | seniorite=None | tech=0
+2026-04-19 01:30:18,731 [INFO] Transformed offer | poste='Manager Stratégie & Data' | societe='digiRocks' | lieu='Paris, Ile-de-France' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,732 [INFO] Transformed offer | poste='Alternance - Data Scientist (H/F)' | societe='Galileo Global Education' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,734 [INFO] Transformed offer | poste='Data Analyst (H/F)' | societe='Business et Decision' | lieu='Loire-Atlantique, Pays de la Loire' | contrat=CDD | seniorite=None | tech=0
+2026-04-19 01:30:18,735 [INFO] Transformed offer | poste='Data Analyst Confirmé(e) - CDI - Paris' | societe='pass Culture' | lieu='1er Arrondissement, Paris' | contrat=CDI | seniorite=Confirmé | tech=1
+2026-04-19 01:30:18,737 [INFO] Transformed offer | poste='Data Engineer F/H' | societe='Axeria iard' | lieu='Lyon, Rhône' | contrat=CDI | seniorite=None | tech=2
+2026-04-19 01:30:18,738 [INFO] Transformed offer | poste='Data Analyst (H/F)' | societe='AssoConnect' | lieu='2ème Arrondissement, Paris' | contrat=None | seniorite=None | tech=0
+2026-04-19 01:30:18,739 [INFO] Transformed offer | poste='Stage : Data Scientist F/H' | societe='BPIfrance' | lieu='France' | contrat=CDD | seniorite=Stage | tech=1
+2026-04-19 01:30:18,740 [INFO] Transformed offer | poste='Data Scientist - Python / Machine Learning (H/F) en Contrat pro / AlternanceParis' | societe='OpenClassrooms' | lieu='Paris, Ile-de-France' | contrat=CDD | seniorite=Alternance | tech=2
+2026-04-19 01:30:18,742 [INFO] Transformed offer | poste='Senior Data Engineer H/F - Remote (CDI)' | societe='Bureau des Talents' | lieu='Saint-Cloud, Boulogne-Billancourt' | contrat=CDI | seniorite=Senior | tech=0
+2026-04-19 01:30:18,743 [INFO] Transformed offer | poste='Data Engineer (H/F)' | societe='ALTEN' | lieu='Toulouse, Haute-Garonne' | contrat=None | seniorite=None | tech=1
+2026-04-19 01:30:18,744 [INFO] Transformed offer | poste='Senior Site Reliability Engineer (Data & Analytics Infrastructure)' | societe='Criteo Technology' | lieu='Grenoble, Isère' | contrat=None | seniorite=Senior | tech=1
+2026-04-19 01:30:18,746 [INFO] Transformed offer | poste='Data Scientist Roboticien H/F' | societe='Forums Talents Handicap' | lieu='Aix en Provence Sud-Ouest, Aix-en-Provence' | contrat=CDI | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,747 [INFO] Transformed offer | poste='Alternance - Data Scientist (H/F)' | societe='Galileo Global Education' | lieu='France' | contrat=Alternance | seniorite=Alternance | tech=0
+2026-04-19 01:30:18,777 [INFO] Wrote 1000 cleaned offers to C:\Users\marouane\Desktop\FindJob\transformers\data\adzuna_clean.json

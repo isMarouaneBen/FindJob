@@ -8,9 +8,13 @@
 
 import time
 import logging
+from pathlib import Path
 from datetime import datetime, timezone
 
 import requests
+
+LOG_DIR = Path(__file__).resolve().parent.parent / "logs"
+LOG_DIR.mkdir(exist_ok=True)
 from bs4 import BeautifulSoup
 from pymongo import MongoClient, UpdateOne
 from pymongo.errors import BulkWriteError
@@ -51,7 +55,7 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler("rekrute_scraper.log", encoding="utf-8"),
+        logging.FileHandler(LOG_DIR / "rekrute_scraper.log", encoding="utf-8"),
     ],
 )
 logger = logging.getLogger(__name__)

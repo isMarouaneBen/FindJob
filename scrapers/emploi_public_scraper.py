@@ -11,8 +11,12 @@
 
 import time
 import logging
+from pathlib import Path
 from datetime import datetime, timezone
 import requests
+
+LOG_DIR = Path(__file__).resolve().parent.parent / "logs"
+LOG_DIR.mkdir(exist_ok=True)
 from io import BytesIO
 
 from selenium import webdriver
@@ -47,7 +51,7 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler("emploi_public_scraper.log", encoding="utf-8"),
+        logging.FileHandler(LOG_DIR / "emploi_public_scraper.log", encoding="utf-8"),
     ],
 )
 logger = logging.getLogger(__name__)

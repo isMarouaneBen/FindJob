@@ -1,0 +1,24 @@
+2026-04-19 01:17:53,533 [INFO] Reading raw offers from C:\Users\marouane\Desktop\FindJob\transformers\data\emploi_public_raw.json
+2026-04-19 01:17:53,534 [INFO] Loaded 9 raw offers
+2026-04-19 01:17:53,534 [INFO] Kept 4 offers with type_annonce == 'Annonce'
+2026-04-19 01:17:53,561 [INFO] Transformed offer | poste='Administrateur Datacenter & Infrastructure Système' | societe='Office de la Formation Professionnelle et de la Promotion du Travail' | date_limite=2026-01-16 | tech=8 | missions=15 | competences=4
+2026-04-19 01:17:53,572 [INFO] Transformed offer | poste='DATA GOVERNANCE LEAD' | societe='Caisse de Dépôt et de Gestion -Branche Epargne - Prévoyance-' | date_limite=2026-03-09 | tech=10 | missions=17 | competences=11
+2026-04-19 01:17:53,587 [INFO] Transformed offer | poste='Rattaché(e) à la Direction Commerciale, vous aurez pour mission principale d’explorer, ana lyser et' | societe="Société Royale d'Encouragement du Cheval (SOREC)" | date_limite=2025-10-28 | tech=6 | missions=47 | competences=4
+2026-04-19 01:17:53,597 [INFO] Transformed offer | poste='ARCHITECTE PLATEFORMES ET SOLUTIONS DATA' | societe='Bank Al-Maghrib' | date_limite=2025-10-21 | tech=13 | missions=9 | competences=16
+2026-04-19 01:17:53,598 [INFO] Wrote 4 cleaned offers to C:\Users\marouane\Desktop\FindJob\transformers\data\emploi_public_clean.json
+2026-04-19 01:18:14,288 [INFO] Reading raw offers from C:\Users\marouane\Desktop\FindJob\transformers\data\emploi_public_raw.json
+2026-04-19 01:18:14,288 [INFO] Loaded 9 raw offers
+2026-04-19 01:18:14,288 [INFO] Kept 4 offers with type_annonce == 'Annonce'
+2026-04-19 01:18:14,315 [INFO] Transformed offer | poste='Administrateur Datacenter & Infrastructure Système' | societe='Office de la Formation Professionnelle et de la Promotion du Travail' | date_limite=2026-01-16 | tech=8 | missions=15 | competences=4
+2026-04-19 01:18:14,326 [INFO] Transformed offer | poste='DATA GOVERNANCE LEAD' | societe='Caisse de Dépôt et de Gestion -Branche Epargne - Prévoyance-' | date_limite=2026-03-09 | tech=10 | missions=17 | competences=11
+2026-04-19 01:18:14,340 [INFO] Transformed offer | poste='Business Data Analyst (H/F) - Rabat' | societe="Société Royale d'Encouragement du Cheval (SOREC)" | date_limite=2025-10-28 | tech=6 | missions=47 | competences=4
+2026-04-19 01:18:14,350 [INFO] Transformed offer | poste='ARCHITECTE PLATEFORMES ET SOLUTIONS DATA' | societe='Bank Al-Maghrib' | date_limite=2025-10-21 | tech=13 | missions=9 | competences=16
+2026-04-19 01:18:14,352 [INFO] Wrote 4 cleaned offers to C:\Users\marouane\Desktop\FindJob\transformers\data\emploi_public_clean.json
+2026-04-19 01:19:21,365 [INFO] Reading raw offers from C:\Users\marouane\Desktop\FindJob\transformers\data\emploi_public_raw.json
+2026-04-19 01:19:21,365 [INFO] Loaded 9 raw offers
+2026-04-19 01:19:21,365 [INFO] Kept 4 offers with type_annonce == 'Annonce'
+2026-04-19 01:19:21,391 [INFO] Transformed offer | poste='Administrateur Datacenter & Infrastructure Système' | societe='Office de la Formation Professionnelle et de la Promotion du Travail' | date_limite=2026-01-16 | tech=8 | missions=15 | competences=4
+2026-04-19 01:19:21,402 [INFO] Transformed offer | poste='DATA GOVERNANCE LEAD' | societe='Caisse de Dépôt et de Gestion -Branche Epargne - Prévoyance-' | date_limite=2026-03-09 | tech=10 | missions=17 | competences=11
+2026-04-19 01:19:21,416 [INFO] Transformed offer | poste='Business Data Analyst (H/F) - Rabat' | societe="Société Royale d'Encouragement du Cheval (SOREC)" | date_limite=2025-10-28 | tech=6 | missions=47 | competences=4
+2026-04-19 01:19:21,426 [INFO] Transformed offer | poste='ARCHITECTE PLATEFORMES ET SOLUTIONS DATA' | societe='Bank Al-Maghrib' | date_limite=2025-10-21 | tech=13 | missions=9 | competences=16
+2026-04-19 01:19:21,427 [INFO] Wrote 4 cleaned offers to C:\Users\marouane\Desktop\FindJob\transformers\data\emploi_public_clean.json
