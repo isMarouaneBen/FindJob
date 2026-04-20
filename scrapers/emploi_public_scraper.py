@@ -9,6 +9,7 @@
 =====================================================
 """
 
+import os
 import time
 import logging
 from pathlib import Path
@@ -33,7 +34,7 @@ import PyPDF2
 # ─────────────────────────────────────────
 #  CONFIGURATION
 # ─────────────────────────────────────────
-MONGO_URI        = "mongodb://admin:admin123@localhost:27017/"
+MONGO_URI        = os.getenv("MONGO_URI", "mongodb://admin:admin123@localhost:27017/")
 MONGO_DB         = "job_raw"
 MONGO_COLLECTION = "emploi_public_raw"
 
@@ -72,12 +73,9 @@ def get_driver():
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/120.0.0.0 Safari/537.36"
     )
-    from webdriver_manager.chrome import ChromeDriverManager
-    from selenium.webdriver.chrome.service import Service
-    driver = webdriver.Chrome(
-        service=Service(ChromeDriverManager().install()),
-        options=options
-    )
+    # Selenium Manager (intégré à selenium >= 4.11) résout automatiquement
+    # le chromedriver correspondant à la version de Chrome installée.
+    driver = webdriver.Chrome(options=options)
     return driver
 
 

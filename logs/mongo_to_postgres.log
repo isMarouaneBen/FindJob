@@ -23047,3 +23047,58 @@ LINE 2:             INSERT INTO analytics.dim_pays (pays_nom) VALUES...
 2026-04-19 08:00:21,767 [INFO] source=adzuna fetched_from_mongo=1000
 2026-04-19 08:00:21,767 [INFO] source=adzuna TERMINÉ : 1000 upsert, 0 échecs
 2026-04-19 08:00:21,767 [INFO] ETL terminée.
+2026-04-20 03:06:19,689 [INFO] Connexion Postgres: localhost:5433/job_db
+2026-04-20 04:02:27,674 [INFO] Connexion Postgres: localhost:5433/job_db
+2026-04-20 04:02:27,703 [INFO] >>> Source: emploi_public (pays=Maroc)
+2026-04-20 04:02:27,783 [INFO] source=emploi_public fetched_from_mongo=0
+2026-04-20 04:02:27,783 [INFO] source=emploi_public TERMINÉ : 0 upsert, 0 échecs
+2026-04-20 04:02:27,784 [INFO] >>> Source: rekrute (pays=Maroc)
+2026-04-20 04:02:27,816 [INFO] source=rekrute fetched_from_mongo=0
+2026-04-20 04:02:27,816 [INFO] source=rekrute TERMINÉ : 0 upsert, 0 échecs
+2026-04-20 04:02:27,817 [INFO] >>> Source: adzuna (pays=France)
+2026-04-20 04:02:27,830 [INFO] source=adzuna fetched_from_mongo=0
+2026-04-20 04:02:27,830 [INFO] source=adzuna TERMINÉ : 0 upsert, 0 échecs
+2026-04-20 04:02:27,830 [INFO] ETL terminée.
+2026-04-20 04:03:03,808 [INFO] Connexion Postgres: localhost:5433/job_db
+2026-04-20 04:03:03,822 [INFO] >>> Source: emploi_public (pays=Maroc)
+2026-04-20 04:03:03,853 [INFO] source=emploi_public fetched_from_mongo=0
+2026-04-20 04:03:03,854 [INFO] source=emploi_public TERMINÉ : 0 upsert, 0 échecs
+2026-04-20 04:03:03,854 [INFO] >>> Source: rekrute (pays=Maroc)
+2026-04-20 04:03:03,891 [INFO] source=rekrute fetched_from_mongo=0
+2026-04-20 04:03:03,891 [INFO] source=rekrute TERMINÉ : 0 upsert, 0 échecs
+2026-04-20 04:03:03,891 [INFO] >>> Source: adzuna (pays=France)
+2026-04-20 04:03:03,922 [INFO] source=adzuna fetched_from_mongo=0
+2026-04-20 04:03:03,922 [INFO] source=adzuna TERMINÉ : 0 upsert, 0 échecs
+2026-04-20 04:03:03,922 [INFO] ETL terminée.
+2026-04-20 04:12:29,157 [INFO] Connexion Postgres: localhost:5433/job_db
+2026-04-20 04:12:29,172 [INFO] >>> Source: emploi_public (pays=Maroc)
+2026-04-20 04:12:29,495 [INFO] source=emploi_public fetched_from_mongo=4
+2026-04-20 04:12:29,498 [INFO] source=emploi_public TERMINÉ : 4 upsert, 0 échecs
+2026-04-20 04:12:29,499 [INFO] >>> Source: rekrute (pays=Maroc)
+2026-04-20 04:12:33,738 [INFO] source=rekrute fetched_from_mongo=81
+2026-04-20 04:12:33,740 [INFO] source=rekrute TERMINÉ : 81 upsert, 0 échecs
+2026-04-20 04:12:33,740 [INFO] >>> Source: adzuna (pays=France)
+2026-04-20 04:12:34,409 [INFO] source=adzuna commit intermédiaire (200 lignes)
+2026-04-20 04:12:35,018 [INFO] source=adzuna commit intermédiaire (400 lignes)
+2026-04-20 04:12:35,610 [INFO] source=adzuna commit intermédiaire (600 lignes)
+2026-04-20 04:12:36,233 [INFO] source=adzuna commit intermédiaire (800 lignes)
+2026-04-20 04:12:36,842 [INFO] source=adzuna commit intermédiaire (1000 lignes)
+2026-04-20 04:12:36,842 [INFO] source=adzuna fetched_from_mongo=1000
+2026-04-20 04:12:36,842 [INFO] source=adzuna TERMINÉ : 1000 upsert, 0 échecs
+2026-04-20 04:12:36,842 [INFO] ETL terminée.
+2026-04-20 04:34:00,649 [INFO] Connexion Postgres: localhost:5433/job_db
+2026-04-20 04:34:00,661 [INFO] >>> Source: emploi_public (pays=Maroc)
+2026-04-20 04:34:00,981 [INFO] source=emploi_public fetched_from_mongo=4
+2026-04-20 04:34:00,982 [INFO] source=emploi_public TERMINÉ : 4 upsert, 0 échecs
+2026-04-20 04:34:00,982 [INFO] >>> Source: rekrute (pays=Maroc)
+2026-04-20 04:34:05,180 [INFO] source=rekrute fetched_from_mongo=81
+2026-04-20 04:34:05,182 [INFO] source=rekrute TERMINÉ : 81 upsert, 0 échecs
+2026-04-20 04:34:05,182 [INFO] >>> Source: adzuna (pays=France)
+2026-04-20 04:34:05,837 [INFO] source=adzuna commit intermédiaire (200 lignes)
+2026-04-20 04:34:06,407 [INFO] source=adzuna commit intermédiaire (400 lignes)
+2026-04-20 04:34:06,998 [INFO] source=adzuna commit intermédiaire (600 lignes)
+2026-04-20 04:34:07,584 [INFO] source=adzuna commit intermédiaire (800 lignes)
+2026-04-20 04:34:08,163 [INFO] source=adzuna commit intermédiaire (1000 lignes)
+2026-04-20 04:34:08,163 [INFO] source=adzuna fetched_from_mongo=1000
+2026-04-20 04:34:08,164 [INFO] source=adzuna TERMINÉ : 1000 upsert, 0 échecs
+2026-04-20 04:34:08,164 [INFO] ETL terminée.

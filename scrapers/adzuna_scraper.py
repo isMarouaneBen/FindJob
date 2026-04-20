@@ -29,7 +29,7 @@ load_dotenv(dotenv_path=ENV_PATH)
 ADZUNA_APP_ID  = os.getenv("ADZUNA_APP_ID", "").strip()
 ADZUNA_API_KEY = os.getenv("ADZUNA_API_KEY", "").strip()
 
-MONGO_URI        = "mongodb://admin:admin123@localhost:27017/"
+MONGO_URI        = os.getenv("MONGO_URI", "mongodb://admin:admin123@localhost:27017/")
 MONGO_DB         = "job_raw"
 MONGO_COLLECTION = "adzuna_raw"
 

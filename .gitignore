@@ -1,3 +1,5 @@
 airflow/logs/
 venv/
 pass.txt
+.env
+data/

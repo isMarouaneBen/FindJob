@@ -7,7 +7,7 @@ version: "3.8"
 # ==============================================================
 
 x-airflow-common: &airflow-common
-  image: apache/airflow:2.8.1
+  image: job-intelligent/airflow:2.8.1
   environment: &airflow-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
@@ -16,6 +16,7 @@ x-airflow-common: &airflow-common
     AIRFLOW__CORE__LOAD_EXAMPLES: "false"
     AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
     AIRFLOW__WEBSERVER__SECRET_KEY: "job_intelligent_secret"
+
     # Variables accessibles dans les DAGs
     MONGO_URI: mongodb://admin:admin123@mongodb:27017/
     POSTGRES_DATA_URI: postgresql://datauser:datapass@postgres:5432/job_db
@@ -25,6 +26,7 @@ x-airflow-common: &airflow-common
     - ${AIRFLOW_PROJ_DIR:-.}/airflow/plugins:/opt/airflow/plugins
     - ${AIRFLOW_PROJ_DIR:-.}/scrapers:/opt/airflow/scrapers
     - ${AIRFLOW_PROJ_DIR:-.}/etl:/opt/airflow/etl
+    - ${AIRFLOW_PROJ_DIR:-.}/transformers:/opt/airflow/transformers
   depends_on:
     postgres:
       condition: service_healthy
@@ -138,6 +140,9 @@ services:
   # ────────────────────────────────────────────
   airflow-init:
     <<: *airflow-common
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
     container_name: job_airflow_init
     entrypoint: /bin/bash
     command:

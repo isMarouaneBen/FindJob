@@ -6,6 +6,7 @@
 =====================================================
 """
 
+import os
 import time
 import logging
 from pathlib import Path
@@ -22,7 +23,7 @@ from pymongo.errors import BulkWriteError
 # ─────────────────────────────────────────
 #  CONFIGURATION
 # ─────────────────────────────────────────
-MONGO_URI        = "mongodb://admin:admin123@localhost:27017/"
+MONGO_URI        = os.getenv("MONGO_URI", "mongodb://admin:admin123@localhost:27017/")
 MONGO_DB         = "job_raw"
 MONGO_COLLECTION = "rekrute_raw"
 
