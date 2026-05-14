@@ -34,7 +34,10 @@ from emploi_public_transformer import (  # type: ignore
     extract_urls,
     extract_villes,
 )
+from enrichment import enrich  # type: ignore
+from geo_normalizer import normalize_villes  # type: ignore
 from salary_estimator import estimate_salary_mad, parse_salary_from_text
+from skill_normalizer import normalize_skills  # type: ignore
 
 # --------------------------------------------------------------------------- #
 # Paths & logging
@@ -238,7 +241,9 @@ def transform_offer(raw: dict[str, Any]) -> dict[str, Any]:
     etude = parse_niveau_etude(infos.get("niveau_détude_et_formation") or infos.get("niveau_detude_et_formation"))
 
     poste = clean_titre(raw.get("titre"))
-    villes = derive_villes(description, region["lieu"], raw.get("titre"), sections.get("adresse"))
+    villes = normalize_villes(
+        derive_villes(description, region["lieu"], raw.get("titre"), sections.get("adresse"))
+    )
     salaire_infos = infos.get("salaire") or infos.get("rémunération") or infos.get("remuneration")
     salary = (
         parse_salary_from_text(salaire_infos)
@@ -282,7 +287,7 @@ def transform_offer(raw: dict[str, Any]) -> dict[str, Any]:
         "diplome_types": etude["diplome_types"],
         "age_max": extract_age_max(description),
         "langues": extract_langues(description),
-        "technologies": extract_technologies(full_text_for_kw),
+        "technologies": normalize_skills(extract_technologies(full_text_for_kw)),
         "missions": _split_rekrute_bullets(poste_text),
         "competences": _split_rekrute_bullets(profil_text),
         "profil": _split_rekrute_bullets(profil_text),
@@ -294,7 +299,7 @@ def transform_offer(raw: dict[str, Any]) -> dict[str, Any]:
         "urls_postulation": extract_urls(description),
         "description_brute": description,
     }
-    return record
+    return enrich(record, source_id=2)
 
 
 def _extract_societe(entreprise_text: str, url: str | None) -> str | None:

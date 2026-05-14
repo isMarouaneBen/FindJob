@@ -40,6 +40,8 @@ sys.path.insert(0, str(PROJECT_ROOT / "transformers"))
 import emploi_public_transformer as t_emploi
 import rekrute_transformer as t_rekrute
 import adzuna_transformer as t_adzuna
+from geo_normalizer import normalize_ville, normalize_villes
+from skill_normalizer import category_of, normalize_skills
 
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://admin:admin123@localhost:27017/")
 MONGO_DB  = os.getenv("MONGO_DB",  "job_raw")
@@ -54,6 +56,16 @@ SOURCE_COUNTRY = {
     2: "Maroc",   # rekrute
     3: "France",  # adzuna
 }
+
+# Devise par défaut imposée par source (cohérence métier).
+# Empêche les lignes avec devise=''/null ou devise incohérente avec le pays.
+SOURCE_DEFAULT_DEVISE = {
+    1: "MAD",   # emploi_public
+    2: "MAD",   # rekrute
+    3: "EUR",   # adzuna
+}
+
+ALLOWED_DEVISES = {"MAD", "EUR", "USD", "GBP"}
 
 SOURCES: dict[str, dict[str, Any]] = {
     "emploi_public": {
@@ -238,9 +250,11 @@ class DimCache:
         return pid
 
     def ville(self, nom: str | None, pays_id: int) -> int:
-        if not nom:
+        # Filtre défensif : pays / région / département → sentinel 0
+        clean = normalize_ville(nom)
+        if not clean:
             return 0
-        key = (nom.strip()[:160], pays_id)
+        key = (clean[:160], pays_id)
         if not key[0]:
             return 0
         if key in self._ville:
@@ -283,27 +297,80 @@ class DimCache:
             return 0
         if key in self._tech:
             return self._tech[key]
+        # Enrichit la catégorie via skill_normalizer (BI / Cloud / Programmation / ...)
+        categorie = category_of(key)[:32]
         self.cur.execute(
             """
-            INSERT INTO analytics.dim_technologie (tech_nom) VALUES (%s)
-            ON CONFLICT (tech_nom) DO UPDATE SET tech_nom = EXCLUDED.tech_nom
+            INSERT INTO analytics.dim_technologie (tech_nom, categorie) VALUES (%s, %s)
+            ON CONFLICT (tech_nom) DO UPDATE
+                SET categorie = CASE
+                    WHEN analytics.dim_technologie.categorie = 'Autre'
+                      THEN EXCLUDED.categorie
+                    ELSE analytics.dim_technologie.categorie
+                END
             RETURNING tech_id
             """,
-            (key,),
+            (key, categorie),
         )
         tid = self.cur.fetchone()[0]
         self._tech[key] = tid
         return tid
+
+    def metier(self, code: str | None) -> int:
+        if not code:
+            return 0
+        c = code.strip().upper()
+        if not c:
+            return 0
+        cache = self._code_cache.setdefault("dim_metier", {})
+        if c in cache:
+            return cache[c]
+        self.cur.execute(
+            "SELECT metier_id FROM analytics.dim_metier WHERE metier_code = %s",
+            (c,),
+        )
+        row = self.cur.fetchone()
+        cache[c] = row[0] if row else 0
+        return cache[c]
 
 
 # --------------------------------------------------------------------------- #
 # Helpers
 # --------------------------------------------------------------------------- #
 def _first_ville(rec: dict[str, Any]) -> str | None:
+    """Renvoie le 1er candidat ville propre (pays/région/dept filtrés)."""
+    candidates = []
     if rec.get("ville_principale"):
-        return rec["ville_principale"]
-    villes = rec.get("villes") or []
-    return villes[0] if villes else None
+        candidates.append(rec["ville_principale"])
+    candidates.extend(rec.get("villes") or [])
+    cleaned = normalize_villes(candidates)
+    return cleaned[0] if cleaned else None
+
+
+def _clean_societe(name: Any) -> str | None:
+    """Société : trim, normalise espaces, rejette les valeurs vides ou trop courtes."""
+    if not name:
+        return None
+    s = str(name).replace(" ", " ").strip(" \t\n\r-•·")
+    s = re.sub(r"\s+", " ", s)
+    if len(s) < 2:
+        return None
+    return s[:300]
+
+
+def _resolve_devise(source_id: int, devise: str | None, sal_min: float, sal_max: float) -> str:
+    """
+    Règles devise :
+    - Toujours en MAJUSCULES, sur 3 caractères, dans `ALLOWED_DEVISES`.
+    - Si pas de salaire connu → devise vide (cohérent avec salaire_connu=False).
+    - Sinon, on retombe sur la devise par défaut de la source.
+    """
+    if not (sal_min or sal_max):
+        return ""
+    code = (devise or "").strip().upper()[:3]
+    if code in ALLOWED_DEVISES:
+        return code
+    return SOURCE_DEFAULT_DEVISE.get(source_id, "")
 
 
 def _num(value: Any, default: float = 0.0) -> float:
@@ -352,7 +419,7 @@ def upsert_offer(
     pays_nom   = _resolve_pays(source_id, rec.get("pays"))
     pays_id    = cache.pays(pays_nom)
     ville_id   = cache.ville(_first_ville(rec), pays_id)
-    societe_id = cache.societe(rec.get("societe"))
+    societe_id = cache.societe(_clean_societe(rec.get("societe")))
     contrat_id = cache.by_code("dim_contrat",        "contrat_id",     "contrat_code",     _map_code(rec.get("type_contrat"), _CONTRAT_MAP))
     tele_id    = cache.by_code("dim_teletravail",    "teletravail_id", "teletravail_code", _map_code(rec.get("teletravail"), _TELETRAVAIL_MAP))
     sen_id     = cache.by_code("dim_seniorite",      "seniorite_id",   "seniorite_code",   _map_code(rec.get("seniorite") or rec.get("experience_label"), _SENIORITE_MAP))
@@ -362,25 +429,59 @@ def upsert_offer(
     date_limite_id   = _date_to_id(rec.get("date_limite"), default=_SENTINEL_DATE_LIMIT)
     date_scraping_id = _date_to_id(rec.get("scraped_at"),  default=_SENTINEL_DATE_PUB)
 
-    exp_min = _int(rec.get("experience_min_annees"))
-    exp_max = _int(rec.get("experience_max_annees") or exp_min)
+    # Expérience : on borne entre 0 et 50 ans, swap si min > max.
+    exp_min = max(0, min(50, _int(rec.get("experience_min_annees"))))
+    exp_max = max(0, min(50, _int(rec.get("experience_max_annees") or exp_min)))
+    if exp_max < exp_min:
+        exp_min, exp_max = exp_max, exp_min
     exp_connue = (rec.get("experience_min_annees") is not None) or (rec.get("experience_max_annees") is not None)
 
-    age_max   = _int(rec.get("age_max"))
-    age_connu = rec.get("age_max") is not None
+    # Âge max : borne 16-99 ; 0 si absent.
+    age_raw = _int(rec.get("age_max"))
+    age_max = age_raw if 16 <= age_raw <= 99 else 0
+    age_connu = bool(age_max)
 
-    sal_min   = _num(rec.get("salaire_min"))
-    sal_max   = _num(rec.get("salaire_max"))
-    sal_connu = bool(rec.get("salaire_min") or rec.get("salaire_max"))
-    devise    = (rec.get("devise") or "")[:3]
+    # Salaire : valeurs négatives interdites, swap si min > max, max=min si max manquant.
+    sal_min = max(0.0, _num(rec.get("salaire_min")))
+    sal_max = max(0.0, _num(rec.get("salaire_max")))
+    if sal_min > 0 and sal_max == 0:
+        sal_max = sal_min
+    if sal_max > 0 and sal_max < sal_min:
+        sal_min, sal_max = sal_max, sal_min
+    sal_connu = bool(sal_min or sal_max)
+    devise    = _resolve_devise(source_id, rec.get("devise"), sal_min, sal_max)
 
-    techs       = _clean_list(rec.get("technologies"), 64)
+    # Skills canoniques + dédup avant insertion
+    techs       = normalize_skills(_clean_list(rec.get("technologies"), 64))
     missions    = _clean_list(rec.get("missions"), 2000)
     competences = _clean_list(rec.get("competences"), 500)
     langues     = _clean_list(rec.get("langues"), 32)
     diplomes    = _clean_list(rec.get("diplome_types"), 120)
     emails      = _clean_list(rec.get("emails_contact"), 200)
     urls_post   = _clean_list(rec.get("urls_postulation"), 1000)
+
+    # Enrichissement métier (recommandation / segmentation)
+    metier_id     = cache.metier(rec.get("metier_code"))
+    sal_min_eur_m = _int(rec.get("salaire_min_mensuel_eur"))
+    sal_max_eur_m = _int(rec.get("salaire_max_mensuel_eur"))
+    sal_min_mad_m = _int(rec.get("salaire_min_mensuel_mad"))
+    sal_max_mad_m = _int(rec.get("salaire_max_mensuel_mad"))
+    quality       = max(0, min(100, _int(rec.get("quality_score"))))
+    chash         = (rec.get("content_hash") or "")[:16]
+    lat           = _num(rec.get("latitude")) if rec.get("latitude") is not None else None
+    lon           = _num(rec.get("longitude")) if rec.get("longitude") is not None else None
+    # Bornes géo : si invalide on annule (None) plutôt que violer la contrainte.
+    if lat is not None and not (-90.0 <= lat <= 90.0):
+        lat = None
+    if lon is not None and not (-180.0 <= lon <= 180.0):
+        lon = None
+    # Borne salaire mensuel (cohérence min/max + valeurs négatives)
+    if sal_max_eur_m < sal_min_eur_m:
+        sal_min_eur_m, sal_max_eur_m = sal_max_eur_m, sal_min_eur_m
+    if sal_max_mad_m < sal_min_mad_m:
+        sal_min_mad_m, sal_max_mad_m = sal_max_mad_m, sal_min_mad_m
+    sal_min_eur_m, sal_max_eur_m = max(0, sal_min_eur_m), max(0, sal_max_eur_m)
+    sal_min_mad_m, sal_max_mad_m = max(0, sal_min_mad_m), max(0, sal_max_mad_m)
 
     cur.execute(
         """
@@ -395,7 +496,12 @@ def upsert_offer(
             salaire_min, salaire_max, salaire_connu, devise,
             langues, missions, competences, diplome_types, emails_contact, urls_postulation,
             nb_technologies, nb_missions, nb_competences, nb_langues,
-            description_brute
+            description_brute,
+            metier_id,
+            salaire_min_mensuel_eur, salaire_max_mensuel_eur,
+            salaire_min_mensuel_mad, salaire_max_mensuel_mad,
+            latitude, longitude,
+            quality_score, content_hash
         ) VALUES (
             %s,%s,%s,
             %s,%s,%s,%s,%s,%s,%s,
@@ -407,7 +513,12 @@ def upsert_offer(
             %s,%s,%s,%s,
             %s,%s,%s,%s,%s,%s,
             %s,%s,%s,%s,
-            %s
+            %s,
+            %s,
+            %s,%s,
+            %s,%s,
+            %s,%s,
+            %s,%s
         )
         ON CONFLICT (source_id, source_ref) DO UPDATE SET
             societe_id          = EXCLUDED.societe_id,
@@ -445,6 +556,15 @@ def upsert_offer(
             nb_competences      = EXCLUDED.nb_competences,
             nb_langues          = EXCLUDED.nb_langues,
             description_brute   = EXCLUDED.description_brute,
+            metier_id           = EXCLUDED.metier_id,
+            salaire_min_mensuel_eur = EXCLUDED.salaire_min_mensuel_eur,
+            salaire_max_mensuel_eur = EXCLUDED.salaire_max_mensuel_eur,
+            salaire_min_mensuel_mad = EXCLUDED.salaire_min_mensuel_mad,
+            salaire_max_mensuel_mad = EXCLUDED.salaire_max_mensuel_mad,
+            latitude            = EXCLUDED.latitude,
+            longitude           = EXCLUDED.longitude,
+            quality_score       = EXCLUDED.quality_score,
+            content_hash        = EXCLUDED.content_hash,
             updated_at          = now()
         RETURNING offer_id
         """,
@@ -463,6 +583,11 @@ def upsert_offer(
             langues, missions, competences, diplomes, emails, urls_post,
             len(techs), len(missions), len(competences), len(langues),
             rec.get("description_brute") or "",
+            metier_id,
+            sal_min_eur_m, sal_max_eur_m,
+            sal_min_mad_m, sal_max_mad_m,
+            lat, lon,
+            quality, chash,
         ),
     )
     offer_id = cur.fetchone()[0]
@@ -561,6 +686,12 @@ def main() -> None:
         for src in sources:
             log.info(">>> Source: %s (pays=%s)", src, SOURCE_COUNTRY.get(SOURCES[src]["source_id"], "?"))
             run_source(conn, src, args.limit)
+
+        # Marque les doublons cross-source via le content_hash (clé : poste + société + ville).
+        with conn.cursor() as cur:
+            cur.execute("SELECT analytics.refresh_duplicates()")
+        conn.commit()
+        log.info("Doublons cross-source marqués (is_duplicate=TRUE).")
 
     log.info("ETL terminée.")
 

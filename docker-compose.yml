@@ -20,6 +20,8 @@ x-airflow-common: &airflow-common
     # Variables accessibles dans les DAGs
     MONGO_URI: mongodb://admin:admin123@mongodb:27017/
     POSTGRES_DATA_URI: postgresql://datauser:datapass@postgres:5432/job_db
+  env_file:
+    - .env
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/airflow/dags:/opt/airflow/dags
     - ${AIRFLOW_PROJ_DIR:-.}/airflow/logs:/opt/airflow/logs
@@ -59,10 +61,10 @@ services:
     networks:
       - job_network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U datauser -d job_db"]
+      test: ["CMD-SHELL", "pg_isready -U datauser -d job_db && pg_isready -U airflow -d airflow || pg_isready -U postgres"]
       interval: 10s
       timeout: 5s
-      retries: 5
+      retries: 10
 
   # ────────────────────────────────────────────
   #  2. PGADMIN — Interface PostgreSQL
@@ -148,7 +150,21 @@ services:
     command:
       - -c
       - |
+        set -e
+        echo "Waiting for PostgreSQL to be fully ready..."
+        for i in {1..30}; do
+          if psql -h postgres -U airflow -d airflow -c "SELECT 1" 2>/dev/null; then
+            echo "PostgreSQL is ready!"
+            break
+          fi
+          echo "Attempt $$i/30: Waiting for PostgreSQL..."
+          sleep 2
+        done
+        
+        echo "Running Airflow database migration..."
         airflow db migrate
+        
+        echo "Creating admin user..."
         airflow users create \
           --username admin \
           --password admin123 \
@@ -156,7 +172,8 @@ services:
           --lastname JobIntelligent \
           --role Admin \
           --email admin@jobintelligent.ma || true
-        echo "Airflow init terminé."
+        
+        echo "Airflow init completed successfully."
     restart: "no"
 
   # ────────────────────────────────────────────

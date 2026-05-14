@@ -20,7 +20,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from enrichment import enrich  # type: ignore
 from salary_estimator import estimate_salary_mad, parse_salary_from_text
+from skill_normalizer import normalize_skills  # type: ignore
 
 # --------------------------------------------------------------------------- #
 # Paths & logging
@@ -310,6 +312,10 @@ def derive_villes(*sources: str | None) -> list[str]:
     ville_principale, title). Guarantees a non-empty list if any of the
     sources names a city — this is the main reason emploi-public and
     adzuna records were shipping with `villes: []`.
+
+    Note : on délègue le filtrage pays/région/département aux consommateurs
+    via `geo_normalizer.normalize_villes`, qui est appelé dans chaque
+    transformer + dans l'ETL avant insertion dans `dim_ville`.
     """
     found: set[str] = set()
     for s in sources:
@@ -463,7 +469,7 @@ def transform_offer(raw: dict[str, Any]) -> dict[str, Any]:
         "devise": salary["devise"],
         "source_salaire": salary["source_salaire"],
         "langues": extract_langues(description),
-        "technologies": extract_technologies(description),
+        "technologies": normalize_skills(extract_technologies(description)),
         "missions": extract_missions(description),
         "competences": extract_competences(description),
         "profil": extract_profil(description),
@@ -471,7 +477,7 @@ def transform_offer(raw: dict[str, Any]) -> dict[str, Any]:
         "urls_postulation": extract_urls(description),
         "description_brute": description,
     }
-    return record
+    return enrich(record, source_id=1)
 
 
 def load_offers(path: Path) -> list[dict[str, Any]]:

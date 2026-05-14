@@ -28,6 +28,7 @@ RUN apt-get update \
         libgtk-3-0 \
         libgbm1 \
         xdg-utils \
+        postgresql-client \
  && wget -q -O /tmp/google-chrome.deb \
         https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
  && apt-get install -y --no-install-recommends /tmp/google-chrome.deb \

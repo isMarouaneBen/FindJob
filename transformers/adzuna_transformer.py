@@ -31,7 +31,20 @@ from emploi_public_transformer import (  # type: ignore
     extract_urls,
     extract_villes,
 )
-from salary_estimator import EUR_TO_MAD, estimate_salary_mad, parse_salary_from_text
+from enrichment import enrich  # type: ignore
+from geo_normalizer import (  # type: ignore
+    is_non_ville,
+    normalize_ville,
+    normalize_villes,
+    pick_city_from_area,
+)
+from salary_estimator import (
+    EUR_TO_MAD,
+    estimate_salary_eur,
+    estimate_salary_mad,
+    parse_salary_from_text,
+)
+from skill_normalizer import normalize_skills  # type: ignore
 
 # --------------------------------------------------------------------------- #
 # Paths & logging
@@ -134,6 +147,11 @@ def parse_iso_datetime(value: str | None) -> str | None:
 
 
 def parse_salary(min_val: Any, max_val: Any, devise: Any) -> dict[str, Any]:
+    """
+    Adzuna FR mélange parfois TJM freelance (€/jour) et salaire annuel
+    dans les mêmes champs. Heuristique : valeur < 1500 EUR ≈ TJM →
+    on convertit en annuel via 218 jours ouvrés ETP.
+    """
     def _num(v: Any) -> float | None:
         try:
             n = float(v)
@@ -141,18 +159,46 @@ def parse_salary(min_val: Any, max_val: Any, devise: Any) -> dict[str, Any]:
             return None
         return n if n > 0 else None
 
-    return {
-        "salaire_min": _num(min_val),
-        "salaire_max": _num(max_val),
-        "devise": devise if devise not in (None, "", "0", 0) else None,
-    }
+    lo = _num(min_val)
+    hi = _num(max_val)
+    dev = devise if devise not in (None, "", "0", 0) else None
+
+    # TJM detection : si EUR et borne haute < 1500, on considère que c'est un TJM.
+    if dev == "EUR" or dev is None:
+        if lo is not None and (hi is None or hi < 1500) and lo < 1500:
+            WORKING_DAYS = 218
+            lo = lo * WORKING_DAYS
+            if hi is not None:
+                hi = hi * WORKING_DAYS
+            dev = "EUR"
+
+    # Garde-fou : couple incohérent (ex: min=45, max=45000) — la borne basse
+    # est manifestement corrompue côté source. On la remonte à 70% du max.
+    if lo is not None and hi is not None and hi > 0 and lo < hi * 0.10 and lo < 1000:
+        lo = round(hi * 0.7)
+
+    return {"salaire_min": lo, "salaire_max": hi, "devise": dev}
 
 
 def parse_location(raw: dict[str, Any]) -> dict[str, Any]:
+    """
+    `location_area` est ordonné [pays, région, dpt, ..., ville].
+    On prend `pays` = area[0] mais on ne considère comme ville que le dernier
+    élément qui n'est ni un pays, ni une région, ni un département. Si tout
+    est blacklisté (annonce nationale type ["France"]) on renvoie ville=None
+    pour que l'ETL retombe sur le sentinel "Non spécifié".
+    """
     area = raw.get("location_area") or []
     pays = area[0] if len(area) >= 1 else None
+    # Région = première entrée après le pays qui ressemble à une région FR.
     region = area[1] if len(area) >= 2 else None
-    ville = area[-1] if area else None
+    ville = pick_city_from_area(area)
+    # En dernier recours : `localisation` (ex. "Paris, Ile-de-France") — on
+    # garde la première portion avant la virgule si c'est une vraie ville.
+    if not ville:
+        loc = raw.get("localisation") or ""
+        head = loc.split(",", 1)[0].strip() if loc else ""
+        ville = normalize_ville(head)
     return {
         "pays": pays,
         "region": region,
@@ -182,9 +228,9 @@ def transform_offer(raw: dict[str, Any]) -> dict[str, Any]:
     location = parse_location(raw)
     salary = parse_salary(raw.get("salaire_min"), raw.get("salaire_max"), raw.get("devise"))
 
-    # Enrich salary: if the Adzuna record has no figures, try to parse them
-    # from the description, then fall back to a Moroccan-market estimate
-    # (expressed in MAD) so downstream analytics never see a null bracket.
+    # Adzuna = source FR : si pas de figures source, on parse le texte puis
+    # on retombe sur une estimation EUR (et NON MAD comme avant — c'était
+    # incohérent puisque tout Adzuna est en France).
     source_salaire = "source" if salary["salaire_min"] else None
     if salary["salaire_min"] is None:
         parsed = parse_salary_from_text(description)
@@ -192,9 +238,14 @@ def transform_offer(raw: dict[str, Any]) -> dict[str, Any]:
             salary = {"salaire_min": parsed["salaire_min"], "salaire_max": parsed["salaire_max"], "devise": parsed["devise"]}
             source_salaire = parsed["source_salaire"]
         else:
-            est = estimate_salary_mad(poste=titre, titre=titre)
+            est = estimate_salary_eur(poste=titre, titre=titre)
             salary = {"salaire_min": est["salaire_min"], "salaire_max": est["salaire_max"], "devise": est["devise"]}
             source_salaire = est["source_salaire"]
+
+    # Si la source a renvoyé un montant mais sans devise (cas devise="0"),
+    # on force EUR puisqu'on est sur l'endpoint Adzuna FR.
+    if salary["salaire_min"] and not salary.get("devise"):
+        salary["devise"] = "EUR"
 
     # Provide MAD-normalized figures to unify cross-source comparison.
     if salary["devise"] == "MAD":
@@ -236,10 +287,12 @@ def transform_offer(raw: dict[str, Any]) -> dict[str, Any]:
         "ville_principale": location["ville_principale"],
         "latitude": location["latitude"],
         "longitude": location["longitude"],
-        "villes": derive_villes(
-            description, titre, location.get("localisation"),
-            location.get("ville_principale"), location.get("region"),
-        ) or ([location["ville_principale"]] if location.get("ville_principale") else []),
+        "villes": normalize_villes(
+            derive_villes(
+                description, titre, location.get("localisation"),
+                location.get("ville_principale"), location.get("region"),
+            ) or ([location["ville_principale"]] if location.get("ville_principale") else [])
+        ),
         "type_contrat": contract_type,
         "temps_travail": CONTRACT_TIME_MAP.get(contract_time or "", contract_time),
         "teletravail": infer_teletravail(description),
@@ -251,12 +304,12 @@ def transform_offer(raw: dict[str, Any]) -> dict[str, Any]:
         "salaire_max_mad": salaire_max_mad,
         "source_salaire": source_salaire,
         "langues": extract_langues(description),
-        "technologies": extract_technologies(keyword_text),
+        "technologies": normalize_skills(extract_technologies(keyword_text)),
         "emails_contact": extract_emails(description),
         "urls_postulation": extract_urls(description),
         "description_brute": description or None,
     }
-    return record
+    return enrich(record, source_id=3)
 
 
 def load_offers(path: Path) -> list[dict[str, Any]]:

@@ -83,6 +83,58 @@ DEFAULT_RANGE_MAD: tuple[int, int] = (10000, 22000)
 # Rough EUR → MAD conversion for cross-country comparison display.
 EUR_TO_MAD = 10.9
 
+# Brackets EUR (France, brut annuel). Repères marché Tech FR 2024-2025
+# (Apec, Hays, Robert Half). Ils sont volontairement larges pour absorber
+# les écarts Paris / régions et junior / senior.
+ROLE_SALARY_EUR: list[tuple[str, tuple[int, int]]] = [
+    ("stagiaire",                  ( 6000,  12000)),  # gratification annualisée
+    ("internship",                 ( 6000,  12000)),
+    ("stage",                      ( 6000,  12000)),
+    ("alternance",                 (10000,  22000)),
+    ("architecte data",            (65000, 100000)),
+    ("data architect",             (65000, 100000)),
+    ("architecte",                 (60000,  95000)),
+    ("data governance",            (55000,  85000)),
+    ("data scientist",             (45000,  75000)),
+    ("data engineer",              (45000,  72000)),
+    ("machine learning",           (50000,  80000)),
+    ("ml engineer",                (50000,  80000)),
+    ("data analyst",               (38000,  55000)),
+    ("business analyst",           (40000,  60000)),
+    ("business intelligence",      (42000,  65000)),
+    ("bi developer",               (42000,  65000)),
+    ("devops",                     (48000,  75000)),
+    ("sre",                        (55000,  85000)),
+    ("cloud",                      (50000,  80000)),
+    ("cybersecur",                 (50000,  80000)),
+    ("securite",                   (45000,  72000)),
+    ("full stack",                 (42000,  65000)),
+    ("fullstack",                  (42000,  65000)),
+    ("back end",                   (42000,  65000)),
+    ("backend",                    (42000,  65000)),
+    ("front end",                  (40000,  60000)),
+    ("frontend",                   (40000,  60000)),
+    ("mobile",                     (42000,  65000)),
+    ("developpeur",                (38000,  60000)),
+    ("developer",                  (38000,  60000)),
+    ("ingenieur logiciel",         (45000,  70000)),
+    ("software engineer",          (45000,  70000)),
+    ("administrateur systeme",     (38000,  55000)),
+    ("administrateur",             (35000,  55000)),
+    ("datacenter",                 (40000,  60000)),
+    ("reseau",                     (38000,  55000)),
+    ("chef de projet",             (50000,  80000)),
+    ("project manager",            (50000,  80000)),
+    ("product owner",              (48000,  72000)),
+    ("product manager",            (55000,  85000)),
+    ("scrum master",               (50000,  75000)),
+    ("consultant",                 (42000,  68000)),
+    ("responsable",                (50000,  80000)),
+    ("manager",                    (55000,  85000)),
+    ("directeur",                  (80000, 140000)),
+]
+DEFAULT_RANGE_EUR: tuple[int, int] = (35000, 55000)
+
 
 def _norm(text: str | None) -> str:
     if not text:
@@ -149,6 +201,35 @@ def estimate_salary_mad(
         "salaire_max": hi,
         "devise": "MAD",
         "source_salaire": "estimation_marche_maroc",
+        "salaire_match": matched_key,
+    }
+
+
+def estimate_salary_eur(
+    poste: str | None = None,
+    titre: str | None = None,
+    experience_years: int | None = None,
+    diplome_niveau: str | None = None,
+) -> dict[str, object]:
+    """Pendant France de `estimate_salary_mad` : renvoie EUR / brut annuel."""
+    haystack = _norm(f"{poste or ''} {titre or ''}")
+    base: tuple[int, int] | None = None
+    matched_key: str | None = None
+    for key, rng in ROLE_SALARY_EUR:
+        if key in haystack:
+            base = rng
+            matched_key = key
+            break
+    if base is None:
+        base = DEFAULT_RANGE_EUR
+    mult = _seniority_multiplier(experience_years, diplome_niveau)
+    lo = int(round(base[0] * mult / 1000.0)) * 1000
+    hi = int(round(base[1] * mult / 1000.0)) * 1000
+    return {
+        "salaire_min": lo,
+        "salaire_max": hi,
+        "devise": "EUR",
+        "source_salaire": "estimation_marche_france",
         "salaire_match": matched_key,
     }
 
