@@ -3,3 +3,4 @@ venv/
 pass.txt
 .env
 data/
+cv_test/

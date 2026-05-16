@@ -1,0 +1,29 @@
+# Dockerfile for embedding worker
+# Usage: docker build -f platform/Dockerfile.worker -t job-embedding-worker .
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    postgresql-client \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements
+COPY platform/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application
+COPY platform/scripts ./scripts
+COPY platform/app ./app
+
+# Set environment variables (can be overridden at runtime)
+ENV DATABASE_URL=postgresql+asyncpg://datauser:datapass@postgres:5432/job_db
+ENV EMBEDDING_MODEL=sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+ENV BATCH_SIZE=32
+ENV DEVICE=cpu
+
+# Run embedding script
+CMD ["python", "-u", "scripts/embed_offers.py"]

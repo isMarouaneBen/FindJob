@@ -1,0 +1,26 @@
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+
+# DB
+asyncpg==0.29.0
+sqlalchemy[asyncio]==2.0.29
+pgvector==0.2.5
+
+# Settings / validation
+pydantic==2.6.4
+pydantic-settings==2.2.1
+
+# Embeddings
+sentence-transformers==2.6.1
+torch==2.2.2
+numpy==1.26.4
+
+# Infra clients
+redis==5.0.3
+aiokafka==0.10.0
+minio==7.2.5
+
+# CV parsing
+pypdf==4.2.0
+python-docx==1.1.0

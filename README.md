@@ -1,14 +1,15 @@
-# FindJob — Intelligent Job Aggregation ETL Platform
+# FindJob — Job Recommendation Engine & Aggregation Platform
 
 <div align="center">
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.110-00A651.svg)](https://fastapi.tiangolo.com/)
 [![Docker Compose](https://img.shields.io/badge/Docker%20Compose-3.8-blue.svg)](https://www.docker.com/)
-[![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-2.8-017CEE.svg)](https://airflow.apache.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791.svg)](https://www.postgresql.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-7.0-green.svg)](https://www.mongodb.com/)
+[![pgvector](https://img.shields.io/badge/pgvector-0.2.5-336791.svg)](https://github.com/pgvector/pgvector)
+[![Redis](https://img.shields.io/badge/Redis-5.0-DC382D.svg)](https://redis.io/)
+[![Kafka](https://img.shields.io/badge/Apache%20Kafka-Latest-000000.svg)](https://kafka.apache.org/)
 
-**A production-grade data pipeline that aggregates, transforms, and analyzes job listings from multiple sources across France and Morocco.**
+**An intelligent job recommendation platform that matches candidates with opportunities using semantic search, hybrid scoring, and CV analysis. Aggregates and enriches job listings from multiple sources across France and Morocco.**
 
 [Overview](#overview) • [Features](#features) • [Architecture](#architecture) • [Quick Start](#quick-start) • [Configuration](#configuration) • [Development](#development)
 
@@ -18,52 +19,62 @@
 
 ## Overview
 
-**FindJob** is an end-to-end ETL (Extract, Transform, Load) platform designed to:
+**FindJob** is a comprehensive job intelligence platform consisting of:
 
-- **Aggregate** job listings from three major sources: Adzuna (France), ReKrute (Morocco), and Emploi-Public.ma (Morocco)
-- **Standardize** heterogeneous data into a unified schema with salary estimation
-- **Enrich** raw job postings with NLP-based skill and requirement extraction
-- **Analyze** job market trends via a dimensional data warehouse (star schema)
-- **Automate** daily data refresh cycles using Apache Airflow orchestration
+### 🎯 Core Platform (FastAPI Recommendation Engine)
+- **Semantic job matching** using sentence embeddings (multilingual MiniLM)
+- **Hybrid scoring** combining vector similarity, skill overlap, seniority, contract type, location, and remote policy
+- **CV upload & parsing** with automatic profile extraction from PDF/DOCX/TXT files
+- **Real-time recommendations** matching candidates against the job database
+- **Smart caching** with Redis for performance optimization
+- **Async processing** using Kafka for CV parsing and embedding generation
+
+### 📊 Supporting Infrastructure (ETL Pipeline)
+- **Multi-source aggregation** from Adzuna (France), ReKrute (Morocco), Emploi-Public.ma (Morocco)
+- **Data transformation** with salary estimation, skill extraction, and geolocation normalization
+- **Analytics data warehouse** with star schema for BI and reporting
+- **Daily orchestration** via Apache Airflow
 
 The platform implements a **medallion architecture** (Bronze → Silver → Gold) with:
-- **MongoDB** as the Bronze layer (raw ingestion)
-- **PostgreSQL** as the Silver/Gold layers (transformed, analytics-ready data)
+- **MongoDB** as Bronze layer (raw ingestion)
+- **PostgreSQL** with pgvector as Silver/Gold layers (transformed, analytics-ready data with embeddings)
 
-Perfect for market researchers, data analysts, and job market intelligence applications.
+Perfect for job marketplaces, talent platforms, and recruitment analytics.
 
 ---
 
 ## Features
 
-### 🗂️ Data Aggregation
-- **Multi-source scraping**: Adzuna API, ReKrute web scraper, Emploi-Public.ma (Selenium automation)
-- **Real-time ingestion**: Three independent parallel scrapers
-- **Robust error handling**: Retry logic, rate limiting, malformed data detection
+### 🤖 Recommendation Engine
+- **Semantic search** with pgvector (384-dim multilingual embeddings)
+- **Hybrid scoring** algorithm weighting: vector (55%) + tech overlap (20%) + seniority (8%) + contract (5%) + location (5%) + remote (4%) + language (3%)
+- **CV upload & parsing** supporting PDF, DOCX, TXT formats (max 5MB)
+- **Async CV processing** via Kafka worker with Redis caching
+- **Real-time API** built on FastAPI with async/await
+- **Top-K retrieval** with configurable candidate pool size (200 pre-filtered by ANN, re-ranked for top-20)
 
-### 🔄 Data Transformation
-- **Salary estimation**: Machine-learning-based salary range prediction for jobs without explicit salary data
-- **NLP normalization**: Skill extraction, technology detection, role classification
-- **Geolocation enrichment**: City and country standardization across sources
-- **Multi-language support**: French and Arabic text processing
+### 📤 Job Ingestion & Enrichment
+- **Multi-source scraping**: Adzuna API (France), ReKrute (Morocco), Emploi-Public.ma (Morocco)
+- **Parallel extraction**: 3 independent scrapers running concurrently
+- **ML-based salary estimation**: Predicts salary ranges for jobs with missing data
+- **NLP skill extraction**: Automatic technology & requirement detection
+- **Geolocation normalization**: Standardized city/country across sources
+- **Multi-language support**: French, Arabic, and English text processing
 
-### 📊 Analytics-Ready Schema
-- **Star schema**: 1 fact table + 9 dimension tables (Kimball methodology)
-- **Pre-aggregated metrics**: Denormalized data for fast BI queries
-- **Technology bridge table**: Many-to-many relationship between offers and required skills
-- **Temporal dimensions**: Date hierarchy (year/quarter/month/day)
+### 💾 Data Architecture
+- **Star schema**: 1 fact table + 10 dimension tables (Kimball methodology)
+- **Vector embeddings**: Semantic job embeddings stored in pgvector column
+- **Efficient indexing**: IVFFlat index on embeddings for fast ANN queries
+- **Bridge tables**: Many-to-many relationships for technologies and skills
+- **Audit trails**: Timestamps for scraping, parsing, and modification
 
-### ⚙️ Orchestration & Monitoring
-- **Daily automation**: Scheduled DAGs (6:00 AM UTC daily)
+### ⚙️ Infrastructure & Reliability
+- **Async worker pool**: Kafka-based consumer for background CV parsing
+- **Redis caching**: Recommendation results cached for 5 minutes
+- **MinIO storage**: Scalable object storage for uploaded CVs
+- **Database connection pooling**: 10 base + 20 overflow connections
 - **Fault tolerance**: Automatic retries with configurable backoff
-- **Comprehensive logging**: Structured logs for each pipeline stage
-- **Web UI monitoring**: Airflow WebUI for DAG visualization and health checks
-
-### 🛡️ Data Quality
-- **Deduplication**: UPSERT operations prevent duplicate job postings
-- **Type validation**: Consistent data types across all layers
-- **Referential integrity**: Foreign key constraints in PostgreSQL
-- **Audit trails**: Timestamp tracking for ingestion and transformation
+- **Structured logging**: JSON logs for all pipeline stages
 
 ---
 
@@ -72,59 +83,75 @@ Perfect for market researchers, data analysts, and job market intelligence appli
 ### System Diagram
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    DATA SOURCES                             │
-│  ┌────────────┐  ┌────────────┐  ┌────────────────────┐    │
-│  │  Adzuna    │  │  ReKrute   │  │ Emploi-Public.ma   │    │
-│  │   API      │  │  Web       │  │  Selenium + API    │    │
-│  │  (France)  │  │  Scraper   │  │  (Morocco)         │    │
-│  │            │  │ (Morocco)  │  │                    │    │
-│  └────────────┘  └────────────┘  └────────────────────┘    │
-└────────┬────────────────┬──────────────────────┬────────────┘
-         │                │                      │
-         └─────────────────┼──────────────────────┘
-                    (3 parallel tasks)
-                           │
-                           ▼
-        ┌──────────────────────────────────┐
-        │        AIRFLOW ORCHESTRATOR       │
-        │   daily_jobs_pipeline (06:00 UTC)│
-        └──────────────────────────────────┘
-                           │
-        ┌──────────────────┴──────────────────┐
-        │                                     │
-        ▼                                     ▼
-┌──────────────────────────┐      ┌──────────────────────────┐
-│     MONGODB (BRONZE)     │      │   TRANSFORMERS (SILVER)  │
-│ ┌──────────────────────┐ │      │ ┌────────────────────┐   │
-│ │ adzuna_raw           │ │      │ │ adzuna_transformer │   │
-│ │ emploi_public_raw    │ │ ───► │ │ rekrute_transformer│   │
-│ │ rekrute_raw          │ │      │ │ emploi_transformer │   │
-│ └──────────────────────┘ │      │ │ salary_estimator   │   │
-│  Raw JSON documents     │      │ └────────────────────┘   │
-└──────────────────────────┘      └──────────────────────────┘
-                                            │
-                                            ▼
-                                ┌──────────────────────────┐
-                                │  POSTGRESQL (GOLD)       │
-                                │ ┌────────────────────┐   │
-                                │ │ FACT TABLE:        │   │
-                                │ │ fact_offer (jobs)  │   │
-                                │ ├────────────────────┤   │
-                                │ │ DIMENSIONS:        │   │
-                                │ │ • dim_source       │   │
-                                │ │ • dim_pays         │   │
-                                │ │ • dim_ville        │   │
-                                │ │ • dim_societe      │   │
-                                │ │ • dim_contrat      │   │
-                                │ │ • dim_teletravail  │   │
-                                │ │ • dim_seniorite    │   │
-                                │ │ • dim_diplome      │   │
-                                │ │ • dim_technologie  │   │
-                                │ │ • dim_date         │   │
-                                │ └────────────────────┘   │
-                                │  Analytics-ready data    │
-                                └──────────────────────────┘
+┌────────────────────────────────────────────────────────────────────┐
+│                          CLIENTS                                    │
+│  ┌──────────────┐          ┌──────────────┐                        │
+│  │ Web Frontend │          │   Mobile App │                        │
+│  └──────────────┘          └──────────────┘                        │
+└────────┬──────────────────────────────────┬────────────────────────┘
+         │                                  │
+         │         POST /api/v1/           │
+         └─────────────┬────────────────────┘
+                       ▼
+      ┌────────────────────────────────────────┐
+      │    FASTAPI RECOMMENDATION ENGINE       │
+      │  ┌──────────────────────────────────┐  │
+      │  │ GET  /health                     │  │
+      │  │ POST /cv/upload                  │  │
+      │  │ POST /recommendations            │  │
+      │  │ POST /recommendations/from-cv    │  │
+      │  │ GET  /offers                     │  │
+      │  │ POST /profiles                   │  │
+      │  └──────────────────────────────────┘  │
+      │         (Hybrid Scoring)               │
+      └────────────┬──────────────┬─────────────┘
+                   │              │
+         ┌─────────┴──────┐       │
+         ▼                ▼       │
+    ┌─────────┐      ┌─────────┐ │
+    │  Redis  │      │ MinIO   │ │
+    │ (Cache) │      │ (CVs)   │ │
+    └─────────┘      └─────────┘ │
+                                 ▼
+                    ┌────────────────────────┐
+                    │  PostgreSQL + pgvector │
+                    │ ┌────────────────────┐ │
+                    │ │ fact_offer         │ │
+                    │ │  └─ embedding vec │ │
+                    │ │  └─ tech_ids[]    │ │
+                    │ └────────────────────┘ │
+                    │ DIMENSIONS:            │
+                    │ • dim_source           │
+                    │ • dim_pays/ville       │
+                    │ • dim_societe          │
+                    │ • dim_contrat          │
+                    │ • dim_technologie      │
+                    └────────────────────────┘
+                                 ▲
+         ┌───────────────────────┴───────────────────────┐
+         │                                               │
+         ▼                                               ▼
+    ┌─────────────┐                           ┌──────────────────┐
+    │   KAFKA     │                           │ AIRFLOW ETL      │
+    │ cv.uploaded │                           │ (6am daily)      │
+    │  (worker)   │                           │                  │
+    └─────────────┘                           └──────────────────┘
+         │                                           │
+         ▼                                           ▼
+    ┌─────────────────┐              ┌────────────────────────────┐
+    │ CV Parser       │              │ MONGODB (BRONZE)           │
+    │ • Extract text  │              │ • adzuna_raw               │
+    │ • Generate emb. │              │ • rekrute_raw              │
+    │ • Store profile │              │ • emploi_public_raw        │
+    └─────────────────┘              └────────────────────────────┘
+         ▼                                           │
+    ┌─────────────────┐                           ▼
+    │ Redis cache:    │              ┌────────────────────────────┐
+    │ cv:profile:{id} │              │ TRANSFORMERS (SILVER)      │
+    │ cv:embedding{id}│              │ • adzuna_transformer       │
+    └─────────────────┘              │ • rekrute_transformer      │
+                                     │ • salary_estimator        │
+                                     └────────────────────────────┘
 ```
 
 ### Pipeline Layers
@@ -170,14 +197,14 @@ Perfect for market researchers, data analysts, and job market intelligence appli
 
 - **Docker Desktop** (v4.20+) with Docker Compose
 - **Git** for repository cloning
-- **~4 GB** free disk space
+- **~6 GB** free disk space (includes embedding model + data)
 - **Windows/Mac/Linux** with WSL2 (on Windows)
 
 ### Installation & Setup
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/findjob.git
+   git clone https://github.com/isMarouaneBen/findjob.git
    cd findjob
    ```
 
@@ -185,72 +212,213 @@ Perfect for market researchers, data analysts, and job market intelligence appli
    ```bash
    cp .env.example .env
    ```
-   Edit `.env` with your credentials:
+   Edit `.env` with required values:
    ```env
    # API Keys (get from Adzuna Developer Portal)
    ADZUNA_APP_ID=your_app_id
    ADZUNA_API_KEY=your_api_key
 
-   # Database URLs (pre-configured in docker-compose.yml)
-   MONGO_URI=mongodb://admin:admin123@mongodb:27017/
-   POSTGRES_DATA_URI=postgresql://datauser:datapass@postgres:5433/job_db
-
-   # Airflow admin credentials
+   # Airflow credentials
    AIRFLOW_ADMIN_USER=admin
    AIRFLOW_ADMIN_PASSWORD=admin123
-   AIRFLOW_ADMIN_EMAIL=admin@jobintelligent.ma
+   AIRFLOW_ADMIN_EMAIL=admin@example.com
+
+   # Default values for FastAPI service (override if needed)
+   # DATABASE_URL=postgresql+asyncpg://datauser:datapass@postgres:5432/job_db
+   # REDIS_URL=redis://redis:6379/0
+   # KAFKA_BOOTSTRAP_SERVERS=kafka:9092
    ```
 
-3. **Start the stack:**
+3. **Start the full stack:**
    ```bash
    docker-compose up -d
    ```
 
-4. **Initialize Airflow:**
+4. **Initialize Airflow (first time only):**
    ```bash
    docker-compose exec airflow airflow db init
    docker-compose exec airflow airflow users create \
      --role Admin \
      --username admin \
-     --email admin@jobintelligent.ma \
+     --email admin@example.com \
      --firstname Admin \
      --lastname User \
      --password admin123
    ```
 
 5. **Access the services:**
+   - **FastAPI API** (Recommendation Engine): http://localhost:8000
+   - **FastAPI Docs**: http://localhost:8000/docs
    - **Airflow WebUI**: http://localhost:8080 (admin/admin123)
-   - **pgAdmin**: http://localhost:5050 (admin@jobintelligent.ma/admin123)
-   - **PostgreSQL**: localhost:5433 (user: datauser, password: datapass)
-   - **MongoDB**: localhost:27017 (user: admin, password: admin123)
+   - **pgAdmin**: http://localhost:5050 (admin@example.com/admin123)
+   - **PostgreSQL**: localhost:5432 (datauser:datapass)
+   - **MongoDB**: localhost:27017 (admin:admin123)
+   - **Redis**: localhost:6379 (no password)
 
-6. **Trigger the DAG:**
-   ```bash
-   # Manual trigger
-   docker-compose exec airflow airflow dags trigger daily_jobs_pipeline
-   
-   # Check logs
-   docker-compose exec airflow airflow dags test daily_jobs_pipeline
-   ```
+### Quick API Test
+
+**1. Upload a CV:**
+```bash
+curl -X POST http://localhost:8000/api/v1/cv/upload \
+  -F "file=@cv_test/english_resume.pdf"
+```
+Response:
+```json
+{
+  "cv_id": "db0ff853df354ef89d90dff04db0edc3",
+  "object_key": "db0ff853df354ef89d90dff04db0edc3.pdf",
+  "bucket": "cv-uploads",
+  "status": "queued",
+  "message": "CV uploaded; parsing scheduled."
+}
+```
+
+**2. Get recommendations based on CV (wait 2-5 seconds for async parsing):**
+```bash
+curl -X POST http://localhost:8000/api/v1/recommendations/from-cv \
+  -H "Content-Type: application/json" \
+  -d '{"cv_id": "db0ff853df354ef89d90dff04db0edc3", "top_k": 20}'
+```
+
+**3. Get recommendations from profile data (synchronous):**
+```bash
+curl -X POST http://localhost:8000/api/v1/recommendations \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Data Engineer",
+    "description": "Passionate about building scalable data pipelines with Python, Apache Spark, and PostgreSQL",
+    "skills": ["Python", "Apache Spark", "PostgreSQL", "Kafka"],
+    "seniority_level": "mid",
+    "preferred_contract": "CDI",
+    "preferred_location": "Paris",
+    "remote_preference": "flexible",
+    "languages": ["French", "English"],
+    "top_k": 20
+  }'
+```
+
+**4. Browse available job offers:**
+```bash
+curl "http://localhost:8000/api/v1/offers?skip=0&limit=10&source=adzuna"
+```
+
+**5. Check API health:**
+```bash
+curl http://localhost:8000/api/v1/health
+```
+
+### Trigger ETL Pipeline
+
+**Option 1: Manual trigger via Airflow CLI**
+```bash
+docker-compose exec airflow airflow dags trigger daily_jobs_pipeline
+```
+
+**Option 2: Via Airflow WebUI**
+1. Navigate to http://localhost:8080
+2. Find `daily_jobs_pipeline` DAG
+3. Click "Trigger DAG"
 
 ---
 
 ## Configuration
 
-### Environment Variables
+### FastAPI Application Settings
 
-| Variable | Description | Default | Required |
-|----------|-------------|---------|----------|
-| `ADZUNA_APP_ID` | Adzuna API application ID | (none) | ✅ Yes |
-| `ADZUNA_API_KEY` | Adzuna API authentication key | (none) | ✅ Yes |
-| `MONGO_URI` | MongoDB connection string | `mongodb://admin:admin123@localhost:27017/` | ❌ No |
-| `MONGO_DB` | MongoDB database name | `job_raw` | ❌ No |
-| `POSTGRES_DATA_URI` | PostgreSQL analytics connection | `postgresql://datauser:datapass@localhost:5433/job_db` | ❌ No |
-| `AIRFLOW_HOME` | Airflow base directory | `/opt/airflow` | ❌ No |
+[platform/app/core/config.py](platform/app/core/config.py) manages all settings:
 
-### Airflow Configuration
+| Variable | Description | Default |
+|----------|-------------|----------|
+| `EMBEDDING_MODEL` | Sentence transformer model | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` |
+| `EMBEDDING_DIM` | Embedding vector dimension | `384` |
+| `EMBEDDING_DEVICE` | Inference device (cpu/cuda) | `cpu` |
+| `REDIS_CACHE_TTL_SECONDS` | Recommendation cache lifetime | `300` |
+| `RECO_DEFAULT_TOP_K` | Default recommendation count | `20` |
+| `RECO_VECTOR_CANDIDATES` | ANN candidate pool size | `200` |
+| `RECO_WEIGHT_*` | Hybrid scoring weights | See [config.py](platform/app/core/config.py) |
+| `MINIO_BUCKET_CV` | CV storage bucket | `cv-uploads` |
+| `KAFKA_TOPIC_CV_UPLOADED` | Async processing topic | `cv.uploaded` |
 
-Key DAG settings (in `airflow/dags/daily_jobs_pipeline.py`):
+### Recommendation Scoring Algorithm
+
+The hybrid recommendation engine combines six signals:
+
+$$
+\text{Score} = 0.55 \times \text{VectorSimilarity} + 0.20 \times \text{TechOverlap} + 0.08 \times \text{SeniorityMatch}
++ 0.05 \times \text{ContractMatch} + 0.05 \times \text{LocationMatch} + 0.04 \times \text{RemoteMatch} + 0.03 \times \text{LanguageMatch}
+$$
+
+**Components:**
+- **Vector Similarity** (55%): Cosine distance in embedding space (semantic relevance)
+- **Tech Overlap** (20%): Jaccard similarity of skill sets
+- **Seniority Match** (8%): How well job seniority aligns with candidate level
+- **Contract Type** (5%): Job contract preference matching
+- **Location** (5%): Geographic preference matching
+- **Remote Policy** (4%): Work location preference (office/hybrid/remote)
+- **Language** (3%): Required language proficiency matching
+
+---
+
+## API Endpoints
+
+### Health & Status
+
+**GET /api/v1/health**
+
+Check API and dependencies health.
+
+### CV Upload & Profile Extraction
+
+**POST /api/v1/cv/upload**
+
+Upload a CV file (PDF, DOCX, or TXT) for parsing and recommendations.
+- **Accepted formats**: `.pdf`, `.docx`, `.txt`
+- **Max size**: 5 MB
+- **Returns**: CV ID for use with recommendation endpoints
+- **Async processing**: CV is parsed asynchronously by a Kafka worker
+
+### Recommendations
+
+**POST /api/v1/recommendations**
+
+Get job recommendations from a profile payload (synchronous).
+
+**POST /api/v1/recommendations/from-cv**
+
+Get job recommendations based on a previously uploaded CV.
+
+### Job Offers
+
+**GET /api/v1/offers**
+
+Browse and search job offers with filtering options.
+
+Query parameters:
+- `skip` (int): Pagination offset (default: 0)
+- `limit` (int): Results per page (default: 10, max: 100)
+- `source` (str): Filter by source (adzuna, rekrute, emploi_public)
+- `country` (str): Filter by country (fr, ma)
+- `city` (str): Filter by city name
+- `salary_min` (float): Minimum salary filter
+- `salary_max` (float): Maximum salary filter
+- `contract_type` (str): Filter by contract (CDI, CDD, Stage, etc.)
+- `remote` (str): Filter by remote policy (onsite, hybrid, remote)
+
+### Profiles
+
+**POST /api/v1/profiles**
+
+Parse and extract profile from form data (synchronous). Alternative to CV upload.
+
+See [API Documentation](http://localhost:8000/docs) for complete endpoint specifications and request/response schemas.
+
+---
+
+## Airflow ETL Configuration
+
+### DAG Schedule & Settings
+
+Key settings in [airflow/dags/daily_jobs_pipeline.py](airflow/dags/daily_jobs_pipeline.py):
 
 ```python
 schedule_interval="0 6 * * *",      # Daily at 06:00 UTC
@@ -261,48 +429,30 @@ retry_delay=timedelta(minutes=5),    # Wait 5 min between retries
 
 ### Scraper Configuration
 
-#### Adzuna Scraper (`scrapers/adzuna_scraper.py`)
+#### Adzuna Scraper
+Searches for data roles in France via the Adzuna API:
+- **Keywords**: Data scientist, engineer, analyst, machine learning
+- **Country**: France
+- **Rate Limit**: 1 second delay between requests
+- **Max Results**: 1000 per run (20 pages × 50 results)
 
-```python
-DATA_KEYWORDS = "data scientist data engineer data analyst machine learning big data"
-ADZUNA_COUNTRY = "fr"         # France
-RESULTS_PER_PAGE = 50         # API pagination size
-MAX_PAGES = 20                # Max 1000 results per run
-DELAY_BETWEEN_REQUESTS = 1    # Rate limiting (seconds)
-```
+#### ReKrute Scraper
+Web scrapes job listings from ReKrute.com (Morocco)
+- **Base URL**: `https://www.rekrute.com`
+- **Pagination**: 50 results per page
 
-#### ReKrute Scraper (`scrapers/rekrute_scraper.py`)
+#### Emploi-Public Scraper
+Automates scraping from Emploi-Public.ma (Morocco) using Selenium
+- **Browser**: Headless Chrome automation
+- **PDF Parsing**: Extracts text from PDF job descriptions
 
-```python
-REKRUTE_BASE_URL = "https://www.rekrute.com"
-SEARCH_KEYWORDS = "data scientist data engineer"
-PAGINATION_SIZE = 50
-```
+### Transformers (Silver Layer)
 
-#### Emploi-Public Scraper (`scrapers/emploi_public_scraper.py`)
-
-```python
-EMPLOI_PUBLIC_BASE_URL = "https://www.emploi-public.ma"
-HEADLESS_BROWSER = True       # Run Selenium in headless mode
-PDF_PARSING = True            # Extract PDF job descriptions
-```
-
-### Salary Estimation Rules
-
-The `salary_estimator.py` uses role-based lookup with fallback adjustments:
-
-```python
-# Example rules (in MAD - Moroccan Dirhams)
-ROLE_SALARY_MAD = {
-    "data scientist": (18000, 35000),    # Monthly gross
-    "data engineer": (17000, 32000),
-    "data analyst": (12000, 25000),
-    "junior": (-30%),                    # Seniority adjustment
-    "senior": (+20%),
-}
-```
-
-Estimates can be overridden by setting `salary_min` / `salary_max` in MongoDB.
+Data normalization and enrichment:
+- **Salary Estimation**: ML-based prediction for missing salary data
+- **Skill Extraction**: Automatic technology detection and categorization
+- **Geolocation**: Standardized city and country names
+- **Schema Unification**: Converts source-specific formats to common schema
 
 ---
 
@@ -312,50 +462,93 @@ Estimates can be overridden by setting `salary_min` / `salary_max` in MongoDB.
 
 ```
 findjob/
-├── airflow/
-│   ├── dags/
-│   │   └── daily_jobs_pipeline.py    # Main orchestration DAG
-│   ├── logs/                         # DAG execution logs
-│   ├── plugins/                      # Airflow plugins (custom operators)
-│   ├── requirements.txt              # Airflow + Python dependencies
-│   └── Dockerfile                    # Airflow image build
+├── platform/                         # FastAPI Application (Main)
+│   ├── app/
+│   │   ├── main.py                  # FastAPI application entrypoint
+│   │   ├── api/v1/
+│   │   │   ├── cv.py                # CV upload endpoint
+│   │   │   ├── recommendations.py   # Recommendation endpoints
+│   │   │   ├── offers.py            # Browse job offers
+│   │   │   ├── profiles.py          # Profile parsing
+│   │   │   ├── health.py            # Health check
+│   │   │   └── router.py            # API router
+│   │   ├── core/
+│   │   │   ├── config.py            # Settings management
+│   │   │   └── logging.py           # Structured logging
+│   │   ├── db/session.py            # SQLAlchemy setup
+│   │   ├── schemas/                 # Pydantic models
+│   │   ├── services/                # Business logic
+│   │   │   ├── matching.py          # Hybrid recommendation
+│   │   │   ├── embedding.py         # Embedding generation
+│   │   │   ├── cv_parser.py         # CV parsing
+│   │   │   ├── redis_client.py      # Redis cache
+│   │   │   ├── minio_client.py      # MinIO storage
+│   │   │   ├── kafka_producer.py    # Event publishing
+│   │   │   ├── tech_extractor.py    # Skill extraction
+│   │   │   └── tech_vocab.py        # Technology vocabulary
+│   │   ├── workers/
+│   │   │   └── cv_consumer.py       # Kafka consumer for CV processing
+│   │   └── repositories/            # Database queries
+│   ├── requirements.txt             # Python dependencies
+│   ├── Dockerfile                   # Container image
+│   └── Dockerfile.worker            # Worker process image
 │
-├── scrapers/                         # Bronze layer (ingestion)
-│   ├── adzuna_scraper.py
-│   ├── rekrute_scraper.py
-│   ├── emploi_public_scraper.py
+├── airflow/                         # Orchestration
+│   ├── dags/
+│   │   └── daily_jobs_pipeline.py   # Main ETL DAG
+│   ├── logs/                        # Execution logs
+│   ├── plugins/                     # Custom operators
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── scrapers/                        # Bronze Layer (Data Ingestion)
+│   ├── adzuna_scraper.py            # France jobs
+│   ├── rekrute_scraper.py           # Morocco jobs
+│   ├── emploi_public_scraper.py     # Morocco public sector
 │   └── requirements.txt
 │
-├── transformers/                     # Silver layer (cleaning)
+├── transformers/                    # Silver Layer (Data Transformation)
 │   ├── adzuna_transformer.py
 │   ├── rekrute_transformer.py
 │   ├── emploi_public_transformer.py
-│   └── salary_estimator.py
+│   ├── salary_estimator.py          # ML salary prediction
+│   ├── skill_normalizer.py          # Technology extraction
+│   ├── geo_normalizer.py            # Location standardization
+│   ├── job_family.py                # Role classification
+│   └── enrichment.py
 │
 ├── etl/
-│   └── mongo_to_postgres.py          # Gold layer (load to analytics DB)
+│   └── mongo_to_postgres.py         # MongoDB → PostgreSQL loader
 │
 ├── data/
-│   ├── raw/                          # Local raw data samples
-│   └── data/                         # Local cleaned data samples
-│
-├── dashboard/
-│   ├── Revenue and Profitability.json # Power BI model
-│   └── power bi dashboard.fig        # Power BI dashboard
-│
-├── postgres-init/
-│   └── init-schema.sql               # PostgreSQL star schema
-│
-├── mongo-init/                       # MongoDB initialization (optional)
-│   └── init.js
+│   ├── raw/                         # Sample raw data
+│   └── data/                        # Sample transformed data
 │
 ├── db_snapshot/
-│   └── data_snapshot.dump            # PostgreSQL backup
+│   └── data_snapshot.dump           # PostgreSQL backup
 │
-├── docker-compose.yml                # Services orchestration
-├── .env.example                      # Environment template
-├── README.md                         # This file
-└── pass.txt                          # Credentials reference
+├── dashboard/
+│   ├── power bi dashboard.fig       # BI dashboard
+│   └── Revenue and Profitability.json
+│
+├── postgres-init/                   # PostgreSQL initialization
+│   ├── 00-roles.sql
+│   ├── 01-schema.sql                # Star schema definition
+│   ├── 02-cleanup-and-constraints.sql
+│   ├── 03-enrichment.sql
+│   └── Dockerfile
+│
+├── mongo-init/
+│   └── 00-roles.sql
+│
+├── cv_test/                         # Test CVs
+│   └── english_resume.pdf
+│
+├── docker-compose.yml               # Services orchestration
+├── .env.example                     # Environment template
+├── EMBEDDING_USAGE.md               # Embedding deployment guide
+├── README.md                        # This file
+└── pass.txt                         # Credentials reference
 ```
 
 ### Running Locally (Without Docker)

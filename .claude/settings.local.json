@@ -1,7 +1,41 @@
 {
   "permissions": {
     "allow": [
-      "Bash(docker exec *)"
+      "Bash(docker exec *)",
+      "Bash(docker rm *)",
+      "Bash(docker volume *)",
+      "Bash(docker compose *)",
+      "Read(//mnt/c/Users/marouane/Desktop/**)",
+      "Bash(docker build *)",
+      "Bash(docker cp *)",
+      "Bash(docker restart *)",
+      "Bash(curl -s -X POST \"http://localhost:8000/api/v1/recommendations/from-cv/db0ff853df354ef89d90dff04db0edc3?top_k=5\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('count=',d['count']\\); [print\\(f\\\\\"  {i['score']:.3f}  {i['offer']['poste'][:60]!r:60}  matched={i['matched_technologies'][:5]}\\\\\"\\) for i in d['items']]\")",
+      "Bash(curl -s -X POST http://localhost:8000/api/v1/cv/upload -F \"file=@/mnt/c/Users/marouane/Desktop/FindJob/cv_test/english_resume.pdf\")",
+      "Bash(curl -s -X POST http://localhost:8000/api/v1/cv/upload -F \"file=@C:/Users/marouane/Desktop/FindJob/cv_test/english_resume.pdf\")",
+      "Bash(curl -s -X POST \"http://localhost:8000/api/v1/recommendations/from-cv/2e4e9f305f9e4fa4ace66dd181d290de?top_k=5\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('count=',d['count']\\); [print\\(f\\\\\"  score={i['score']:.3f}  matched={i['matched_technologies'][:6]}  {i['offer']['poste'][:55]!r}\\\\\"\\) for i in d['items']]\")",
+      "Bash(python -c \"import sys,json; d=json.loads\\(sys.stdin.read\\(\\)\\); print\\('tech_stack=',d['tech_stack']\\); print\\('competences=',d['competences']\\)\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('count=',d['count']\\); [print\\(f\\\\\"  score={i['score']:.3f}  matched={i['matched_technologies'][:6]}  missing={i['missing_technologies'][:3]}  {i['offer']['poste'][:50]!r}\\\\\"\\) for i in d['items']]\")",
+      "Bash(curl -s -X POST \"http://localhost:8000/api/v1/recommendations/from-cv/2e4e9f305f9e4fa4ace66dd181d290de?top_k=1\")",
+      "Bash(python -m json.tool)",
+      "Bash(curl -s -X POST http://localhost:8000/api/v1/recommendations -H \"Content-Type: application/json\" -d '{\"profile\":{\"poste_recherche\":\"Data Analyst Python SQL\",\"tech_stack\":[\"Python\",\"SQL\",\"MySQL\",\"Power BI\",\"Tableau\"],\"competences\":[],\"description_libre\":\"Data analyst with Python, SQL, MySQL, Power BI dashboards and Tableau visualizations.\"},\"top_k\":5}')",
+      "Bash(curl -s -X POST http://localhost:8000/api/v1/recommendations -H \"Content-Type: application/json\" -d '{\"profile\":{\"poste_recherche\":\"Data Analyst Python SQL\",\"tech_stack\":[\"Python\",\"SQL\",\"MySQL\",\"Power BI\",\"Tableau\"],\"competences\":[],\"description_libre\":\"Data analyst Python SQL MySQL Power BI Tableau.\"},\"top_k\":3}')",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(f\\\\\"{i['offer']['poste'][:35]!r:35}  score={i['score']:.3f}  matched={i['matched_technologies']}  missing={i['missing_technologies'][:4]}\\\\\"\\) for i in d['items']]\")",
+      "Bash(curl -s -X POST http://localhost:8000/api/v1/recommendations -H \"Content-Type: application/json\" -d '{\"profile\":{\"poste_recherche\":\"Data Analyst Python SQL\",\"tech_stack\":[\"Python\",\"SQL\",\"MySQL\",\"Power BI\",\"Tableau\"]},\"top_k\":5}')",
+      "Bash(python -c \"import json; d=json.load\\(open\\('/tmp/r.json'\\)\\); [print\\(i['offer']['poste'][:40], '|', 'matched=', i['matched_technologies'], 'missing=', i['missing_technologies'][:5]\\) for i in d['items']]\")",
+      "Bash(curl -s -X POST http://localhost:8000/api/v1/recommendations -H \"Content-Type: application/json\" -d \"{\\\\\"profile\\\\\":{\\\\\"poste_recherche\\\\\":\\\\\"Data Engineer Python\\\\\",\\\\\"tech_stack\\\\\":[\\\\\"Python\\\\\",\\\\\"SQL\\\\\",\\\\\"Spark\\\\\",\\\\\"Airflow\\\\\",\\\\\"AWS\\\\\"]},\\\\\"top_k\\\\\":5}\")",
+      "Bash(python -c ' *)",
+      "Bash(curl -sf http://localhost:8000/api/v1/health)",
+      "Bash(python -c \"import sys,json; d=json.loads\\(sys.stdin.read\\(\\)\\); print\\('poste_recherche=', repr\\(d['poste_recherche']\\)\\); print\\('seniority=', d['seniority']\\); print\\('tech=', d['tech_stack']\\)\")",
+      "Bash(curl -s -X POST \"http://localhost:8000/api/v1/recommendations/from-cv/5e7508d21a1b49a0ae68e9928b74c55a?top_k=10\")",
+      "Bash(python -c \"import sys,json; d=json.loads\\(sys.stdin.read\\(\\)\\); print\\('metier_code=',d.get\\('metier_code'\\)\\)\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('count=',d['count'],'items=',len\\(d['items']\\)\\)\")",
+      "Bash(curl -s -X POST \"http://localhost:8000/api/v1/recommendations/from-cv/5e7508d21a1b49a0ae68e9928b74c55a?top_k=30\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('count=', d['count']\\)\")",
+      "Bash(python -c \"import sys,json; print\\(json.load\\(sys.stdin\\)['cv_id']\\)\")",
+      "Bash(curl -s -X POST \"http://localhost:8000/api/v1/recommendations/from-cv/10333e929eb742a89cc5620b5295e81b?top_k=10\")",
+      "Bash(curl -s -X POST \"http://localhost:8000/api/v1/recommendations/from-cv/4c3365c6f709498e849a1a6e7d71b768?top_k=10\")"
     ]
   }
 }
