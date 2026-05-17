@@ -1,97 +1,149 @@
+import { useState } from "react";
+import {
+  ArrowUpRight, Briefcase, Building2, Calendar, ChevronDown,
+  MapPin, Sparkles, Wallet,
+} from "lucide-react";
+import ScoreRing from "./ScoreRing";
 import { cn } from "../lib/cn";
 
-function ScoreBar({ label, value }) {
-  const pct = Math.round((value || 0) * 100);
+const SIGNAL_META = {
+  vector:       { label: "Semantic match" },
+  tech_overlap: { label: "Skills overlap" },
+  seniority:    { label: "Seniority" },
+  contract:     { label: "Contract" },
+  location:     { label: "Location" },
+  remote:       { label: "Remote" },
+  language:     { label: "Languages" },
+};
+
+function MetaLine({ icon: Icon, children }) {
+  if (!children || children === "Non spécifié") return null;
   return (
-    <div className="flex items-center gap-2 text-xs">
-      <span className="w-20 text-slate-500">{label}</span>
-      <div className="flex-1 h-1.5 bg-slate-100 rounded-full overflow-hidden">
-        <div className="h-full bg-brand-500" style={{ width: `${pct}%` }} />
-      </div>
-      <span className="w-8 text-right tabular-nums text-slate-600">{pct}</span>
-    </div>
+    <span className="inline-flex items-center gap-1.5 text-[13px] text-text-mute">
+      <Icon size={13} className="text-text-faint" /> {children}
+    </span>
   );
 }
 
-function Badge({ children, color = "slate" }) {
-  const tones = {
-    slate:  "bg-slate-100 text-slate-700",
-    green:  "bg-emerald-100 text-emerald-700",
-    amber:  "bg-amber-100 text-amber-700",
-    brand:  "bg-brand-100 text-brand-700",
-  };
-  return <span className={cn("badge", tones[color])}>{children}</span>;
-}
-
 export default function OfferCard({ item }) {
-  const { offer, score, breakdown, matched_technologies = [], missing_technologies = [] } = item;
-  const scorePct = Math.round((score || 0) * 100);
+  const [open, setOpen] = useState(false);
+  const { offer, score, breakdown,
+          matched_technologies = [], missing_technologies = [] } = item;
+
+  const onMouseMove = (e) => {
+    const r = e.currentTarget.getBoundingClientRect();
+    e.currentTarget.style.setProperty("--mx", `${e.clientX - r.left}px`);
+    e.currentTarget.style.setProperty("--my", `${e.clientY - r.top}px`);
+  };
 
   return (
-    <article className="card p-5 flex flex-col gap-3">
-      <header className="flex items-start justify-between gap-3">
-        <div className="min-w-0">
-          <h3 className="font-semibold text-slate-900 truncate">{offer.poste}</h3>
-          <p className="text-sm text-slate-600 truncate">
-            {offer.societe_nom} · {offer.ville_nom}, {offer.pays_nom}
-          </p>
-        </div>
-        <div className="text-right shrink-0">
-          <div className="text-2xl font-bold text-brand-700 tabular-nums">{scorePct}</div>
-          <div className="text-[10px] uppercase tracking-wide text-slate-500">match</div>
-        </div>
-      </header>
-
-      <div className="flex flex-wrap gap-1.5">
-        {offer.metier_libelle && offer.metier_libelle !== "Non spécifié" &&
-          <Badge color="brand">{offer.metier_libelle}</Badge>}
-        {offer.contrat_libelle && offer.contrat_libelle !== "Non spécifié" &&
-          <Badge>{offer.contrat_libelle}</Badge>}
-        {offer.seniorite_libelle && offer.seniorite_libelle !== "Non spécifié" &&
-          <Badge>{offer.seniorite_libelle}</Badge>}
-        {offer.teletravail_libelle && offer.teletravail_libelle !== "Non spécifié" &&
-          <Badge>{offer.teletravail_libelle}</Badge>}
-        {offer.salaire_min_mensuel_eur > 0 &&
-          <Badge color="green">{offer.salaire_min_mensuel_eur}–{offer.salaire_max_mensuel_eur} €/mo</Badge>}
-      </div>
-
-      {matched_technologies.length > 0 && (
-        <div>
-          <p className="text-xs font-medium text-slate-700 mb-1">You match</p>
-          <div className="flex flex-wrap gap-1.5">
-            {matched_technologies.map((t) => <Badge key={t} color="green">{t}</Badge>)}
+    <article
+      onMouseMove={onMouseMove}
+      className="group glow-on-hover card hover:border-line-strong transition-colors overflow-hidden">
+      <div className="p-5 sm:p-6">
+        {/* HEADER */}
+        <div className="flex items-start gap-4">
+          <ScoreRing value={score} size={56} />
+          <div className="min-w-0 flex-1">
+            <div className="flex items-start justify-between gap-2">
+              <h3 className="font-semibold text-text text-[15px] leading-snug truncate">
+                {offer.poste}
+              </h3>
+              {offer.url && (
+                <a href={offer.url} target="_blank" rel="noreferrer"
+                   className="shrink-0 inline-flex items-center gap-1 text-xs text-brand-300
+                              hover:text-brand-200 font-medium opacity-0 group-hover:opacity-100
+                              transition-opacity">
+                  Open <ArrowUpRight size={13} />
+                </a>
+              )}
+            </div>
+            <div className="mt-1.5 flex flex-wrap gap-x-3.5 gap-y-1">
+              <MetaLine icon={Building2}>{offer.societe_nom}</MetaLine>
+              <MetaLine icon={MapPin}>
+                {[offer.ville_nom, offer.pays_nom].filter(Boolean).filter(s => s !== "Non spécifié").join(", ")}
+              </MetaLine>
+              <MetaLine icon={Calendar}>{offer.date_publication}</MetaLine>
+            </div>
           </div>
         </div>
-      )}
-      {missing_technologies.length > 0 && (
-        <div>
-          <p className="text-xs font-medium text-slate-700 mb-1">You may want to learn</p>
-          <div className="flex flex-wrap gap-1.5">
-            {missing_technologies.slice(0, 6).map((t) => <Badge key={t} color="amber">{t}</Badge>)}
+
+        {/* META BADGES */}
+        <div className="mt-4 flex flex-wrap gap-1.5">
+          {offer.metier_libelle && offer.metier_libelle !== "Non spécifié" &&
+            <span className="badge-brand">{offer.metier_libelle}</span>}
+          {offer.contrat_libelle && offer.contrat_libelle !== "Non spécifié" &&
+            <span className="badge-neutral"><Briefcase size={11}/>{offer.contrat_libelle}</span>}
+          {offer.seniorite_libelle && offer.seniorite_libelle !== "Non spécifié" &&
+            <span className="badge-neutral">{offer.seniorite_libelle}</span>}
+          {offer.teletravail_libelle && offer.teletravail_libelle !== "Non spécifié" &&
+            <span className="badge-neutral">{offer.teletravail_libelle}</span>}
+          {offer.salaire_min_mensuel_eur > 0 && (
+            <span className="badge-success">
+              <Wallet size={11}/>
+              {offer.salaire_min_mensuel_eur.toLocaleString()}–
+              {offer.salaire_max_mensuel_eur.toLocaleString()} €/mo
+            </span>
+          )}
+        </div>
+
+        {/* MATCHED / MISSING */}
+        {matched_technologies.length > 0 && (
+          <div className="mt-4">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-text-dim mb-1.5">
+              You match · {matched_technologies.length}
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {matched_technologies.map((t) => (
+                <span key={t} className="badge-success">{t}</span>
+              ))}
+            </div>
           </div>
-        </div>
-      )}
-
-      <details className="text-xs">
-        <summary className="cursor-pointer text-slate-500 hover:text-slate-700">
-          Score breakdown
-        </summary>
-        <div className="mt-2 space-y-1">
-          {Object.entries(breakdown || {}).map(([k, v]) => (
-            <ScoreBar key={k} label={k} value={v} />
-          ))}
-        </div>
-      </details>
-
-      <footer className="flex items-center justify-between pt-2 border-t border-slate-100 text-xs text-slate-500">
-        <span>{offer.date_publication ?? "—"}</span>
-        {offer.url && (
-          <a href={offer.url} target="_blank" rel="noreferrer"
-             className="text-brand-600 hover:underline font-medium">
-            View offer →
-          </a>
         )}
-      </footer>
+        {missing_technologies.length > 0 && (
+          <div className="mt-3">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-text-dim mb-1.5">
+              Could be a stretch
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {missing_technologies.slice(0, 6).map((t) => (
+                <span key={t} className="badge-warn">{t}</span>
+              ))}
+              {missing_technologies.length > 6 && (
+                <span className="badge-neutral">+{missing_technologies.length - 6}</span>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* BREAKDOWN */}
+        <button type="button" onClick={() => setOpen(x => !x)}
+                className="mt-5 inline-flex items-center gap-1.5 text-xs font-medium
+                           text-text-dim hover:text-text transition-colors">
+          <Sparkles size={12} className="text-brand-400" />
+          Why this offer?
+          <ChevronDown size={14} className={cn("transition-transform", open && "rotate-180")} />
+        </button>
+
+        {open && (
+          <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 animate-fade-in">
+            {Object.entries(breakdown || {}).map(([k, v]) => {
+              const meta = SIGNAL_META[k] ?? { label: k };
+              const pct = Math.round((v || 0) * 100);
+              return (
+                <div key={k} className="flex items-center gap-2 text-xs">
+                  <span className="w-28 text-text-dim shrink-0">{meta.label}</span>
+                  <div className="flex-1 h-1 bg-white/[0.06] rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-cta"
+                         style={{ width: `${pct}%` }} />
+                  </div>
+                  <span className="w-8 text-right tabular-nums text-text-mute">{pct}</span>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
     </article>
   );
 }

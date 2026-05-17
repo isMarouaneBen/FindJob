@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { GoogleLogin } from "@react-oauth/google";
+import { Lock, Mail, User as UserIcon } from "lucide-react";
+import AuthShell from "../components/AuthShell";
 import { useAuth } from "../auth/AuthContext";
+import { nextStepFor } from "../auth/flow";
 
 export default function Register() {
   const { signUp, signInWithGoogle } = useAuth();
@@ -19,59 +22,73 @@ export default function Register() {
     if (password.length < 6) { setError("Password must be at least 6 characters."); return; }
     setSubmitting(true);
     try {
-      await signUp({ email, password, fullName });
-      navigate("/onboarding/cv", { replace: true });
+      const u = await signUp({ email, password, fullName });
+      navigate(nextStepFor(u.user_id), { replace: true });
     } catch (err) { setError(err.message); }
     finally { setSubmitting(false); }
   };
 
   const hasGoogle = !!import.meta.env.VITE_GOOGLE_CLIENT_ID;
+  const padded = { paddingLeft: "2.4rem" };
 
   return (
-    <div className="max-w-md mx-auto card p-8">
-      <h1 className="text-2xl font-semibold text-slate-900">Create your account</h1>
-      <p className="text-sm text-slate-600 mt-1">It's free — you'll see matching offers in two clicks.</p>
-
-      <form onSubmit={onSubmit} className="mt-6 space-y-4">
+    <AuthShell title="Create your account"
+               subtitle="Two minutes to your first ranked offer list.">
+      <form onSubmit={onSubmit} className="space-y-4">
         <div>
           <label className="field-label" htmlFor="name">Full name</label>
-          <input id="name" type="text" required autoComplete="name"
-                 value={fullName} onChange={(e) => setFullName(e.target.value)}
-                 className="field-input" />
+          <div className="relative">
+            <UserIcon size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-dim" />
+            <input id="name" type="text" required autoComplete="name"
+                   value={fullName} onChange={(e) => setFullName(e.target.value)}
+                   className="field-input" style={padded}
+                   placeholder="Jane Doe" />
+          </div>
         </div>
         <div>
           <label className="field-label" htmlFor="email">Email</label>
-          <input id="email" type="email" required autoComplete="email"
-                 value={email} onChange={(e) => setEmail(e.target.value)}
-                 className="field-input" />
+          <div className="relative">
+            <Mail size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-dim" />
+            <input id="email" type="email" required autoComplete="email"
+                   value={email} onChange={(e) => setEmail(e.target.value)}
+                   className="field-input" style={padded}
+                   placeholder="you@example.com" />
+          </div>
         </div>
         <div>
           <label className="field-label" htmlFor="password">Password</label>
-          <input id="password" type="password" required autoComplete="new-password"
-                 value={password} onChange={(e) => setPassword(e.target.value)}
-                 className="field-input" />
+          <div className="relative">
+            <Lock size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-dim" />
+            <input id="password" type="password" required autoComplete="new-password"
+                   value={password} onChange={(e) => setPassword(e.target.value)}
+                   className="field-input" style={padded}
+                   placeholder="At least 6 characters" />
+          </div>
+          <p className="field-hint">Bcrypt-hashed server-side. We never see your plain password.</p>
         </div>
-        {error && <p className="text-sm text-red-600">{error}</p>}
-        <button type="submit" disabled={submitting} className="btn-primary w-full">
-          {submitting ? "Creating…" : "Create account"}
+
+        {error && (
+          <div className="rounded-lg bg-rose-500/10 border border-rose-500/30 px-3 py-2 text-sm text-rose-300">
+            {error}
+          </div>
+        )}
+
+        <button type="submit" disabled={submitting} className="btn-primary btn-lg w-full">
+          {submitting ? "Creating account…" : "Create account"}
         </button>
       </form>
 
       {hasGoogle && (
         <>
-          <div className="my-6 flex items-center gap-3 text-xs text-slate-500">
-            <div className="flex-1 h-px bg-slate-200" />OR<div className="flex-1 h-px bg-slate-200" />
-          </div>
-          <div className="flex justify-center">
+          <div className="divider-or my-6">or</div>
+          <div className="flex justify-center [color-scheme:light]">
             <GoogleLogin
-              text="signup_with"
+              size="large" theme="filled_black" text="signup_with"
               onSuccess={async (resp) => {
                 try {
-                  await signInWithGoogle(resp.credential);
-                  navigate("/onboarding/cv", { replace: true });
-                } catch (err) {
-                  setError(err.message);
-                }
+                  const u = await signInWithGoogle(resp.credential);
+                  navigate(nextStepFor(u.user_id), { replace: true });
+                } catch (err) { setError(err.message); }
               }}
               onError={() => setError("Google sign-up failed.")}
             />
@@ -79,10 +96,10 @@ export default function Register() {
         </>
       )}
 
-      <p className="mt-6 text-sm text-slate-600 text-center">
+      <p className="mt-8 text-sm text-text-mute text-center">
         Already have an account?{" "}
-        <Link to="/login" className="text-brand-600 font-medium hover:underline">Sign in</Link>
+        <Link to="/login" className="btn-link">Sign in</Link>
       </p>
-    </div>
+    </AuthShell>
   );
 }

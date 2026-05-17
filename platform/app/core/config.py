@@ -56,6 +56,15 @@ class Settings(BaseSettings):
     MINIO_BUCKET_CV: str = "cv-uploads"
     MINIO_PRESIGN_EXPIRY_SECONDS: int = 3600
 
+    # ---- Auth / JWT ----
+    JWT_SECRET: str = "change-me-in-production-please-and-make-it-long"
+    JWT_ALGORITHM: str = "HS256"
+    JWT_EXPIRE_MINUTES: int = 60 * 24 * 7  # 7 days
+    GOOGLE_CLIENT_ID: str = ""  # must match the frontend's VITE_GOOGLE_CLIENT_ID
+
+    # ---- Admin (internal endpoints called by Airflow / cron) ----
+    ADMIN_TOKEN: str = "local-admin-token-change-me"
+
     # ---- Matching / Recommendation ----
     RECO_DEFAULT_TOP_K: int = 20
     RECO_MAX_TOP_K: int = 100

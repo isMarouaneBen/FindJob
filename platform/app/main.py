@@ -51,12 +51,47 @@ async def _init_pgvector() -> None:
     logger.info("pgvector extension + index ready")
 
 
+async def _init_auth_schema() -> None:
+    """Idempotent bootstrap of the auth schema (mirrors postgres-init/04-auth.sql)
+    so the table also exists in DBs that were initialised before this commit."""
+    engine = init_engine()
+    async with engine.begin() as conn:
+        await conn.execute(text("CREATE SCHEMA IF NOT EXISTS auth"))
+        await conn.execute(text("""
+            CREATE TABLE IF NOT EXISTS auth.users (
+                user_id       BIGSERIAL    PRIMARY KEY,
+                email         TEXT         NOT NULL UNIQUE,
+                full_name     TEXT         NOT NULL DEFAULT '',
+                password_hash TEXT,
+                provider      TEXT         NOT NULL DEFAULT 'local',
+                google_sub    TEXT         UNIQUE,
+                picture       TEXT,
+                created_at    TIMESTAMPTZ  NOT NULL DEFAULT now(),
+                last_login_at TIMESTAMPTZ,
+                CONSTRAINT chk_users_provider CHECK (provider IN ('local','google')),
+                CONSTRAINT chk_users_password CHECK (
+                    (provider='local'  AND password_hash IS NOT NULL)
+                 OR (provider='google' AND google_sub    IS NOT NULL)
+                )
+            )
+        """))
+        await conn.execute(text(
+            "CREATE INDEX IF NOT EXISTS idx_users_email ON auth.users(LOWER(email))"
+        ))
+        await conn.execute(text(
+            "CREATE INDEX IF NOT EXISTS idx_users_google_sub ON auth.users(google_sub) "
+            "WHERE google_sub IS NOT NULL"
+        ))
+    logger.info("auth schema ready")
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     configure_logging()
     logger.info("Starting %s v%s", settings.APP_NAME, settings.APP_VERSION)
 
     await _init_pgvector()
+    await _init_auth_schema()
     await tech_vocab.load_from_db()
     await tech_extractor.load_from_db()
     await redis_client.init_redis()

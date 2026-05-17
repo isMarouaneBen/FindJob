@@ -1,12 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FindJob — Tech offer recommendations</title>
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description"
+          content="FindJob — get the tech offers that actually fit your CV. Semantic match, transparent scoring." />
+    <link rel="icon" type="image/png" href="/src/assets/logo.png" />
+    <title>FindJob — Tech offers tailored to your CV</title>
+    <style>
+      /* Prevent FOUC on dark theme */
+      html { background: #0a0a0a; }
+    </style>
   </head>
-  <body class="bg-slate-50">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

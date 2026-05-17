@@ -1,18 +1,26 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Layout() {
+  const { pathname } = useLocation();
+  const bare = pathname === "/login" || pathname === "/register";
+
+  if (bare) {
+    return (
+      <div className="min-h-full bg-bg">
+        <Outlet />
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-full flex flex-col bg-slate-50">
+    <div className="min-h-full flex flex-col bg-bg">
       <Header />
-      <main className="flex-1">
-        <div className="max-w-6xl mx-auto px-4 py-8">
-          <Outlet />
-        </div>
+      <main className="flex-1 relative">
+        <Outlet />
       </main>
-      <footer className="text-center py-6 text-xs text-slate-500">
-        FindJob — pgvector + FastAPI + React
-      </footer>
+      <Footer />
     </div>
   );
 }

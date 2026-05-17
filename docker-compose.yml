@@ -11,15 +11,19 @@ x-airflow-common: &airflow-common
   environment: &airflow-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
-    AIRFLOW__CORE__FERNET_KEY: ""
+    AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY:-}
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
     AIRFLOW__CORE__LOAD_EXAMPLES: "false"
     AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
-    AIRFLOW__WEBSERVER__SECRET_KEY: "job_intelligent_secret"
+    AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_SECRET_KEY:-job_intelligent_secret}
+    AIRFLOW_ADMIN_USER: ${AIRFLOW_ADMIN_USER:-admin}
+    AIRFLOW_ADMIN_PASSWORD: ${AIRFLOW_ADMIN_PASSWORD:-admin123}
 
     # Variables accessibles dans les DAGs
     MONGO_URI: mongodb://admin:admin123@mongodb:27017/
     POSTGRES_DATA_URI: postgresql://datauser:datapass@postgres:5432/job_db
+    PLATFORM_API_URL: http://platform-api:8000/api/v1
+    PLATFORM_ADMIN_TOKEN: ${ADMIN_TOKEN:-local-admin-token-change-me}
   env_file:
     - .env
   volumes:
@@ -53,9 +57,9 @@ services:
     container_name: job_postgres
     restart: unless-stopped
     environment:
-      POSTGRES_USER: datauser
-      POSTGRES_PASSWORD: datapass
-      POSTGRES_DB: job_db
+      POSTGRES_USER: ${POSTGRES_USER:-datauser}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-datapass}
+      POSTGRES_DB: ${POSTGRES_DB:-job_db}
     ports:
       - "5433:5432"   # host 5433 → container 5432 (5432 is taken by a native Windows Postgres)
     volumes:
@@ -79,8 +83,8 @@ services:
     container_name: job_pgadmin
     restart: unless-stopped
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@jobintelligent.ma
-      PGADMIN_DEFAULT_PASSWORD: admin123
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-admin@jobintelligent.ma}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin123}
     ports:
       - "5050:80"
     volumes:
@@ -100,8 +104,8 @@ services:
     container_name: job_mongodb
     restart: unless-stopped
     environment:
-      MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: admin123
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME:-admin}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD:-admin123}
       MONGO_INITDB_DATABASE: job_raw
     ports:
       - "27017:27017"
@@ -126,11 +130,11 @@ services:
     container_name: job_mongo_express
     restart: unless-stopped
     environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
-      ME_CONFIG_MONGODB_ADMINPASSWORD: admin123
-      ME_CONFIG_MONGODB_URL: mongodb://admin:admin123@mongodb:27017/
-      ME_CONFIG_BASICAUTH_USERNAME: admin
-      ME_CONFIG_BASICAUTH_PASSWORD: admin123
+      ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGO_INITDB_ROOT_USERNAME:-admin}
+      ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_INITDB_ROOT_PASSWORD:-admin123}
+      ME_CONFIG_MONGODB_URL: mongodb://${MONGO_INITDB_ROOT_USERNAME:-admin}:${MONGO_INITDB_ROOT_PASSWORD:-admin123}@mongodb:27017/
+      ME_CONFIG_BASICAUTH_USERNAME: ${ME_BASICAUTH_USER:-admin}
+      ME_CONFIG_BASICAUTH_PASSWORD: ${ME_BASICAUTH_PASSWORD:-admin123}
     ports:
       - "8081:8081"
     depends_on:
@@ -169,8 +173,8 @@ services:
         
         echo "Creating admin user..."
         airflow users create \
-          --username admin \
-          --password admin123 \
+          --username "$${AIRFLOW_ADMIN_USER:-admin}" \
+          --password "$${AIRFLOW_ADMIN_PASSWORD:-admin123}" \
           --firstname Admin \
           --lastname JobIntelligent \
           --role Admin \
@@ -272,8 +276,8 @@ services:
     restart: unless-stopped
     command: server /data --console-address ":9001"
     environment:
-      MINIO_ROOT_USER: minioadmin
-      MINIO_ROOT_PASSWORD: minioadmin
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioadmin}
     ports:
       - "9000:9000"
       - "9001:9001"
@@ -298,15 +302,22 @@ services:
     container_name: job_platform_api
     ports:
       - "8000:8000"
+    volumes:
+      # Persist the HuggingFace model cache so rebuilds don't re-download
+      # the ~470 MB sentence-transformers model.
+      - hf_cache:/root/.cache/huggingface
     environment:
-      DATABASE_URL: postgresql+asyncpg://datauser:datapass@postgres:5432/job_db
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-datauser}:${POSTGRES_PASSWORD:-datapass}@postgres:5432/${POSTGRES_DB:-job_db}
       REDIS_URL: redis://redis:6379/0
       KAFKA_BOOTSTRAP_SERVERS: kafka:9092
       MINIO_ENDPOINT: minio:9000
-      MINIO_ACCESS_KEY: minioadmin
-      MINIO_SECRET_KEY: minioadmin
+      MINIO_ACCESS_KEY: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD:-minioadmin}
       MINIO_SECURE: "false"
       EMBEDDING_DEVICE: cpu
+      JWT_SECRET: ${JWT_SECRET:-please-set-a-long-random-secret-in-dot-env}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-local-admin-token-change-me}
     depends_on:
       postgres:
         condition: service_healthy
@@ -334,13 +345,15 @@ services:
       dockerfile: Dockerfile
     container_name: job_cv_worker
     command: ["python", "-u", "-m", "app.workers.cv_consumer"]
+    volumes:
+      - hf_cache:/root/.cache/huggingface
     environment:
-      DATABASE_URL: postgresql+asyncpg://datauser:datapass@postgres:5432/job_db
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-datauser}:${POSTGRES_PASSWORD:-datapass}@postgres:5432/${POSTGRES_DB:-job_db}
       REDIS_URL: redis://redis:6379/0
       KAFKA_BOOTSTRAP_SERVERS: kafka:9092
       MINIO_ENDPOINT: minio:9000
-      MINIO_ACCESS_KEY: minioadmin
-      MINIO_SECRET_KEY: minioadmin
+      MINIO_ACCESS_KEY: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD:-minioadmin}
       MINIO_SECURE: "false"
     depends_on:
       kafka:
@@ -375,6 +388,33 @@ services:
   #     - job_network
   #   restart: "no"
 
+  # ────────────────────────────────────────────
+  # 13. FRONTEND — React (Vite) served by nginx, reverse-proxies /api
+  #     Accès : http://localhost:5173
+  # ────────────────────────────────────────────
+  frontend:
+    build:
+      context: ./platform/frontend
+      dockerfile: Dockerfile
+      args:
+        # Both are PUBLIC — they end up in the JS bundle.
+        VITE_API_URL: /api/v1
+        VITE_GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+    container_name: job_frontend
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    depends_on:
+      platform-api:
+        condition: service_started
+    networks:
+      - job_network
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
 # ────────────────────────────────────────────
 #  VOLUMES persistants
 # ────────────────────────────────────────────
@@ -383,6 +423,7 @@ volumes:
   mongodb_data:
   pgadmin_data:
   minio_data:
+  hf_cache:
 
 # ────────────────────────────────────────────
 #  RÉSEAU interne partagé entre tous les services
