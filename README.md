@@ -206,7 +206,6 @@ The FastAPI backend exposes a robust REST API. View the full interactive Swagger
 Developed as a Final Engineering Project.
 
 - **Marouane Ben** — Project Owner, Data & Software Engineer
-- 📧 **Email**: [marouane@jobintelligent.ma](mailto:marouane@jobintelligent.ma)
 - 🐙 **GitHub**: [isMarouaneBen](https://github.com/isMarouaneBen)
 
 **License:** This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
